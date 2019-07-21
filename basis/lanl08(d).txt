@@ -1,0 +1,839 @@
+
+N: 14
+Name: Si
+
+L= 0
+total= 1
+Exponents:
+0.0931000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.2595000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.2220000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0237
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0885000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.2984000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.5800000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2960
+Coefficients:
+1.0
+
+
+N: 15
+Name: P
+
+L= 0
+total= 1
+Exponents:
+0.1211000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.3369000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.5160000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0298
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1190000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.3934000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3.7050000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.3640
+Coefficients:
+1.0
+
+
+N: 16
+Name: S
+
+L= 0
+total= 1
+Exponents:
+0.1438000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4035000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.8500000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0347
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1379000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.4870000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.9450000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.4960
+Coefficients:
+1.0
+
+
+N: 17
+Name: Cl
+
+L= 0
+total= 1
+Exponents:
+0.1631000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4720000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2310000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0467
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1819000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.6333000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+6.2960000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.6480
+Coefficients:
+1.0
+
+
+N: 32
+Name: Ge
+
+L= 0
+total= 1
+Exponents:
+0.1162000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4424000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.8935000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0209
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0798000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.2623000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8770000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2460
+Coefficients:
+1.0
+
+
+N: 33
+Name: As
+
+L= 0
+total= 1
+Exponents:
+0.1407000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.5427000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.9635000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0263
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1020000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.3224000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0840000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2860
+Coefficients:
+1.0
+
+
+N: 34
+Name: Se
+
+L= 0
+total= 1
+Exponents:
+0.1660000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.6521000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.0330000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0328
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1186000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.3833000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.3660000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.3630
+Coefficients:
+1.0
+
+
+N: 35
+Name: Br
+
+L= 0
+total= 1
+Exponents:
+0.1905000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.7107000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1590000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0376
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1377000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.4446000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.6910000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.4340
+Coefficients:
+1.0
+
+
+N: 50
+Name: Sn
+
+L= 0
+total= 1
+Exponents:
+0.0926000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.3784000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.5418000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0174
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0630000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.1932000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.0470000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.1860
+Coefficients:
+1.0
+
+
+N: 51
+Name: Sb
+
+L= 0
+total= 1
+Exponents:
+0.1078000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4293000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.5863000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0220
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0800000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.2365000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.1110000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2070
+Coefficients:
+1.0
+
+
+N: 52
+Name: Te
+
+L= 0
+total= 1
+Exponents:
+0.1165000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4038000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.6938000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0274
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0911000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.2756000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2310000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2500
+Coefficients:
+1.0
+
+
+N: 53
+Name: I
+
+L= 0
+total= 1
+Exponents:
+0.1336000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.4653000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.7242000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0308
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.1053000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.3180000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2900000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.2940
+Coefficients:
+1.0
+
+
+N: 82
+Name: Pb
+
+L= 0
+total= 1
+Exponents:
+0.0944000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.3756000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.5135000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0168
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0598000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.1843000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.8748000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.1790
+Coefficients:
+1.0
+
+
+N: 83
+Name: Bi
+
+L= 0
+total= 1
+Exponents:
+0.1050000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.3851000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.5744000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0204
+Coefficients:
+1.0
+
+L= 1
+total= 1
+Exponents:
+0.0745000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.2194000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.9105000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.1920
+Coefficients:
+1.0

@@ -1,0 +1,16593 @@
+
+N: 57
+Name: La
+
+L= 0
+total= 1
+Exponents:
+0.03798134
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0752061959152
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.148914490748
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.294863013412
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.583853164603
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1071.07619418
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.15607757606
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+127821.4498290
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+137.965452589
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+16464.6962299
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+17.7713464378
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1964884.8088800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2120.81948925
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2891292587
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+253097.0470770
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+273.183011893
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+32601.4608845
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+35.1887364131
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3890634.5033600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4199.39807309
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.53266534317
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+501153.0953900
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+540.924967712
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+64553.5901156
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+69.6766097429
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+7703778.2420000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8315.15565831
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8.97505242881
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+992324.5961160
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.03780829
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.074560970069
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.147040192975
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.289975014139
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.571853906907
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1003.35530114
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.12774161531
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+123512.3074300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+130.822127248
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+15175.8423608
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1619227.8939900
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17.0571969454
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1978.69685661
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.22399661092
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+257.991692142
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+288299.1866660
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+29927.9742098
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+33.6381558358
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3856472.9468500
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3902.14836749
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.38589909094
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+508.780239357
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+59020.3574211
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+66.3371321594
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+681414.1771060
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7695.3484972
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8.64934359224
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.03763524
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0730089716317
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.141630820973
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.274751020336
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.532992202242
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.03395680679
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+106.898887639
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+11052.0788715
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+119199.8284350
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+14.6429494133
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1513.90753825
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1614915.4149900
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.00578296234
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+207.374201814
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+21440.0363277
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+283986.7076710
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+28.4060013519
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2936.84409912
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3852160.4678500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3.89103806424
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+402.287250391
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+50124.0713963
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+55.1050809525
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5697.21270595
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+677101.6981110
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7.54826294851
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+780.400987255
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06016448
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.116224829316
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.224521361268
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.43372695802
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.837867154604
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+11.6683692565
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1171.44367435
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+118946.8328560
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1614662.4194100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.61857905252
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+162.496930877
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+20915.7352420
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+22.5407786327
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2262.97711051
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+283733.7120920
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.12674644763
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+313.909104767
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3851907.4722700
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+43.5439340496
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4371.58483569
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+49871.0758170
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.04020133128
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+606.404844226
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+676848.7025320
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+84.1175109079
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8759.90412693
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+9710.2852376
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08269372
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.159915165195
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.30924790975
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.598031272193
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.15648769562
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+116.966331539
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+16.1737044858
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1635.7968081
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.23644456787
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+226.192390792
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+31.2771105794
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+3847.28374998
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.32489193279
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+437.416451207
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+60.4844516021
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.36358320661
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+845.886774157
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9185.98415189
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.13022373
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.260365818658
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.520568405817
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.04081045097
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+132.931684992
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+16.6320964963
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.08096838521
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+265.78003094
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+33.2537658094
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.16063214606
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+561.00363349
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+66.4866837899
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+8.3186558613
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.17775374
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.347022903019
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.677481639595
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.3226255904
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+19.2129692054
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.58211935225
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+37.5088611315
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+5.04098846842
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+73.22734182
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+9.84135946953
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+13.8227532443
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.81712569536
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+27.1851093264
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.57372802763
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+53.4647588671
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+7.02842519262
+Coefficients:
+1.0000000
+
+
+N: 58
+Name: Ce
+
+L= 0
+total= 1
+Exponents:
+0.03900952
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0773651027693
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.153433293373
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.30429450324
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.603487956665
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1060554.7996200
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1126.64763876
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1968593253
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+135959.5169360
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+144.432394043
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+17429.5474898
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+18.5157415072
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2103330.9578000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2234.40868683
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.37365506425
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+269639.8725290
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+286.443591419
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+34566.9142500
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+36.7210938395
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4171402.6655100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4431.36079822
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.70751929234
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+534759.6291610
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+568.085377306
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+68554.3650208
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+72.8266125473
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8272877.9003000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8788.43634995
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9.33612394718
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.03867782
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.07642083822
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.150994666045
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.298339951577
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.589469343774
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1056.10992197
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.16469184034
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+131603.4509920
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+136.917731756
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+16095.6440320
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1735333.7850100
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17.7504868378
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2086.69479017
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.30123431742
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+270.526307531
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+307748.4169370
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+31802.2734637
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+35.0719632843
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4122.95638622
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4141358.8996800
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.54685024848
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+534.514281883
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+62835.9197957
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+69.2962745111
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+728811.2188350
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8146.26530087
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8.9838079615
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.03834612
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0745365270842
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.144882816561
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.281620721487
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.547409504132
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.06404515844
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+111.55631144
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+11695.7541919
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+126965.4977430
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+15.1897618991
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1592.52057649
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1730695.8317600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.06827263804
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+216.841235283
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+22734.0053986
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+29.5255973537
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+303110.4636880
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3095.51404631
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.02027270302
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4136720.9464300
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+421.492255452
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+53278.0361856
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+57.3913472037
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6017.00684586
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+724173.2655860
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7.81453678271
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+819.289380888
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06174094
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.120487228698
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.235130405842
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.458856165496
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.895456203802
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+10403.8298969
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+126711.6365110
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+12.9871980071
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1399.87709818
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1730441.9705300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.74747965315
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+188.359085973
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+22198.1904498
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+25.3444715359
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2731.85526616
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+302856.6024560
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.41020043773
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+367.582098182
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4136467.0852000
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+49.4596476532
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+53024.1749538
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5331.20600729
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.65499423958
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+717.335180334
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+723919.4043540
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+96.5203295917
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08513576
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.165126001245
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.320271954901
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.62118699855
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.20483008663
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+124.408464788
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+17.0505970423
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1760.61224341
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.33684146808
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+241.297808482
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+33.070673339
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4123.60019856
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.5324466143
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+468.01182281
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+64.1425888128
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.79095676454
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+907.737486997
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9868.01494818
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.27761424
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.527861551212
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.00368704879
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+13.1193247443
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+171.484410358
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.90843165143
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+24.9453598287
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+326.064062349
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+3.62873205606
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+47.4316315139
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+619.98506181
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+6.89974740505
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+90.1875011434
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.47009272
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.931851727098
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+112.07011986
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+14.3879847843
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.84718376684
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+28.5209021546
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+3.66162101681
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+56.536191267
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+7.25832952378
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.22669562931
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+16.0046391862
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.33138546936
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+30.4174746772
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.43089392092
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+8.42109603774
+Coefficients:
+1.0000000
+
+
+N: 59
+Name: Pr
+
+L= 0
+total= 1
+Exponents:
+0.04015518
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0797624546327
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.158436574535
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.314711329609
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.625128517674
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1135441.9009000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1187.39599817
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.24172734453
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+144875.2225310
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+151.504237541
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+18485.1643108
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+19.3309848005
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2255391.0381800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2358.59033468
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.46651169249
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+287773.6661760
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+300.941245277
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+36718.1041080
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+38.398204121
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4480007.9432300
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4684.99841282
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.89936857396
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+571620.7471320
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+597.776237673
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+72935.2007166
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+76.2724762826
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8898887.5240000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9306.07142981
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9.73188673563
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.03960609
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.078399101816
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.155188739044
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.307191589803
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.608076806521
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1111.72847022
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.20367033116
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+140404.1647650
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+143.334711329
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17068.4937061
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+18.4800875592
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1862855.9162700
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2200.63413299
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.38263036936
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+283.726887133
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+329015.2846790
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+33786.5862525
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+36.5807951788
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4356.09118325
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4454664.0213900
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.71634743337
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+561.629110884
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+66879.5636132
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+72.4106188146
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+780780.1761590
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8622.75564681
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9.33587240317
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0390570
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0760782181603
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.148190984419
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.288657757687
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.562269704867
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.09523202683
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+116.529609077
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+12398.4228537
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+135477.6163400
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+15.7671041935
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1677.57556657
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1857929.3678400
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.13337688693
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+226.98530408
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+24150.5983232
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+30.7123740325
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+324088.7362540
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3267.71026792
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.15555501503
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+442.139372788
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4449737.4729600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+56732.7753274
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+59.823916119
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6365.09651656
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+775853.6277340
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.09450856468
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+861.232958502
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06227081
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.121857312505
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.238461722451
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.466644076626
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.913172529379
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+100.351161653
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+11027.8784361
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13.3912513489
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+135213.6359550
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1471.60321366
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.78698093511
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1857665.3874600
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+196.376486284
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+23592.9497158
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+26.2052460931
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2879.77003496
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+323824.7558690
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.496930492
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+384.287772357
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4449473.4925800
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+51.280862774
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5635.40183744
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+56468.7949418
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.84311881879
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+752.010053637
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+775589.6473490
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08548462
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.166353478896
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.323724664633
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.629969743868
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10470.2298287
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.22592413105
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+129.559990726
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+17.5808230192
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1858.00345196
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.38565421549
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+252.124360885
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+34.2123655823
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4363.35332274
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.64249450005
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+490.635210727
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+66.5774268619
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9.03431647515
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+954.778463929
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.29240562
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.555528092753
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.05542247046
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+13.7501544972
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+179.138453074
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.0051489847
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+26.1232910055
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+340.336971549
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+3.80949104589
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+49.6304483776
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+646.59068009
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+7.23747818213
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+94.290623859
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.49932662
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.989159056342
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+118.42298798
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+15.2332222743
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.95951026753
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+30.1768004476
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+3.88176245666
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+59.7798199786
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+7.68971718065
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.4312553498
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+17.4602467798
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.67485618344
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+32.6312485539
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.99900706265
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+9.34258513303
+Coefficients:
+1.0000000
+
+
+N: 60
+Name: Nd
+
+L= 0
+total= 1
+Exponents:
+0.04130086
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0821550260765
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.163421495573
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.325075488264
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.646635087386
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10.1241702046
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1210138.7457400
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1247.62692227
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.28627642296
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+153748.1991810
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+158.511074224
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+19533.7177944
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+20.1388413502
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2407189.1048400
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2481.76000046
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.558640984
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+305833.5180650
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+315.307754761
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+38856.1665488
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+40.0598688811
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4788342.9952700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4936.6782569
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.08960870938
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+608359.2606000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+627.205264359
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+77292.0800208
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+79.6864659125
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9524897.1483800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9819.96333557
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04053437
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0803715616117
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.159360757695
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.315980560586
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.62652635512
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1166.83142357
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2422766544
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+149169.6392860
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+149.682551873
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+18035.3275220
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+19.2014595104
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1990236.8352800
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2313.59371442
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.46318654189
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+296.79061103
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+350215.3351910
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+35760.4530951
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+38.0726599691
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4587.39434615
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4767969.1434400
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.88400705161
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+588.476517094
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+70905.8376680
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+75.4904821866
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+832636.8299890
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9095.88695541
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9.68401072128
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.03976788
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0776131837594
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.151474161893
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.295625312735
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.576958633984
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.12602423063
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+121.44206717
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+13097.5651121
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+143955.9600050
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+16.3365359667
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1761.90053839
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1985023.1560000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.19761087415
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+237.01302346
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+25561.9290705
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+31.88328289
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3438.62208023
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+345001.6559100
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.28897835657
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+462.567663731
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4762755.4641600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+60171.6090214
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+62.2251700064
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6711.00414183
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+827423.1507080
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.37060626135
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+902.772516069
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06280069
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.122232731227
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.237908860289
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.463056214449
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.901273947847
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+10397.2475577
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+11654.8556324
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+12.9344873292
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1368.70837123
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+143680.7702430
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.75420327753
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+185.627203436
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1984747.9662400
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+24979.8922582
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+25.175164688
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2663.99879474
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.41431053927
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+344726.4661480
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+361.297305269
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4762480.2744000
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+48.9999256203
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5185.09985585
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+59896.4192599
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.64547638684
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+703.214509395
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+827147.9609460
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+95.3714798116
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.0858335
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.167559192612
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.327099361306
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.63854444808
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1001.88284692
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+11072.8188201
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.24652952713
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+134.673649735
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+18.1029069304
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1955.81772759
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.43340282212
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+262.902107169
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+35.3394475255
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4603.06304351
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.75034819941
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+513.222282828
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+68.9876248169
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9.27335491292
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.31047508
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.589160041375
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.11799489464
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+14.4965936566
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+187.971544996
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.12151622083
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+27.5088542323
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+356.696335265
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.02580646551
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+52.2010259171
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+676.86987195
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+7.63940314883
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+99.0570920834
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.53511666
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.0593832212
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+126.26570726
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+16.2731475378
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.09728624291
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+32.2163385041
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.15204762229
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+63.7794541098
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.21990775748
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+10.0048406799
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.56782642651
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+18.5572766741
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.90805118289
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+34.4205898502
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+5.39394000464
+Coefficients:
+1.0000000
+
+
+N: 61
+Name: Pm
+
+L= 0
+total= 1
+Exponents:
+0.04244654
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0845691431298
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.16849288469
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.335699891715
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.668837841462
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10237456.9240000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10387.1339665
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10.5389993665
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1294443.7443900
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1313.36919753
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.33257135082
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+163671.9567980
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+166.064927494
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+20694.9970273
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+20.9975688448
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2579008.7553100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2616.71522927
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.65497299186
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+326094.8275350
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+330.862506629
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+41232.0572105
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+41.8348917253
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5138335.4346600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5213.46062021
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.28968417577
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+649701.0155300
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+659.199988488
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+82149.4460508
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+83.3505144621
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04146264
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0823680074898
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.163628959898
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.325058688845
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.645748474228
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10.0570318718
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1227.95115667
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.28281786113
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+156.630474723
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+159034.0775920
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+19124.3873001
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+19.9788936869
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2134746.1474600
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2439.39821656
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.54839419762
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+311.155780604
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+374116.5564340
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+37991.7360876
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+39.6892639939
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4846.01006043
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.06253707811
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5124619.0648400
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+618.129517736
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+75472.8498382
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+78.8450902768
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+891271.7992640
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9626.88803591
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04047874
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0791657730416
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.154827438336
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.302801763195
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.592200638204
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.15818875091
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+126.751364163
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+13871.5803487
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+153463.5437230
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+16.9442062043
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1854.36203673
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2129175.6135900
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.26511269358
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+247.892343686
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+27129.1641393
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+33.1384124788
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3626.64460743
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+368546.0225650
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.42996490042
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+484.81225006
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5119048.5309700
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+64011.7333691
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+64.8100222796
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7092.76335909
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.66384664861
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+885701.2653950
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+948.165297536
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06333055
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.123634536322
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.241360584607
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.471186559475
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.919855137871
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+11016.9654407
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+12421.2802906
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13.3605893944
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1443.8146029
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+153177.1192730
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.79575044672
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+194.058109386
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2128889.1891400
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+26.082676919
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+26522.7138096
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2818.62938131
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.50568207335
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+368259.5981150
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+378.842191855
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+50.9188640697
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5118762.1065200
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5502.55661163
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+63725.3089191
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.84382778342
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+739.579535139
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+885414.8409450
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+99.4043182838
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.168853318886
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.330826903544
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.648174645486
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1058.51116967
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+11814.8299609
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.2699401607
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+140.741374758
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+18.7132031632
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2073.89451945
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.4881380705
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+275.74840411
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+36.6639583913
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.87489981768
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4896.10628197
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+540.261756716
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+71.8340859763
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9.55117745038
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.3268607
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.619853736718
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+103.681521369
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.17548134396
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+15.2027379495
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+196.620084486
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.22916521776
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+28.8302445853
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+372.86738382
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.22735553706
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+54.6732440966
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+707.10012296
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+8.01669373553
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.56753904
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.12366963523
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+134.01054472
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+17.2667364718
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.22475170897
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+34.1863838529
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.40478234115
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+67.6855665717
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.72102149408
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+10.6492670838
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.70210762888
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+19.622934444
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.13639860427
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+36.1583152307
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+5.77930328138
+Coefficients:
+1.0000000
+
+
+N: 62
+Name: Sm
+
+L= 0
+total= 1
+Exponents:
+0.04326908
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0863722638832
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.172413371588
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.344165700491
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.687011850086
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10.9081423076
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10957.6446523
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11007371.6440000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.37138965761
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1377.6131741
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1383864.9335900
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+173.195802354
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+173981.7838770
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+21.7744621764
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+21873.2770709
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.73752132918
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2749.94450085
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2762424.0502200
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+345.727562139
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+347296.5116880
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+43.4654398248
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+43662.6907519
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.4645468457
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5489.34555787
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5514256.8093200
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+690.129585117
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+693261.4687710
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+86.7642306779
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+87157.9762609
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04201609
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.083648948642
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.166534930045
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.331550884683
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.660077673222
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10144.3207620
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10.3698972152
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1285.54835417
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.31413473712
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+162.912294442
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+169268.4241460
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+20196.1145464
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+20.645209956
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2289613.0041600
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2559.37114221
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.61628316995
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+324.338655761
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+399246.6930080
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+40208.0190818
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+41.1021136739
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5095.39810179
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.20870305915
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5509882.0882800
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+645.718998564
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+80049.2983323
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+81.8293324244
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+953559.9362740
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0407631
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0799242714222
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.156707639075
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.307256903409
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.60243907221
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.18120319413
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+131.584575694
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+14658.3590753
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+163407.4966740
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+17.4570372804
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1944.69237369
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2283752.0766800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.31598687765
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+257.998075287
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+28740.6666652
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+34.2280392272
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3812.96125927
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+393385.7655360
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.5409589511
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+505.857213892
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5504021.1608000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+67.1109679452
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+67992.1249666
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7476.07887055
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.90346503885
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+947699.0088020
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+991.834999399
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06347273
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.1242428425
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.243195525268
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.476035981793
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.931802736552
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+102.59197437
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+11646.2359113
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13063.1466875
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13.679202704
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1506.08745624
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+163107.5375200
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.82393006633
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+200.815665459
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2283452.1175300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+26.7759560221
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+28105.4117980
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2948.04692688
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.57019866582
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+393.080762324
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+393085.8063820
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+52.4118134961
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5503721.2016500
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5770.56840031
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+67692.1658126
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.98838116042
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+769.424463755
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+947399.0496480
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.169360135096
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.332815849553
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.654028704279
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1103.86943183
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+12427.8918203
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.28525593536
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+145.458558844
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+19.1672961774
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2169.25454471
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.52570385455
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+285.845980277
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+37.6663608426
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.96335382345
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5135.31353312
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+561.726481341
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+74.0195552883
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+9.75366970771
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.34147765
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.647746296162
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+108.579083898
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.22870490702
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+15.908096254
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+205.962819047
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.33072077366
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+30.1759439527
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+390.689268198
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.42112609281
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+57.2405131889
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+741.09543165
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+8.38639967062
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.59677294
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.18155860026
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+140.9218283
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+18.1568221257
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.33938342754
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+35.9489311562
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.63177604553
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+71.175762054
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+9.1705143686
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+11.2224248574
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.81317936941
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+20.6048133702
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.32906862716
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+37.8312476506
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+6.1123009181
+Coefficients:
+1.0000000
+
+
+N: 63
+Name: Eu
+
+L= 0
+total= 1
+Exponents:
+0.04420912
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0883546342855
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.176582148654
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.352910240369
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.705312732383
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11.252566223
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11440.0049310
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11630565.8840000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.40961069857
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1433.0911743
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1456962.7741500
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+179.523551454
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+182513.9504320
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+22.4889428563
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+22863.5505955
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.81719332476
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2864.12049376
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2911829.3482800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+358.788814036
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+364765.3095660
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+44.9455298259
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+45694.2063386
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.63033342262
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5724.12024433
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5819469.3124100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+717.061421939
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+729005.8143380
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+89.8263944303
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+91322.6703001
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04286525
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0854596834086
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.170379444615
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.33968245598
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.67721884621
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1004534.9242100
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10614.8019706
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10.6992345936
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1339.50438759
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.35015911946
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+169.034901389
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+177842.1415130
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+21162.5411226
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+21.3308729351
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2415601.3861300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2670.54597577
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.69178812442
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+337.001864161
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+419992.3434590
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+42191.3803013
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+42.5269804296
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5324.2198195
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.3665699119
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5821869.1679900
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+671.874598173
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+84116.2014248
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+84.7852814072
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04152138
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0815222982629
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.160059350485
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.314257524919
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.617007326775
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1031.19621792
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.21142060605
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+136.247143262
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+15323.5663602
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+171604.5013550
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+18.0016991184
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2024.63130187
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.37848048327
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2409363.7459700
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+267.505084139
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+30086.0026153
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+35.3441982123
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3975.12310196
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+413754.7033010
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.66986394406
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+525.214461947
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5815631.5278300
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+69.3941354677
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+71292.3560415
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7804.6820975
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9.16872322871
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+998297.2840520
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06385187
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.126376829928
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.250127414319
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.495056913754
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.979826015963
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+116.575106669
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13869.5597723
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15.0357228623
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+171293.3444950
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1788.87982964
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.93929020055
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+230.727658082
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2409052.5891100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+29426.3030199
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+29.7589873406
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3540.58482534
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.83827987897
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+413443.5464410
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+456.66054894
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+5815320.3709700
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+58.8995511323
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7007.59251554
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+70981.1991817
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7.59679620156
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+903.831203816
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+997986.1271920
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.169986630724
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.335282703154
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.661313719526
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10.0090547769
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1162.43251551
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.30437935366
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+13209.8601769
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+151.488128205
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+19.7419228049
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2292.78922921
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.57276606855
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+298.796140049
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+38.9390931232
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5.07454002923
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5442.95118343
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+589.347392208
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+76.8037130043
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.3560946
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.675389654749
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+113.101023142
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.28098315937
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+16.5767537143
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+214.51395492
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.42958689558
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+31.4404317503
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+406.859598412
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.60809530554
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+59.631744893
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+771.67349267
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+8.73998060477
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.62600684
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.24075978064
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+149.08986074
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+19.1479472601
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.45921407705
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+37.9516665381
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.87421817754
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+75.221065394
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+9.66081117701
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+11.7904325533
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+1.92885707854
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+21.5578924676
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.52676573116
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+39.4169361932
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+6.44841790554
+Coefficients:
+1.0000000
+
+
+N: 64
+Name: Gd
+
+L= 0
+total= 1
+Exponents:
+0.04532542
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0885703705682
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.173075297319
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.338206313802
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.660888714146
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1048.43426562
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+114068.9854170
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+12410633.5140000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.29144216019
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+140.508090749
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+15287.1914628
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1663236.7686000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+18.8304829529
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2048.74464312
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+222902.1222250
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.52360619483
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+274.566758906
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+29872.6898241
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3250129.7712800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+36.7966331721
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4003.45043114
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+435572.8764550
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.93137704724
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+536.530705773
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+58374.2016640
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6351076.2445600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+71.9042743723
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+7823.1396033
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+851152.6440800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9.6364003353
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04370775
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0872892678831
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.174326436103
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.348149400966
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.695293313527
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1067970.5937300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+11.0605737389
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+11163.5330352
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.38857855419
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1401.50438192
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+175.949184399
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+188370.9190770
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+22.0892034944
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+22294.8247308
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2572874.0741300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.77314676215
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2798.9610866
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+351.390210908
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+44.1146112794
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+44525.2598987
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+445687.3656290
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.5382844141
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5589.83850879
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+6212269.1004300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+701.765573644
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+88.1018153881
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+88921.9266345
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04209008
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0828051134752
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.162905055482
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.32048814364
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.630506216703
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1061382.7325500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1077.31035183
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.24041434041
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+141.484419293
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+16138.0276337
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+181783.0578980
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+18.5813130532
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2119.42590584
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.44030541671
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2566286.2129500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+278.346664928
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+31748.8398567
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+36.5555906733
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4169.61199968
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+439099.5044500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.8008881652
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+547.599984956
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6205681.2392500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+71.9169418033
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+75381.7430680
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8203.00638015
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9.44493546463
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06413622
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.127286918773
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.252617938676
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.501354134075
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.99500442871
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1061057.5426300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+120.666831017
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+14633.5872359
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15.4364228692
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+181457.8679750
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1872.01601934
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.97471955623
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+239.479487851
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2565961.0230300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+30.635648685
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+31059.2107723
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3715.26652173
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.91909544644
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+438774.3145270
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+475.279118694
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+60.8005480482
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6205356.0493300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7373.44402233
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+75056.5531460
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7.77796982354
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+943.25506829
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.170539369113
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.337466697565
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.667785817184
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10.2391114214
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1216.48331166
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.32142786488
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+13943.9581515
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+156.995551571
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+20.2613574528
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2407.20138678
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.61486775722
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+310.665921871
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+40.0935773559
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5.17435235739
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5729.9155679
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+614.75190887
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+79.3379687882
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.37071154
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.703391680009
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+118.164276116
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.33462221194
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+17.2982764869
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+224.20604628
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.53232515997
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+32.821917978
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+425.410731916
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.80485837748
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+62.2766262621
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+807.17845853
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+9.11678499768
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.65524072
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+10.1269147284
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.29918185815
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+156.51408526
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+20.0791914979
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.57595941311
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+39.8121186979
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+5.10749658055
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+78.9376801044
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+12.3252124485
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.0251512242
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+22.5029816269
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.69745681709
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+41.0852295014
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+6.75069928155
+Coefficients:
+1.0000000
+
+
+N: 65
+Name: Tb
+
+L= 0
+total= 1
+Exponents:
+0.0462067
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0904732649201
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.177147722415
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.346857334976
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.679150762914
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1101.37344816
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+121518.3242620
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.32978522365
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+13407535.0700000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+146.719781811
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+16188.0986431
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1786088.6544700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+19.545318085
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2156.50223347
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+237934.3156640
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.60373519049
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+287.279067512
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+31696.4885415
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3497182.7030800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+38.2699639024
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4222.45687032
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+465878.2032610
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.09814428797
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+562.495810802
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+62062.0993243
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6847525.0812100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+74.9330418018
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8267.62047586
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+912195.0302480
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9.98222679323
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04438535
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0860844647851
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.166959032143
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.323813576395
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.628029708319
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1147572.5215600
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.21805057997
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+125.736470875
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+12979.4775094
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17.2347846859
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1779.10592411
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+201290.1731380
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.36238381038
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+243.863274689
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+25173.4271463
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2772088.8242000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+33.4265070653
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3450.53900156
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.58179435182
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+472.967758108
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+477597.7605860
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+48823.3392931
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+64.8300164435
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+6692.24875255
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+6711122.6075900
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8.88629501697
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+917.311146974
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+94691.8528763
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0425640
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0839469800102
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.16556468971
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.326535468882
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.644010583566
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1131.05069804
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1140600.4770500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.27015185567
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+147.432810519
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+17113.2558051
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+19.2179127382
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+194318.1286320
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2230.71822053
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.50506090683
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2765116.7796900
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+290.774814337
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+33751.6714354
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+37.9025875499
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4399.5408765
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+470625.7160800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.94061408396
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+573.481522569
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6704150.5630800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+74.7534949578
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+80364.7570612
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8677.00803529
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9.74414133409
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06437318
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.127087573635
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.250900318616
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.49533536664
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.977906791021
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1140258.2547500
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+114.310028875
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+13604.1101449
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+14.8555919084
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15476.1369786
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1736.50817808
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.93061460241
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+193975.9063310
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+225.674484496
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2764774.5573900
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+29.3283807098
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+33026.4641406
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3428.26952076
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.81148058002
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+445.533724849
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+470283.4937790
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+57.9010193849
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6703808.3407800
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6768.19841989
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7.5247458471
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+80022.5347601
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+879.586810276
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.171107587672
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.339719248336
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.67448305046
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10.4803209897
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1274.47343108
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.33912749303
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+14750.9296838
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+162.846387278
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+20.8077667238
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2530.35626252
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.65872128493
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+323.317352743
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+41.3120129102
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5.27866010351
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+6042.99112505
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+641.918511868
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+82.0214121655
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.37558386
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.714744424607
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+122.942380688
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.36017450938
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+17.8389814042
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+233.96208012
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.58844229108
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+33.9479776882
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+445.23503309
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.92586315069
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+64.6037552821
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+847.29215345
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+9.3740269439
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.66498536
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+10.3970567806
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.32232030575
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+162.5581497
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+20.6744992117
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.62942779825
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+41.1111458437
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+5.22860498784
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+81.7493229354
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+12.8722427419
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.11887038898
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+23.4875380895
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+3.86622983778
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+42.8569019842
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+7.0545764556
+Coefficients:
+1.0000000
+
+
+N: 66
+Name: Dy
+
+L= 0
+total= 1
+Exponents:
+0.04749926
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0930984093971
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.182472607621
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.357645772336
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.700984658121
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10.3449925519
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1149.52416042
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+127733.8566230
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.37392786083
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+14193645.2400000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+152.669348265
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+16964.4495639
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1885070.9214300
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+20.2761548666
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2253.06396139
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+250357.9819510
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.69289455183
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+299.231471967
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+33250.2710716
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3694733.4418700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+39.7412036896
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4415.99871399
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+490700.9056470
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.278065373
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+586.492801818
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+65170.4331560
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+7241666.6403700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+77.8926419281
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8655.34444479
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+961772.3266730
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04526859
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0879227532301
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.170767645636
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.331672834673
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.644190349115
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1211622.9581100
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.25117634763
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+130.451388934
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+13601.2520593
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17.8047455903
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1856.37603866
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+211984.7009160
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.43009268148
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+253.368732663
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+26416.9820273
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2930701.2830800
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+34.5812019518
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3605.53956616
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.71983861569
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+492.104493605
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+503595.8436550
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+51308.2866480
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+67.1652129127
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7002.84602495
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7104595.5126600
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9.16708927522
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+955.788151446
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+99653.3319375
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04303792
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0850418324351
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.16804049229
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.332043727662
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.656109938607
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10.0023479652
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1176.44413288
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1204248.9899600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.29645650761
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+152.485062229
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+17934.8046513
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+19.7643845152
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+204610.7327640
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2324.62360675
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.56176499886
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2923327.3149300
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+301.306594531
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+35438.7166459
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+39.0539198021
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4593.39696807
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+496221.8755030
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5.06198231168
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+595.37414735
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7097221.5445100
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+77.1695496378
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+84506.4926392
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9076.43527537
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06461014
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.127910950947
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.253229777435
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.501327835535
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.992496227056
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+118.298212835
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1203891.2327200
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+14267.6894236
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15.2460397195
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+16343.5697423
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1817.21522205
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.96487944794
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+204252.9755190
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+234.199104028
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2922969.5576900
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+30.1831173667
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+34682.0779804
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3597.60444921
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.88994047501
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+463.652146664
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+495864.1182580
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+59.754571727
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7096863.7872700
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7122.30319003
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7.70105103142
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+84148.7353943
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+917.908349811
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08618236
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.171656989525
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.341904329989
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.68100093791
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10.7181577995
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1332.97471333
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.35640948873
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+15586.9310768
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+168.691260497
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+21.3482979709
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2655.00302386
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.70168012802
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+335.997226532
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+42.5212834873
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5.38117402952
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+6365.66452455
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+669.235240194
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+84.6933817332
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.37558386
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.716990941364
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+126.464214352
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.36873828923
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+18.1780547546
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+241.420640644
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.61292632349
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+34.7019719927
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+460.87287244
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+4.98808576171
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+66.2461895094
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+879.80797327
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+9.52227368315
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.66498536
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+10.4431946008
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.32378484796
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+164.00408194
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+20.7892438066
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.63525549448
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+41.3851004955
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+5.24599713607
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+82.3852256947
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+13.3430826315
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.19936574502
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+24.3356199949
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.01128663284
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+44.3842264109
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+7.31593664547
+Coefficients:
+1.0000000
+
+
+N: 67
+Name: Ho
+
+L= 0
+total= 1
+Exponents:
+0.04879182
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.095768536234
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.187974388584
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.368955944751
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.72418636492
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1023865.2471400
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10.7486437509
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1206.38099971
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+135398.9535980
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.42143228371
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+15196589.3360000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+159.535373875
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+17905.5561135
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2009641.6985400
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+21.0974273663
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2367.88343789
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+265760.9327480
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.7899858863
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+313.135874693
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+35145.0079018
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3944522.7463200
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+41.4100096528
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4647.67927943
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+521635.2970120
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.47618154938
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+614.622786396
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+68982.5868903
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+7742305.3609600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+81.2795261559
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9122.46031152
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04619922
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0898847283175
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.174878804982
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.340242408298
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.661972137884
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1000.92986055
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+105623.9764540
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.28792619805
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1292279.2992700
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+135.909509527
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+14341.9668050
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+18.4542349148
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1947.39886475
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+225209.5884030
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.50577599372
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+264.424146978
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+27903.5834330
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3131787.8892900
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+35.9043700656
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3788.83924628
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.87521205813
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+514.460906737
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+536076.5952840
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+54288.9255697
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+69.855173935
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7371.52675501
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7606503.2466100
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9.48516254896
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04360662
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0863535825258
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.171004797323
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.338638419533
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.670600947919
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10.3127835028
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1231.60499501
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1284488.1908300
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.32798172154
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+158.594323354
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+18940.1397567
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+20.4222616034
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+217418.4799600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2438.9302261
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.62978371595
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3123996.7808500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+314.062130702
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+37506.8950891
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+40.4419203492
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4829.7795737
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5.20772408273
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+528285.4868410
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+621.932865281
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7598712.1381700
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+80.086571864
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+89624.3112028
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9564.34525307
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06454563
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.1281752182
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.254531353409
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.505450357552
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.0037272836
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+122.229568539
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1284114.2863100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15075.8160981
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15.6086238503
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+17252.0330149
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1900.75072172
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.99320951068
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+217044.5754410
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+242.72443569
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+30.9957276396
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3123622.8763300
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+36715.5631442
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3774.52568825
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.95813107641
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+482.004087759
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+527911.5823220
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+61.5515590051
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7495.48271032
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7598338.2336500
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7.8600877299
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+89250.4066843
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+957.16749719
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08548464
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.170919904371
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.341741086005
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.683284783556
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+10.9199327941
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.36617490421
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1394.92816753
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+16460.7010700
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+174.517178044
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+21.8335582732
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.73156071059
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2789.05062943
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+348.933555578
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+43.6545055596
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+5.46154368128
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+6704.15076547
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+697.665568357
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+87.2837964298
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.38497963
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.736263402099
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+131.76404334
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.4080843635
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+18.8369474293
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+251.995262252
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.69292425658
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+36.0251657976
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+481.934301558
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+5.15014670969
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+68.8971806931
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+921.68665769
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+9.84951992858
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.68447462
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+10.8999918141
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.36733381703
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+173.57812558
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+21.7742586463
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.73144060066
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+43.4971280422
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+5.45643475062
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+86.8915988671
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+13.8311664503
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.27934422824
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+25.2275516839
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.15744214561
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+46.0141497286
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+7.58302540701
+Coefficients:
+1.0000000
+
+
+N: 68
+Name: Er
+
+L= 0
+total= 1
+Exponents:
+0.04937934
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.0971046693625
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.190956720199
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.375517153074
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.738455981575
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1086215.7720600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11.0434290277
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1255.93676895
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+142834.0023420
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.45217663763
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+16244091.8440000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+165.151786609
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+18782.2279421
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2136047.6547900
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+21.7169472974
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2469.80467315
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+280883.6361760
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.85571115882
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+324.771648088
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+36935.3262764
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4200546.2458700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+42.7064636116
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4856.88075573
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+552358.7925680
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.61576740134
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+638.66474331
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+72633.4666657
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8260390.9721600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+83.982431289
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9551.07540761
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04677733
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0911834688312
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.177744753454
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.346479441782
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.675395482821
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1042.90713497
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+111534.8026350
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.31655447108
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1374453.1299800
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+140.800305383
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+15058.0370440
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+19.0090999775
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2032.94823017
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+238342.2884720
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.56637143629
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+274.463297869
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+29352.7666385
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3339276.7045600
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+37.0546090448
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3962.84421494
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.00265085395
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+535.013767706
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+568740.1217000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+57217.6112209
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+72.2308816875
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+7724.80776384
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8130724.3286300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9.75171216943
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04417532
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0876487807405
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.17390499413
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.345046978724
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.684611837183
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10031.6149343
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10.6098465752
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1284.31728768
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.35834653398
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1366210.7391800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+164.427253862
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+19903.8471673
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+21.0511234816
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+230099.8976680
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2548.22929069
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.69511160364
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+326.242080907
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3331034.3137600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+39491.4612109
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+41.7677858673
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5055.97221199
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5.34740316581
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+560497.7308960
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+647.30081452
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8122481.9378300
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+82.8719634742
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+94614.0272907
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06448111
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.128445223733
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.255860600101
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.509669762575
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.0152530979
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+126.349202644
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1365819.6887600
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15836.9908309
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+15.9851288665
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+18228.7804275
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1989.36431774
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.02236610545
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+229708.8472510
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+251.685363389
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+31.8420922601
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3330643.2633400
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+38664.4373618
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3962.77832187
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4.02851729574
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+501.352765342
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+560106.6804790
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+63.4288811787
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+7893.78390285
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8.02473476903
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8122090.8874100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+94222.9768736
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+998.685787408
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.0847869
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.162925908382
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.313077275172
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.601607081415
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+111.841786048
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.15604391986
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1524.9291665
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+15.7623116855
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+17401.7565784
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+214.914386385
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.22144583389
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2930.29311924
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+30.2887468415
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+412.977967425
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.26871462937
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+58.2026420698
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+7066.76005371
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+793.575546278
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.20273189156
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.38950308
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.746821551011
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+10.0934729756
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+136.415716139
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.43193329577
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+19.3529230699
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+261.559412339
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.74554605547
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+37.1067156225
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+501.506190925
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+5.26422785545
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+71.1473062399
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+961.57296458
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.69421926
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.28667912394
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+15.1832464081
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+179.16741416
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.38475545604
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+28.1409164403
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.41995092585
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+52.1569074763
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.19202075308
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+96.6686000887
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+14.4029222773
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.38472718486
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+26.2293737762
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.34286178051
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+47.766698691
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+7.90884951721
+Coefficients:
+1.0000000
+
+
+N: 69
+Name: Tm
+
+L= 0
+total= 1
+Exponents:
+0.05108318
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.1005587586
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.197952906046
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.38967618095
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.767089147781
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10065.4579098
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11.5189727939
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1152994.9000500
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1319.49455297
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.51003779397
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+151147.6679800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+172.9743337
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+17313915.7600000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+19814.1531546
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+22.6754404188
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2269704.7407800
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2597.46425782
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.97255429282
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+297538.6782370
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+340.50511864
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+39004.7495853
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+44.6372786348
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4467981.2635100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5113.18561752
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.85156150333
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+585713.7343220
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+670.294449705
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+76782.0092208
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+87.8698101172
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+8795353.9561400
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04786621
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0934506760477
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.1824466331
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.356196181103
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.695412775101
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10.1031380544
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1092.27030626
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+118087.5105850
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.35767577933
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1460970.5323400
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+146.781023015
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+15868.7877072
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+19.7246675973
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2132.47296051
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+252657.0152350
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.65063223999
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+286.565112044
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+30981.1229946
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3554327.2745200
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+38.5090760639
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4163.29264033
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.1749109608
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+559.469894361
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+603714.3299200
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+60485.4006316
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+75.1824552674
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8128.12444986
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8666150.8316400
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04464924
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0887877634768
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.176559935695
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.351100305625
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.698184580353
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+100159.1523460
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10556.4255822
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+10.9175813125
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1342.4550529
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.38838303594
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1452235.1034200
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+170.719298406
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+20992.1023908
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+21.7102828024
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+243921.5863140
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2669.55454819
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.76088517095
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+339.485838679
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3545591.8456000
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+41744.0884091
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+43.1722343869
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5308.5736244
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5.49019019236
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+594978.9009990
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+675.088497549
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+85.8506468533
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8657415.4027200
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06436921
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.128641699074
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.25709010163
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.513793900669
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.02681577661
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1043.58641531
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+130.742760926
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1451826.0045100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+16.379735577
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+16720.3911705
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+19300.8843568
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.05208866382
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2085.60474172
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+243512.4873980
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+261.289068286
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+32.7348590268
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3545182.7466900
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+40877.5088176
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4.10109386716
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4168.07566184
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+522.18552463
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+594569.8020830
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+65.4205307812
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8.19602544655
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8329.88838933
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8657006.3038100
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+99750.0534303
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08408918
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.162195424994
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.312850665079
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.603442043103
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+115.617460383
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.16394925768
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1600.3587761
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+16.1112033018
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+18434.3047653
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+223.008752417
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.24508366619
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+3086.85221847
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+31.0760964336
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+430.150459019
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.33042990055
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+59.9411323572
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+7463.30879782
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+829.695764805
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.35275023642
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.40377117
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.775123322551
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1011.4892808
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+10.527198143
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+142.973250214
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.4880115516
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+20.209161545
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+274.467096652
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.85654980733
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+38.7957179873
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+526.897073626
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+5.48374560196
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+74.4765056579
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.72345316
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+103.735871128
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.34578361209
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+16.1151556918
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+192.9717680
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.50345652036
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+29.9777700002
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.65698533779
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+55.7653125647
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.6630274023
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+14.9800381022
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.48084883705
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+27.2782888061
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.51756601683
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+49.6731073121
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+8.22637897628
+Coefficients:
+1.0000000
+
+
+N: 70
+Name: Yb
+
+L= 0
+total= 1
+Exponents:
+0.05208198
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.102698453211
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.202507129951
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.399316020822
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.787395903168
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10579.4472174
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11.9041616376
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1226303.2769700
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1379.8558777
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.55263569703
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+159944.2532100
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+179.971807986
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+18539736.3220000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+20861.2050667
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+23.4733584813
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2418100.2664000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2720.8847339
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3.06158261428
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+315387.9212090
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+354.879486182
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+41135.4079178
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+46.2862127687
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4768158.9115600
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5365.20795749
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.03701700405
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+621901.3115400
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+699.773209605
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+81113.3287438
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+91.2700027215
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+9402149.1671700
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.04860257
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0950626226256
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.185934657786
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.363672871745
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.711314174659
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+10.4103107114
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1140.03344442
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+124845.0973680
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.3912719215
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+152.358230678
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1557281.6339700
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+16684.7545017
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+20.3617100612
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2229.8114916
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+268020.9691660
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.72121325361
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+298.000146635
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+32634.0051728
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+3797310.0082000
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+39.8258273083
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4361.32756667
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.32246892729
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+582.863735024
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+63829.4254503
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+642004.1343010
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+77.8960370236
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+8530.39739703
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9279502.1512500
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04512316
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0899247582665
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.179208684615
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.357140272164
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.711735451187
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+106035.1935630
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+11092.6528532
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+11.2263270674
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1401.5096827
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.41839885322
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1548105.6978400
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+177.074809488
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+22106.2559971
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+22.3726518213
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+258845.0330450
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2793.0317696
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.82668975314
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+352.88772857
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3788134.0720700
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+44054.9759085
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+44.5858691372
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5566.15952234
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+5.63323563211
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+632828.1981800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+703.260668953
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+88.8540054433
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9270326.2151200
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06390844
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.123222239402
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.237585525219
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.458090049876
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.88324612201
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+105625.1372720
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1209.26484285
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+12.206896492
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1547695.6415500
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+168.70532262
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.70299204765
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+17626.9566515
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+20184.0248328
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2331.59066262
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+23.5361889901
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+258434.9767540
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+325.281725737
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.28354899284
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3787724.0157800
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+43186.9068393
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4495.55368302
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+45.3802645527
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+627.177610375
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+632418.1418890
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.33103014382
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+8667.90352222
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+87.4979552445
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+9269916.1588300
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.08269372
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.160075062164
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.309866644369
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.599826956146
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.16112006199
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+118.259265798
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+16.3035330658
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1660.50343405
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+19315.9557636
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.24764790002
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+228.921365783
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+31.559700894
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+3214.33345155
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.3509032768
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+443.136454115
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+61.0919557432
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+7799.83445299
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.4222975155
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+857.805108292
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.40307344
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.773908902804
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1011.70084335
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+10.5174991617
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+142.933862391
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.48592025771
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+20.1938044751
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+274.435816501
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.8529960106
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+38.7725002789
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+526.922145103
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+5.47780824325
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+74.4439602614
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.72345316
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+102.921284812
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.34445808018
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+16.0359486225
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+191.2678811
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.49852738132
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+29.801045722
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.64323816952
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+55.381963801
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.62894713905
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+15.3057511959
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.57175792796
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+27.7372139649
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+4.66056183723
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+50.2656177202
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+8.44591024779
+Coefficients:
+1.0000000
+
+
+N: 71
+Name: Lu
+
+L= 0
+total= 1
+Exponents:
+0.05889728
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.115901436441
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.228077476059
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.448823903161
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+0.883221348855
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+10044202.8484000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+100.931009533
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+11533.9928078
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1318058.6492200
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+13.2447534262
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1513.55754257
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+172963.3131680
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.73805348953
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+19765556.8820000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+198.617813698
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+22697.2507784
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2593751.2013900
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+26.0637833769
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2978.46510604
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+340367.1009560
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3.42024107138
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+390.851494507
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+44664.9483385
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5104131.9737000
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+51.2898037477
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5861.19400048
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+669793.8498710
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.73054601415
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+769.139927151
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+87894.2401247
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.05177326
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.101313519967
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.198257349992
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.387963786459
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.759194549961
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+11.1327037295
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1223.30259939
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+134421.0073350
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.48564475554
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+163.248132294
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1669014.7327500
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+17938.3076594
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+21.7852497907
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2393.84370095
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+288612.1949730
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.9072130981
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+319.455311693
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+35102.9294123
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4059119.2993300
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+42.6308936245
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4684.44002934
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+5.68903700987
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+625.132396524
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+68691.8563733
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+689795.5589660
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+83.4231008907
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9166.83841128
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+9892950.9808200
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.04464924
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.0864744064748
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.167479289125
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.324365479097
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+0.628214775567
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+114548.8626620
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.21669483861
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+124.364462857
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+12711.9135637
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1659315.1055800
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+17.1188955281
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1749.80790541
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.35643348083
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+240.862848106
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+24619.7960050
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+278912.5677980
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+33.1550174269
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+3388.94010435
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4049419.6721600
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.56382206399
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+466.491072004
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+47682.3848976
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+64.2129732478
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6563.52905677
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+680095.9317910
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.83898145277
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+903.476488678
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+9883251.3536500
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.06122944
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.118655107489
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.229938972711
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.445593386499
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+0.863505058539
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+114125.6929410
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+12.1778181561
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1249.83456829
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1658891.9358600
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.67336636655
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+171.741037968
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+19148.2206374
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+21290.8437087
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+23.5991105309
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2422.0253369
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+278489.3980770
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+3.24277775677
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+332.812962529
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4048996.5024400
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+45.7321673477
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+46786.3414345
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+4693.58656051
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+6.28410358307
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+644.950498367
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+679672.7620700
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+88.6233033058
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+9095.59221589
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+9882828.1839300
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.07780964
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.151624853189
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.295465910195
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+0.575763816099
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1.12197028656
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+119.712711374
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+16.1781666631
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+1726.18849135
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+20394.8002456
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+2.18634323435
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+233.27986464
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+31.5258128062
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+3363.76156705
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+4.2604486016
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+454.584100736
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+61.4332200791
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8199.54875284
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+8.30218329936
+Coefficients:
+1.0000000
+
+L= 4
+total= 1
+Exponents:
+885.831723886
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.40550371
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+0.780282174254
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1044.9056411
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+10.6974212828
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+146.658255022
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+1.50144192629
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+20.5842928969
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+282.204131007
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+2.88911874755
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+39.608902264
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+543.025495195
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+5.55932733147
+Coefficients:
+1.0000000
+
+L= 5
+total= 1
+Exponents:
+76.2166155728
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+0.73319778
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+106.406821887
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+1.36596534933
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+16.4556047734
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+198.2385048
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+2.54482676634
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+30.6571931011
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+4.74107434267
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+57.1150985805
+Coefficients:
+1.0000000
+
+L= 6
+total= 1
+Exponents:
+8.83273715133
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+10.6049221056
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+21.1573437622
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+2.66440453263
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+42.2099465337
+Coefficients:
+1.0000000
+
+L= 7
+total= 1
+Exponents:
+5.31561873411
+Coefficients:
+1.0000000

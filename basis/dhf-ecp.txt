@@ -1,0 +1,384 @@
+
+N: 37
+Name: Rb
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 38
+Name: Sr
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 39
+Name: Y
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 40
+Name: Zr
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 41
+Name: Nb
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 42
+Name: Mo
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 43
+Name: Tc
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 44
+Name: Ru
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 45
+Name: Rh
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 46
+Name: Pd
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 47
+Name: Ag
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 48
+Name: Cd
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 49
+Name: In
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 50
+Name: Sn
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 51
+Name: Sb
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 52
+Name: Te
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 53
+Name: I
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 54
+Name: Xe
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 55
+Name: Cs
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 56
+Name: Ba
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 72
+Name: Hf
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 73
+Name: Ta
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 74
+Name: W
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 75
+Name: Re
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 76
+Name: Os
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 77
+Name: Ir
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 78
+Name: Pt
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 79
+Name: Au
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 80
+Name: Hg
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 81
+Name: Tl
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 82
+Name: Pb
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 83
+Name: Bi
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 84
+Name: Po
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 85
+Name: At
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
+
+
+N: 86
+Name: Rn
+Transpose[StringJoin[
+L= , Transpose[{angular_momentum /. electron_shells}], 
+total= 2
+Exponents:
+exponents /. electron_shells exponents /. electron_shells
+Coefficients:
+, StringRiffle[ReplaceAll[coefficients, electron_shells]]]]
