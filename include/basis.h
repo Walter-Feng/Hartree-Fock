@@ -27,7 +27,7 @@ typedef struct orbital
     double * coefficients;
 
     //pointer storing the next orbital
-    void *NEXT;
+    orbital* NEXT;
 }orbital;
 
 typedef struct atomic_orbital
@@ -41,10 +41,10 @@ typedef struct atomic_orbital
     double cartesian[3];
 
     //The HEAD of the orbital
-    void* orbital_HEAD;
+    orbital * orbital_HEAD;
 
     //Next atom
-    void* NEXT;
+    atomic_orbital * NEXT;
 }atomic_orbital;
 
 orbital* orbital_calloc(size_t);
@@ -54,4 +54,6 @@ atomic_orbital* atomic_orbital_calloc();
 void atomic_orbital_free(atomic_orbital *);
 
 void basis_fscanf(FILE *,atomic_orbital *);
+
+void orbital_label(char *,int,int,int);
 
