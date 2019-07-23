@@ -17,9 +17,19 @@ typedef struct orbital
     //main quantum number;
     int n;
     //the name of the orbital;
-    char* label;
+    char label[10];
 
+    //the total number of the terms of coefficients and exponents 
     int total;
+
+    //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
+    struct  angcoef{
+        int a[3];
+        double coef;
+    }A[4];
+
+    //This will tell the functions how long is the angcoef
+    int length;
 
     //The list of exponents
     double * exponents;
@@ -35,7 +45,7 @@ typedef struct atomic_orbital
     // The atomic number of the atom;
     int N;
     // The name of the atom;
-    char* name;
+    char name[5];
 
     //The cartesian coordinate of the atom;
     double cartesian[3];
@@ -56,4 +66,5 @@ void atomic_orbital_free(atomic_orbital *);
 void basis_fscanf(FILE *,atomic_orbital *);
 
 void orbital_label(char *,int,int,int);
+void orbital_angcoef_set(orbital *);
 

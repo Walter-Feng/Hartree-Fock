@@ -106,20 +106,115 @@ void orbital_label(char * dest, int n, int l, int m)
                 case 1: strcat (dest,"px"); break;
             }
         break;
-    }
 
+        case 2:
+            switch(m)
+            {
+                case -2: strcat(dest,"dx^2-y^2");break;
+                case -1: strcat(dest,"dyz");break;
+                case 0: strcat(dest,"dz^2");break;
+                case 1: strcat(dest,"dxz");break;
+                case 2: strcat(dest,"dxy");break;
+            }
+    }
+}
+
+//To set the angcoef of the target according to its angular quantum number and magnetic quantum number, and should correspond with the result given by orbital_label
+void orbital_angcoef_set(orbital * target)
+{
+    switch(target->L)
+    {
+        case 0: 
+            target->A[0].a[0] = 0;
+            target->A[0].a[1] = 0;
+            target->A[0].a[2] = 0;
+            target->A[0].coef = 1.0;
+            target->length = 1;
+            break;
+        
+        case 1:
+            switch(target->m)
+            {
+                case -1:
+                    target->A[0].a[0] = 0;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;
+                    target->length=1;
+                    break;
+                case 0:
+                    target->A[0].a[0] = 0;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 1;
+                    target->A[0].coef = 1.0;
+                    target->length=1;
+                    break;
+                case 1:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;
+                    target->length=1;
+                    break;
+            }
+            break;
+        
+        case 2:
+            switch(target->m)
+            {
+                case -2:
+                    target->A[0].a[0] = 2;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0/sqrt(2.0);
+                    target->A[1].a[0] = 0;
+                    target->A[1].a[1] = 2;
+                    target->A[1].a[2] = 0;
+                    target->A[1].coef = - 1.0/sqrt(2.0);                    
+                    target->length=2;
+                    break;
+                case -1:
+                    target->A[0].a[0] = 0;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 1;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;                 
+                case 0:
+                    target->A[0].a[0] = 0;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 2;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;
+                case 1:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 1;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;
+                case 2:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+            }
+    }
 }
 
 void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
 {
-    atomic_orbital *temp1;
+    atomic_orbital *temp1, *temp2;
 
     orbital *orbit_temp1,*orbit_temp2;
 
     char * str;
 
     
-    //temporary storage of angular quantum number l
+    //temporary storing of angular quantum number l
     int l_temp;
 
     //reference of l, so that you can see whether you need to re-count the n
@@ -129,94 +224,119 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
     l_temp = -1;
     l_ref = -1;
 
-    //temporary storage of the total number of exponents and coefficients
+    //temporary storing of the total number of exponents and coefficients
     int tot_temp;
 
-    //temporary storage of angular quantum number l
+    //temporary storing of angular quantum number l
     int m_temp;
 
-    int n_counter;
 
+    //count the n
+    int n_counter;
     n_counter = 0;
 
-    //temporary storage of exponents and coefficients
+    //temporary storing of exponents and coefficients
     double * exponents_temp;
     double * coefficients_temp;
 
     //loops
     int i,j;
 
-    
-    //Read N
-    fscanf(basis,"%s",str);
-    fscanf(basis,"%d",& HEAD->N);
+    //flags
+    int HEADFLAG = 0;
 
-    //Read Name
-    fscanf(basis,"%s",str);
-    fscanf(basis,"%s",str);
-    strcpy(HEAD->name,str);
+    int ORBITHEADFLAG = 0;
 
-    //Start reading orbitals (electronic shells)
-
-    //Read L
-    fscanf(basis,"%s",str);
-    fscanf(basis,"%d",&l_temp);
-    
-    //check whether it has a change compared with the former l_temp, so to restart counting the main magnetic number n
-    if(l_temp == l_ref) n_counter ++;
-    else n_counter = l_temp + 1;
-
-    //set l_ref to the current value of l_temp for next loop
-    l_ref = l_temp;
-
-    //Read total
-    fscanf(basis,"%s",str);
-    fscanf(basis,"%d",&tot_temp);
-
-    //Read exponents
-    fscanf(basis,"%s",str);
-
-    exponents_temp = new double[tot_temp];
-
-    for(i=0;i<tot_temp;i++)
-        fscanf(basis,"%lf",exponents_temp + i);
-
-    //Read coefficients
-    fscanf(basis,"%s",str);
-
-    coefficients_temp = new double[tot_temp];
-
-    for(i=0;i<tot_temp;i++)
-        fscanf(basis,"%lf",exponents_temp + i);
-
-
-    //create a series of orbitals in different 'direction', namely the different magnetic quantum number
-    
-    for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
+    while(fscanf(basis,"%s",str)!=EOF)
     {
-        orbit_temp1 = orbital_calloc(tot_temp);
+        //Read N
+        if(strcmp(str,"N:")==0)
+        {
+            // Check whether this is a HEAD, namely that this is the initial part
+            if(HEADFLAG == 0)
+            {
+                temp1 = HEAD;
+                HEADFLAG = 1;
+            }
+            else
+            {
+                temp2 = temp1;
+                temp1 = atomic_orbital_calloc();
+                temp2->NEXT = temp1;
+            }
 
-        orbit_temp1->L = l_temp;
-        orbit_temp1->total = tot_temp;
-        orbit_temp1->n = n_counter;
-        orbit_temp1->m = m_temp;
+            //Read Name
+            if(strcmp(str,"Name:")==0)
+            {
+                fscanf(basis,"%s",str);
+                strcpy(temp1->name,str);
+            }
+        }
+
+        //Start reading orbitals (electronic shells)
+
+        //Read L
+        if(strcmp(str,"L=")==0)
+        {
+            fscanf(basis,"%s",str);
+            fscanf(basis,"%d",&l_temp);
+        }
+        
+        //check whether it has a change compared with the former l_temp, so to restart counting the main magnetic number n
+        if(l_temp == l_ref) n_counter ++;
+        else n_counter = l_temp + 1;
+
+        //set l_ref to the current value of l_temp for next loop
+        l_ref = l_temp;
+
+        //Read total
+        fscanf(basis,"%s",str);
+        fscanf(basis,"%d",&tot_temp);
+
+        //Read exponents
+        fscanf(basis,"%s",str);
+
+        exponents_temp = new double[tot_temp];
+
+        for(i=0;i<tot_temp;i++)
+            fscanf(basis,"%lf",exponents_temp + i);
+
+        //Read coefficients
+        fscanf(basis,"%s",str);
+
+        coefficients_temp = new double[tot_temp];
+
+        for(i=0;i<tot_temp;i++)
+            fscanf(basis,"%lf",coefficients_temp + i);
+
+
+        //create a series of orbitals in different 'direction', namely the different magnetic quantum number
+        
+        for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
+        {
+            orbit_temp1 = orbital_calloc(tot_temp);
+            if(ORBITHEADFLAG == 1) 
+            {
+                orbit_temp2->NEXT = orbit_temp1;
+                temp1->orbital_HEAD = orbit_temp1;
+            }
+            else ORBITHEADFLAG = 1;
+
+            orbit_temp1->L = l_temp;
+            orbit_temp1->total = tot_temp;
+            orbit_temp1->n = n_counter;
+            orbit_temp1->m = m_temp;
+
+            orbital_label(orbit_temp1->label,n_counter,l_temp,m_temp);
+            orbital_angcoef_set(orbit_temp1);
+
+            for(i=0;i<tot_temp;i++)
+            {
+                *(orbit_temp1->exponents + i) = *(exponents_temp + i);
+                *(orbit_temp1->coefficients + i) = *(coefficients_temp + i);
+            }
+
+            orbit_temp2 = orbit_temp1;
+        }
     }
-    //set the angular quantum number as well as the total number of the coefficients and exponents
-    orbit_temp1->L = l_temp;
-    orbit_temp1->total = tot_temp;
-    
-
-
-
-
-
-
-    fscanf(basis,"%s",str);
-
-
-    // while(fscanf(basis,"%s",str)!=EOF)
-    // {
-    //     if(strcmp(str,""))
-    // }
-
 }
