@@ -44,6 +44,61 @@ void orbital_free(orbital * HEAD)
     delete temp1;
 }
 
+//To copy the struct orbital. Warning: dest_HEAD MUST be allocated with the same size with src_HEAD
+void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
+{
+    int i;
+
+    orbital * temp1, * temp2, * temp3;
+
+    temp1 = dest_HEAD;
+    temp2 = src_HEAD;
+    while(temp2->NEXT!=NULL)
+    {
+        temp1->L = temp2->L;
+        temp1->m = temp2->m;
+        temp1->n = temp2->n;
+        strcpy(temp1->label,temp2->label);
+        temp1->total = temp2->total;
+        for(i=0;i<4;i++)
+            temp1->A[i] = temp2->A[i];
+        temp1->length = temp2->length;
+        
+        temp1->exponents = new double[temp1->total];
+        temp1->coefficients = new double[temp1->total];
+
+        for(i=0;i<temp1->total;i++)
+        {
+            *(temp1->exponents + i) = *(temp2->exponents +  i);
+            *(temp1->coefficients + i) = *(temp2->coefficients +  i);
+        }
+
+        temp3 = temp1;
+        temp1 = orbital_calloc(temp2->total);
+        temp3->NEXT = temp1;
+        temp2 = temp2->NEXT;
+    }
+
+    //Doing the tail of the struct orbital
+    temp1->L = temp2->L;
+    temp1->m = temp2->m;
+    temp1->n = temp2->n;
+    strcpy(temp1->label,temp2->label);
+    temp1->total = temp2->total;
+    for(i=0;i<4;i++)
+        temp1->A[i] = temp2->A[i];
+    temp1->length = temp2->length;
+        
+    temp1->exponents = new double[temp1->total];
+    temp1->coefficients = new double[temp1->total];
+
+    for(i=0;i<temp1->total;i++)
+    {
+        *(temp1->exponents + i) = *(temp2->exponents +  i);
+        *(temp1->coefficients + i) = *(temp2->coefficients +  i);
+    }
+}
+
 //To allocate the memory for struct atomic_orbital
 atomic_orbital* atomic_orbital_calloc()
 {
@@ -67,6 +122,8 @@ atomic_orbital* atomic_orbital_calloc()
     return pointer;    
 }
 
+
+
 //To free the memory for struct atomic_orbital
 void atomic_orbital_free(atomic_orbital * HEAD)
 {
@@ -79,6 +136,45 @@ void atomic_orbital_free(atomic_orbital * HEAD)
         temp1 = temp2;
     }
     delete temp1;
+}
+
+//copying the struct atomic_orbital. WARNING: you MUST allocate memory dest_HEAD before using this function
+void atomic_orbital_cpy(atomic_orbital * dest_HEAD, atomic_orbital * src_HEAD)
+{
+    int i;
+
+    atomic_orbital * temp1, * temp2, * temp3;
+    
+    temp1 = dest_HEAD;
+    temp2 = src_HEAD;
+
+    while(temp2->NEXT!=NULL)
+    {
+        temp1->N = temp2->N;
+        strcpy(temp1->name, temp2->name);
+        
+        for(i=0;i<3;i++)
+            temp1->cartesian[i] = temp2->cartesian[i];
+
+        temp1->orbital_HEAD = orbital_calloc((temp2->orbital_HEAD)->total);
+
+        orbital_cpy(temp1->orbital_HEAD,temp2->orbital_HEAD);
+
+
+        temp3 = temp1;
+        temp1 = atomic_orbital_calloc();
+        temp2 = temp2->NEXT;
+    }
+
+    temp1->N = temp2->N;
+    strcpy(temp1->name, temp2->name);
+        
+    for(i=0;i<3;i++)
+        temp1->cartesian[i] = temp2->cartesian[i];
+
+    temp1->orbital_HEAD = orbital_calloc((temp2->orbital_HEAD)->total);
+
+    orbital_cpy(temp1->orbital_HEAD,temp2->orbital_HEAD);
 }
 
 //decide the label for orbital label

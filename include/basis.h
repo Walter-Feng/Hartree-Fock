@@ -12,7 +12,7 @@ typedef struct orbital
 {
     //Angular quantum number;
     int L;
-    //magnetic quantum numberl
+    //magnetic quantum number;
     int m;
     //main quantum number;
     int n;
@@ -67,4 +67,7 @@ void basis_fscanf(FILE *,atomic_orbital *);
 
 void orbital_label(char *,int,int,int);
 void orbital_angcoef_set(orbital *);
+
+void atomic_orbital_cpy(atomic_orbital *, atomic_orbital *);
+void orbital_cpy(orbital *, orbital *);
 
