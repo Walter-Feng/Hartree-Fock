@@ -36,6 +36,9 @@ typedef struct orbital
     //THe corresponding coefficient list, which will be normalized during the process;
     double * coefficients;
 
+    //The cartesian coordinate of the center of the orbital;
+    double cartesian[3];
+
     //pointer storing the next orbital
     orbital* NEXT;
 }orbital;

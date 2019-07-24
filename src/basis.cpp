@@ -63,6 +63,9 @@ void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
         for(i=0;i<4;i++)
             temp1->A[i] = temp2->A[i];
         temp1->length = temp2->length;
+
+        for(i=0;i<3;i++)
+            temp1->cartesian[i] = temp2->cartesian[i];
         
         temp1->exponents = new double[temp1->total];
         temp1->coefficients = new double[temp1->total];
