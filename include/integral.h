@@ -27,9 +27,13 @@ Y   (ab|[\hat{t}_1,r_{12}^{-1}])
 
 #include "basis.h"
 #include <math.h>
+#include <gsl/gsl_sf.h>
+
+double Gamma(double);
+double Boys(double);
 
 double SIntegral(double a[3],double b[3],int,int,int,int,int,int,double,double);
-double JIntegral(double a[3],double b[3],int,int,int,int,int,int,double,double);
+double JIntegral(double a[3],double b[3],int,int,int,int,int,int,double,double,int);
 
 double orbital_SIntegral(orbital,orbital);
 double orbital_JIntegral(orbital,orbital);
