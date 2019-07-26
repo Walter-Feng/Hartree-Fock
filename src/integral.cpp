@@ -1,5 +1,4 @@
 #include "../include/integral.h"
-#include <gsl/gsl_sf.h>
 
 double Gamma(double z)
 {
