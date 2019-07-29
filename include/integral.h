@@ -39,31 +39,38 @@ typedef struct gaussian_chain{
     double R[3];
     int a[3];
     
-    double exponents;
+    double exponent;
 
-    double coefficients;
+    double coefficient;
 
     gaussian_chain * NEXT;
 
 }gaussian_chain;
+
+gaussian_chain * gaussian_chain_calloc();
+
+void gaussian_chain_free(gaussian_chain *);
 
 double Gamma(double);
 double Boys(double,int);
 double Binomials(int,int);
 
 double f(int,int,int,double,double);
-double tranformationcoefficients(int[3],int[3], int[3],double[3],double[3],double,double);
+double tranformation_coefficient(int[3],int[3], int[3],double[3],double[3],double,double);
 
 double SIntegral(double[3],double[3],int,int,int,int,int,int,double,double);
 double JIntegral(double[3],double[3],int,int,int,int,int,int,double,double,int);
 
-double orbital_SIntegral(orbital,orbital);
-double orbital_JIntegral(orbital,orbital);
-double orbital_GIntegral(orbital,orbital);
-double orbital_FIntegral(orbital,orbital);
-// double orbital_GJIntegral(orbital,orbital);
-// double orbital_FJIntegral(orbital,orbital);
-// double orbital_FFIntegral(orbital,orbital);
+double orbital_SIntegral(orbital *,orbital *);
+double orbital_JIntegral(orbital *,orbital *);
+//double orbital_GIntegral(orbital *,orbital *);
+//double orbital_FIntegral(orbital *,orbital *);
+// double orbital_GJIntegral(orbital *,orbital *);
+// double orbital_FJIntegral(orbital *,orbital *);
+// double orbital_FFIntegral(orbital *,orbital *);
 
-
+void single_electron_transform(gaussian_chain *, orbital *);
 void two_electron_transform(gaussian_chain *,orbital *, orbital *);
+
+double gaussian_chain_SIntegral(gaussian_chain *, gaussian_chain *);
+double gaussian_chain_JIntegral(gaussian_chain *, gaussian_chain *);

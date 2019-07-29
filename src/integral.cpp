@@ -1,5 +1,6 @@
 #include "../include/integral.h"
 
+//Calculate the complete Gamma function
 double Gamma(double z)
 {
 
@@ -26,11 +27,13 @@ double Gamma(double z)
     return accm/z;
 }
 
+//Calculate the Boys function
 double Boys(double x, int n)
 {
     return 0.5* pow(x,-0.5-n) * (Gamma(0.5 + n) - gsl_sf_gamma_inc(0.5+n,x));
 }
 
+//Calculate the binomials
 double Binomials(int n, int k)
 {
     int i;
@@ -46,6 +49,7 @@ double Binomials(int n, int k)
     return result;
 }
 
+//A special function set for calculating the transformation coefficient
 double f(int k, int a, int b, double PA, double PB)
 {
     int i;
@@ -57,7 +61,8 @@ double f(int k, int a, int b, double PA, double PB)
     return result;
 }
 
-double tranformationcoefficients(int a[3], int b[3], int p[3], double PA[3], double PB[3], double xi, double AB)
+//Calculate the transformation coefficient that is needed to complete the transformation from two combined gaussian function to the sum of a series of gaussian functions
+double tranformation_coefficient(int a[3], int b[3], int p[3], double PA[3], double PB[3], double xi, double AB)
 {
     int i;
     double result;
@@ -72,10 +77,14 @@ double tranformationcoefficients(int a[3], int b[3], int p[3], double PA[3], dou
     return result;
 }
 
+//Calculate the Overlap Integral of two gaussian function
 double SIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta)
 {
+
+    // if one of the angular number goes below zero, it means it will not have contribution - the same as giving derivation to a constant
     if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
 
+    //Provide recurrence relation
     else if(ax > 0) return ((alpha*ra[0]+beta*rb[0])/(alpha + beta)-ra[0])*SIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta) + (ax-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta) + bx/2.0/(alpha+beta) * SIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta);
 
     else if(ay > 0) return ((alpha*ra[1]+beta*rb[1])/(alpha + beta)-ra[1])*SIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta) + (ay-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta) + by/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta);
@@ -88,9 +97,11 @@ double SIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
 
     else if(bz > 0) return ((alpha*ra[2]+beta*rb[2])/(alpha + beta)-rb[2])*SIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta) + az/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta) + (bz-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta) ;
 
+    //giving the starting point
     else return sqrt(M_PI/(alpha + beta)) * M_PI/(alpha + beta) * exp(- alpha * beta /(alpha + beta) * (pow(ra[0]-rb[0],2)+pow(ra[1]-rb[1],2)+pow(ra[2]-rb[2],2)));
 }
 
+//Calculate the Coulomb Integral of two gaussian function
 double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta, int m)
 {
     double zeta = alpha + beta;
@@ -107,8 +118,10 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
     for(i=0;i<3;i++)
      AB += (ra[i]-rb[i])*(ra[i]-rb[i]);
 
+    // if one of the angular number goes below zero, it means it will not have contribution - the same as giving derivation to a constant
     if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
 
+    //Provide recurrence relation
     else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + ax/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- ax /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
     else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + ay/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- ay /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
@@ -121,9 +134,77 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
 
     else if(bz > 0) return ((P[2]-rb[2])*JIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + bz/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m)- bz /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m+1) + az/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
+    //Set the starting point
     else return 2.0 * pow(M_PI,2.5) / alpha / beta / sqrt(zeta) *Boys(xi * AB,m);
 }
 
+//allocate memory for struct gaussian_chain
+gaussian_chain * gaussian_chain_calloc()
+{
+    gaussian_chain * temp;
+
+    int i;
+
+    temp = new gaussian_chain;
+
+    for(i=0;i<3;i++)
+    {
+        temp->R[i] = 0;
+        temp->a[i] = 0;
+    }
+    temp->exponent = 0;
+    temp->coefficient = 0;
+
+    temp->NEXT = NULL;
+    return temp;
+}
+
+//free memory for struct gaussian_chain (not suitable for a single gaussian function)
+void gaussian_chain_free(gaussian_chain * HEAD)
+{
+    gaussian_chain * temp1, *temp2;
+
+    temp1 = HEAD;
+
+    while(temp1->NEXT != NULL)
+    {
+        temp2 = temp1;
+        temp1 = temp1->NEXT;
+        delete temp2;
+    }
+    delete temp1;
+}
+
+//transform the struct orbital to struct gaussian_chain
+void single_electron_transform(gaussian_chain * HEAD, orbital * a)
+{
+    gaussian_chain * temp, * bk;
+
+    temp = HEAD;
+
+    int i,j,q;
+
+    for(i=0;i<a->length;i++)
+    {
+        for(j=0;j<a->total;j++)
+        {
+            temp->coefficient = a->A[i].coef * *(a->coefficients + j);
+            temp->exponent = *(a->exponents + j);
+            for(q=0;q<3;q++)
+            {
+                temp->R[q] = a->cartesian[q];
+                temp->a[q] = a->A[i].a[q];
+            }
+            temp->NEXT = gaussian_chain_calloc();
+            bk = temp;
+            temp = temp->NEXT;
+        }
+    }
+    delete temp;
+    bk->NEXT = NULL;
+}
+
+//transform the two-electron orbital to struct gaussian_chain
 void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
 {
     gaussian_chain * temp, *bk;
@@ -138,7 +219,7 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
 
     int p[3];
 
-    double coefficients;
+    double coefficient;
 
     double xi;
     double zeta;
@@ -176,18 +257,18 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
                             for(p[2]=0;p[2]<=(a->A[i].a[2]+b->A[k].a[2]);p[2]++)
                             {
 
-                                coefficients = a->A[i].coef * *(a->coefficients + j) * b->A[i].coef * *(b->coefficients + j);
-                                coefficients *= tranformationcoefficients(a->A[j].a,b->A[j].a,p,PA,PB,xi,AB);
+                                coefficient = a->A[i].coef * *(a->coefficients + j) * b->A[i].coef * *(b->coefficients + j);
+                                coefficient *= tranformation_coefficient(a->A[j].a,b->A[j].a,p,PA,PB,xi,AB);
 
                                 for(q=0;q<3;q++)
                                 {
                                     temp->R[q] = P[q];
                                     temp->a[q] = p[q];
-                                    temp->exponents = zeta;
-                                    temp->coefficients = coefficients;
+                                    temp->exponent = zeta;
+                                    temp->coefficient = coefficient;
                                 }
                                 
-                                temp->NEXT = new gaussian_chain;
+                                temp->NEXT = gaussian_chain_calloc();
                                 bk = temp;
                                 temp = temp->NEXT;
                             }
@@ -199,4 +280,90 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
     }
     delete temp;
     bk->NEXT = NULL;
+}
+
+//enabling overlap integrals for gaussian_chain format
+double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b)
+{
+    return a->coefficient * b->coefficient *SIntegral(a->R,b->R,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent);
+}
+
+//enabling Coulomb integrals for gaussian_chain format
+double gaussian_chain_JIntegral(gaussian_chain * a, gaussian_chain * b)
+{
+    return a->coefficient * b->coefficient *JIntegral(a->R,b->R,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent,0);
+}
+
+double orbital_SIntegral(orbital * a, orbital * b)
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_head, * b_head, * a_temp, * b_temp;
+    a_head = gaussian_chain_calloc();
+    b_head = gaussian_chain_calloc();
+
+    single_electron_transform(a_head,a);
+    single_electron_transform(b_head,b);
+
+    a_temp = a_head;
+    b_temp = b_head;
+
+    while(a_temp->NEXT != NULL)
+    {
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_SIntegral(a_temp,b_temp);
+        a_temp = a_temp->NEXT;
+    }
+
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_SIntegral(a_temp,b_temp);
+}
+
+double orbital_JIntegral(orbital * a, orbital * b)
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_head, * b_head, * a_temp, * b_temp;
+    a_head = gaussian_chain_calloc();
+    b_head = gaussian_chain_calloc();
+
+    single_electron_transform(a_head,a);
+    single_electron_transform(b_head,b);
+
+    a_temp = a_head;
+    b_temp = b_head;
+
+    while(a_temp->NEXT != NULL)
+    {
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        a_temp = a_temp->NEXT;
+    }
+
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_SIntegral(a_temp,b_temp);
 }
