@@ -19,9 +19,6 @@ typedef struct orbital
     //the name of the orbital;
     char label[10];
 
-    //the total number of the terms of coefficients and exponents 
-    int total;
-
     //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
     struct  angcoef{
         int a[3];
@@ -30,6 +27,9 @@ typedef struct orbital
 
     //This will tell the functions how long is the angcoef
     int length;
+
+    //the total number of the terms of coefficients and exponents 
+    int total;
 
     //The list of exponents
     double * exponents;

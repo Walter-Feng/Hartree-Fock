@@ -48,9 +48,11 @@ typedef struct gaussian_chain{
 }gaussian_chain;
 
 double Gamma(double);
-double Boys(double);
+double Boys(double,int);
+double Binomials(int,int);
 
-double tranformationcoefficients(int[3],int[3],double[3],double[3],int);
+double f(int,int,int,double,double);
+double tranformationcoefficients(int[3],int[3], int[3],double[3],double[3],double,double);
 
 double SIntegral(double[3],double[3],int,int,int,int,int,int,double,double);
 double JIntegral(double[3],double[3],int,int,int,int,int,int,double,double,int);
@@ -62,3 +64,6 @@ double orbital_FIntegral(orbital,orbital);
 // double orbital_GJIntegral(orbital,orbital);
 // double orbital_FJIntegral(orbital,orbital);
 // double orbital_FFIntegral(orbital,orbital);
+
+
+void two_electron_transform(gaussian_chain *,orbital *, orbital *);
