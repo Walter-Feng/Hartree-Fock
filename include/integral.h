@@ -74,3 +74,7 @@ void two_electron_transform(gaussian_chain *,orbital *, orbital *);
 
 double gaussian_chain_SIntegral(gaussian_chain *, gaussian_chain *);
 double gaussian_chain_JIntegral(gaussian_chain *, gaussian_chain *);
+
+void gaussian_chain_derivative(gaussian_chain *, gaussian_chain *, int);
+void gaussian_chain_second_derivative(gaussian_chain *, gaussian_chain *, int);
+void gaussian_chain_laplacian(gaussian_chain *, gaussian_chain *);
