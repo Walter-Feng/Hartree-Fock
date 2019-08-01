@@ -439,7 +439,7 @@ double orbital_JIntegral(orbital * a, orbital * b)
         
         b_temp = b_temp->NEXT;
     }
-    
+
     result += gaussian_chain_JIntegral(a_temp,b_temp);
 
     return result;
@@ -579,4 +579,39 @@ void gaussian_chain_laplacian(gaussian_chain * dest, gaussian_chain * src)
     }
     delete temp1;
     temp2->NEXT = NULL;
+}
+
+double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
+{
+    double result;
+    gaussian_chain * laplacian_temp;
+
+    laplacian_temp = gaussian_chain_calloc();
+
+    gaussian_chain_laplacian(laplacian_temp, b_HEAD);
+
+    result = gaussian_chain_SIntegral(a_HEAD,laplacian_temp);
+
+    gaussian_chain_free(laplacian_temp);
+
+    return result;
+}
+
+double orbital_kinetic_energy(orbital * a, orbital * b)
+{
+    double result;
+
+    gaussian_chain * temp1, * temp2;
+    temp1 = gaussian_chain_calloc();
+    temp2 = gaussian_chain_calloc();
+
+    single_electron_transform(temp1,a);
+    single_electron_transform(temp2,b);
+
+    result = gaussian_chain_kinetic_energy(temp1,temp2);
+
+    gaussian_chain_free(temp1);
+    gaussian_chain_free(temp2);
+
+    return result;
 }

@@ -61,6 +61,18 @@ double tranformation_coefficient(int[3],int[3], int[3],double[3],double[3],doubl
 double SIntegral(double[3],double[3],int,int,int,int,int,int,double,double);
 double JIntegral(double[3],double[3],int,int,int,int,int,int,double,double,int);
 
+double gaussian_chain_SIntegral(gaussian_chain *, gaussian_chain *);
+double gaussian_chain_JIntegral(gaussian_chain *, gaussian_chain *);
+
+void gaussian_chain_derivative(gaussian_chain *, gaussian_chain *, int);
+void gaussian_chain_second_derivative(gaussian_chain *, gaussian_chain *, int);
+void gaussian_chain_laplacian(gaussian_chain *, gaussian_chain *);
+
+double gaussian_chain_kinetic_energy(gaussian_chain *, gaussian_chain *);
+
+void single_electron_transform(gaussian_chain *, orbital *);
+void two_electron_transform(gaussian_chain *,orbital *, orbital *);
+
 double orbital_SIntegral(orbital *,orbital *);
 double orbital_JIntegral(orbital *,orbital *);
 //double orbital_GIntegral(orbital *,orbital *);
@@ -69,12 +81,4 @@ double orbital_JIntegral(orbital *,orbital *);
 //double orbital_FJIntegral(orbital *,orbital *);
 //double orbital_FFIntegral(orbital *,orbital *);
 
-void single_electron_transform(gaussian_chain *, orbital *);
-void two_electron_transform(gaussian_chain *,orbital *, orbital *);
-
-double gaussian_chain_SIntegral(gaussian_chain *, gaussian_chain *);
-double gaussian_chain_JIntegral(gaussian_chain *, gaussian_chain *);
-
-void gaussian_chain_derivative(gaussian_chain *, gaussian_chain *, int);
-void gaussian_chain_second_derivative(gaussian_chain *, gaussian_chain *, int);
-void gaussian_chain_laplacian(gaussian_chain *, gaussian_chain *);
+double orbital_kinetic_energy(orbital *, orbital *);
