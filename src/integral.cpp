@@ -294,6 +294,77 @@ double gaussian_chain_JIntegral(gaussian_chain * a, gaussian_chain * b)
     return a->coefficient * b->coefficient *JIntegral(a->R,b->R,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent,0);
 }
 
+//enabling overlap integrals for gaussian_chain format, calculating the whole chain
+double gaussian_chain_full_SIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
+{
+    double result = 0;
+    gaussian_chain * a_temp, * b_temp;
+
+    a_temp = a_HEAD;
+    b_temp = b_HEAD;
+
+    while(a_temp->NEXT != NULL)
+    {
+        b_temp = b_HEAD;
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_SIntegral(a_temp,b_temp);
+        a_temp = a_temp->NEXT;
+    }
+
+    b_temp = b_HEAD;
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+    return result;
+}
+
+//enabling Coulomb integrals for gaussian_chain format, calculating the whole chain
+double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_temp, * b_temp;
+    
+    a_temp = a_HEAD;
+
+    while(a_temp->NEXT != NULL)
+    {
+        b_temp = b_HEAD;
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        a_temp = a_temp->NEXT;
+    }
+
+    b_temp = b_HEAD;
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+    return result;
+}
+
 double orbital_SIntegral(orbital * a, orbital * b)
 {
     double result;
@@ -307,10 +378,10 @@ double orbital_SIntegral(orbital * a, orbital * b)
     single_electron_transform(b_head,b);
 
     a_temp = a_head;
-    b_temp = b_head;
 
     while(a_temp->NEXT != NULL)
     {
+        b_temp = b_head;
         while(b_temp->NEXT != NULL)
         {
             result += gaussian_chain_SIntegral(a_temp,b_temp);
@@ -321,6 +392,7 @@ double orbital_SIntegral(orbital * a, orbital * b)
         a_temp = a_temp->NEXT;
     }
 
+    b_temp = b_head;
     while(b_temp->NEXT != NULL)
     {
         result += gaussian_chain_SIntegral(a_temp,b_temp);
@@ -329,6 +401,8 @@ double orbital_SIntegral(orbital * a, orbital * b)
     }
 
     result += gaussian_chain_SIntegral(a_temp,b_temp);
+
+    return result;
 }
 
 double orbital_JIntegral(orbital * a, orbital * b)
@@ -344,10 +418,10 @@ double orbital_JIntegral(orbital * a, orbital * b)
     single_electron_transform(b_head,b);
 
     a_temp = a_head;
-    b_temp = b_head;
 
     while(a_temp->NEXT != NULL)
     {
+        b_temp = b_head;
         while(b_temp->NEXT != NULL)
         {
             result += gaussian_chain_JIntegral(a_temp,b_temp);
@@ -358,14 +432,17 @@ double orbital_JIntegral(orbital * a, orbital * b)
         a_temp = a_temp->NEXT;
     }
 
+    b_temp = b_head;
     while(b_temp->NEXT != NULL)
     {
         result += gaussian_chain_JIntegral(a_temp,b_temp);
         
         b_temp = b_temp->NEXT;
     }
+    
+    result += gaussian_chain_JIntegral(a_temp,b_temp);
 
-    result += gaussian_chain_SIntegral(a_temp,b_temp);
+    return result;
 }
 
 void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key)

@@ -65,9 +65,9 @@ double orbital_SIntegral(orbital *,orbital *);
 double orbital_JIntegral(orbital *,orbital *);
 //double orbital_GIntegral(orbital *,orbital *);
 //double orbital_FIntegral(orbital *,orbital *);
-// double orbital_GJIntegral(orbital *,orbital *);
-// double orbital_FJIntegral(orbital *,orbital *);
-// double orbital_FFIntegral(orbital *,orbital *);
+//double orbital_GJIntegral(orbital *,orbital *);
+//double orbital_FJIntegral(orbital *,orbital *);
+//double orbital_FFIntegral(orbital *,orbital *);
 
 void single_electron_transform(gaussian_chain *, orbital *);
 void two_electron_transform(gaussian_chain *,orbital *, orbital *);
