@@ -33,6 +33,8 @@ Y   (ab|[\hat{t}_1,r_{12}^{-1}])
 #include "basis.h"
 #include <math.h>
 
+#include <gsl/gsl_vector.h>
+#include <gsl/gsl_matrix.h>
 #include <gsl/gsl_sf.h>
 
 typedef struct gaussian_chain{
@@ -49,36 +51,41 @@ typedef struct gaussian_chain{
 
 gaussian_chain * gaussian_chain_calloc();
 
-void gaussian_chain_free(gaussian_chain *);
+void gaussian_chain_free(gaussian_chain * HEAD);
 
-double Gamma(double);
-double Boys(double,int);
-double Binomials(int,int);
+double Gamma(double z);
+double Boys(double x, int n);
+double Binomials(int n, int k);
 
-double f(int,int,int,double,double);
-double tranformation_coefficient(int[3],int[3], int[3],double[3],double[3],double,double);
+double f(int k, int a, int b, double PA, double PB);
+double tranformation_coefficient(int a[3], int b[3], int p[3], double PA[3], double PB[3], double xi, double AB);
 
-double SIntegral(double[3],double[3],int,int,int,int,int,int,double,double);
-double JIntegral(double[3],double[3],int,int,int,int,int,int,double,double,int);
+double SIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta);
+double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta, int m);
 
-double gaussian_chain_SIntegral(gaussian_chain *, gaussian_chain *);
-double gaussian_chain_JIntegral(gaussian_chain *, gaussian_chain *);
+double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b);
+double gaussian_chain_JIntegral(gaussian_chain * a, gaussian_chain * b);
+double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD);
 
-void gaussian_chain_derivative(gaussian_chain *, gaussian_chain *, int);
-void gaussian_chain_second_derivative(gaussian_chain *, gaussian_chain *, int);
-void gaussian_chain_laplacian(gaussian_chain *, gaussian_chain *);
+void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key);
+void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key);
+void gaussian_chain_laplacian(gaussian_chain * dest, gaussian_chain * src);
 
-double gaussian_chain_kinetic_energy(gaussian_chain *, gaussian_chain *);
+double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD);
 
-void single_electron_transform(gaussian_chain *, orbital *);
-void two_electron_transform(gaussian_chain *,orbital *, orbital *);
+void single_electron_transform(gaussian_chain * HEAD, orbital * a);
+void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b);
 
-double orbital_SIntegral(orbital *,orbital *);
-double orbital_JIntegral(orbital *,orbital *);
+double orbital_SIntegral(orbital * a,orbital * b);
+double orbital_JIntegral(orbital * a,orbital * b);
 //double orbital_GIntegral(orbital *,orbital *);
 //double orbital_FIntegral(orbital *,orbital *);
 //double orbital_GJIntegral(orbital *,orbital *);
 //double orbital_FJIntegral(orbital *,orbital *);
 //double orbital_FFIntegral(orbital *,orbital *);
 
-double orbital_kinetic_energy(orbital *, orbital *);
+double two_electron_JIntegral(orbital * a_1, orbital * b_1, orbital * c_2, orbital * d_2);
+
+double orbital_kinetic_energy(orbital * a, orbital * b);
+
+void orbital_S_matrix(gsl_matrix * dest, orbital * HEAD);

@@ -445,6 +445,26 @@ double orbital_JIntegral(orbital * a, orbital * b)
     return result;
 }
 
+double two_electron_JIntegral(orbital * a_1, orbital * b_1, orbital * c_2, orbital * d_2)
+{
+    double result;
+
+    gaussian_chain * temp_1, * temp_2;
+
+    temp_1 = gaussian_chain_calloc();
+    temp_2 = gaussian_chain_calloc();
+
+    two_electron_transform(temp_1,a_1,b_1);
+    two_electron_transform(temp_2,c_2,d_2);
+
+    result = gaussian_chain_full_JIntegral(temp_1,temp_2);
+    
+    gaussian_chain_free(temp_1);
+    gaussian_chain_free(temp_2);
+
+    return result;
+}
+
 void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
 {
     gaussian_chain * temp1, * temp2;
@@ -548,20 +568,6 @@ void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * sr
     gaussian_chain_free(temp3);
 }
 
-void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
-{
-    gaussian_chain * temp1, * temp2, * temp3;
-
-    temp1 = dest;
-    temp2 = src;
-    temp3 = gaussian_chain_calloc();
-    
-    gaussian_chain_derivative(temp3,temp2,key);
-    gaussian_chain_derivative(temp1,temp3,key);
-
-    gaussian_chain_free(temp3);
-}
-
 void gaussian_chain_laplacian(gaussian_chain * dest, gaussian_chain * src)
 {
     int i;
@@ -590,7 +596,7 @@ double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b
 
     gaussian_chain_laplacian(laplacian_temp, b_HEAD);
 
-    result = gaussian_chain_SIntegral(a_HEAD,laplacian_temp);
+    result = - 0.5 * gaussian_chain_SIntegral(a_HEAD,laplacian_temp);
 
     gaussian_chain_free(laplacian_temp);
 
@@ -614,4 +620,43 @@ double orbital_kinetic_energy(orbital * a, orbital * b)
     gaussian_chain_free(temp2);
 
     return result;
+}
+
+void orbital_S_matrix(gsl_matrix * dest, orbital * HEAD)
+{
+    orbital * temp1, * temp2;
+
+    temp1 = HEAD;
+    temp2 = HEAD;
+
+    int i,j;
+
+    i = 0;
+    j = 0;
+
+
+    while(temp1->NEXT!=NULL)
+    {
+        while(temp2->NEXT != NULL)
+        {
+            gsl_matrix_set(dest,i,j,orbital_SIntegral(temp1,temp2));
+            j++;
+            temp2 = temp2->NEXT;
+        }
+        gsl_matrix_set(dest,i,j,orbital_SIntegral(temp1,temp2));
+        j = 0;
+        temp2 = HEAD;
+
+        temp1 = temp1->NEXT;
+        i++;
+    }
+
+    while(temp2->NEXT != NULL)
+    {
+        gsl_matrix_set(dest,i,j,orbital_SIntegral(temp1,temp2));
+        j++;
+        temp2 = temp2->NEXT;
+    }
+    
+    gsl_matrix_set(dest,i,j,orbital_SIntegral(temp1,temp2));
 }
