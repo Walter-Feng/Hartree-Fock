@@ -71,7 +71,13 @@ void basis_fscanf(FILE *,atomic_orbital *);
 void orbital_label(char *,int,int,int);
 void orbital_angcoef_set(orbital *);
 
-void atomic_orbital_cpy(atomic_orbital *, atomic_orbital *);
+//copying the struct atomic_orbital. WARNING: you MUST allocate memory dest_HEAD before using this function
+void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src);
+//copying the struct atomic_orbital. WARNING: you MUST allocate memory to dest_HEAD before using this function
+void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src);
 void orbital_cpy(orbital *, orbital *);
 
 int orbital_count(orbital *);
+
+void atomic_orbital_sync_coord(atomic_orbital * atom);
+void atomic_orbital_name_print(atomic_orbital * atom);

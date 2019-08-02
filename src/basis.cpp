@@ -141,7 +141,7 @@ void atomic_orbital_free(atomic_orbital * HEAD)
     delete temp1;
 }
 
-//copying the struct atomic_orbital. WARNING: you MUST allocate memory dest_HEAD before using this function
+//copying the struct atomic_orbital. WARNING: you MUST allocate memory to dest_HEAD before using this function
 void atomic_orbital_cpy(atomic_orbital * dest_HEAD, atomic_orbital * src_HEAD)
 {
     int i;
@@ -178,6 +178,22 @@ void atomic_orbital_cpy(atomic_orbital * dest_HEAD, atomic_orbital * src_HEAD)
     temp1->orbital_HEAD = orbital_calloc((temp2->orbital_HEAD)->total);
 
     orbital_cpy(temp1->orbital_HEAD,temp2->orbital_HEAD);
+}
+
+//copying single knot of the struct atomic_orbital. WARNING: you MUST allocate memory dest before using this function
+void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src)
+{
+    int i;
+
+        dest->N = src->N;
+        strcpy(dest->name, src->name);
+        
+        for(i=0;i<3;i++)
+            dest->cartesian[i] = src->cartesian[i];
+
+        dest->orbital_HEAD = orbital_calloc((src->orbital_HEAD)->total);
+
+        orbital_cpy(dest->orbital_HEAD,src->orbital_HEAD);
 }
 
 //decide the label for orbital label
@@ -456,4 +472,52 @@ int orbital_count(orbital * HEAD)
     }
 
     return i;
+}
+
+void atomic_orbital_sync_coord(atomic_orbital * atom)
+{
+    orbital * temp;
+    
+    int i;
+
+    temp = atom->orbital_HEAD;
+
+    while(temp->NEXT != NULL)
+    {
+        for(i=0;i<3;i++)
+        {
+            temp->cartesian[i] = atom->cartesian[i];
+        }
+
+        temp = temp->NEXT;
+    }
+
+    for(i=0;i<3;i++)
+    {
+        temp->cartesian[i] = atom->cartesian[i];
+    }
+}
+
+void atomic_orbital_name_print(atomic_orbital * atom)
+{
+    orbital * temp;
+    
+    int i;
+
+    char strtemp[30];
+
+    temp = atom->orbital_HEAD;
+
+    while(temp->NEXT != NULL)
+    {
+        strcpy(strtemp,atom->name);
+        strcat(strtemp,temp->label);
+        strcpy(temp->label,strtemp);
+
+        temp = temp->NEXT;
+    }
+
+    strcpy(strtemp,atom->name);
+    strcat(strtemp,temp->label);
+    strcpy(temp->label,strtemp);
 }

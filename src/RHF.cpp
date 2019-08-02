@@ -86,7 +86,7 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int le
     orbital_S_matrix(S,HEAD);
 
     printf("\n");
-    printf("================================== Start SCF =============================\n\n");
+    printf("============================= Start SCF =============================\n\n");
 
     for(i=0;i<iteration_max;i++)
     {
@@ -107,7 +107,15 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int le
         energy_bk = energy_temp;
     }
 
-    printf("\n======================================================================================================\n\n");
-    if(i==iteration_max) printf("WARNING: SCF not converged.\n")
-    else printf("SCF converged.\n")
+    printf("\n===================================================================\n\n");
+    if(i==iteration_max)
+    {
+        printf("WARNING: SCF not converged.\n");
+        return 1;
+    }
+    else 
+    {
+        printf("SCF converged.\n");
+        return 0;    
+    }
 }
