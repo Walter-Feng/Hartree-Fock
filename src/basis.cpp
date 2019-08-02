@@ -439,3 +439,21 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
         }
     }
 }
+
+int orbital_count(orbital * HEAD)
+{
+    if(HEAD == NULL) return 0;
+    int i;
+    
+    i = 1;
+
+    orbital * temp = HEAD;
+
+    while(temp->NEXT != NULL)
+    {
+        i++;
+        temp = temp->NEXT;
+    }
+
+    return i;
+}

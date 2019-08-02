@@ -74,3 +74,4 @@ void orbital_angcoef_set(orbital *);
 void atomic_orbital_cpy(atomic_orbital *, atomic_orbital *);
 void orbital_cpy(orbital *, orbital *);
 
+int orbital_count(orbital *);
