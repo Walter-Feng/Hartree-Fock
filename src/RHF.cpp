@@ -1,5 +1,4 @@
 #include "../include/RHF.h"
-#include "../include/gslextra.h"
 
 double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix * coef, int length, int el_num)
 {
@@ -118,4 +117,58 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int le
         printf("SCF converged.\n");
         return 0;    
     }
+}
+
+double nuclei_repulsion(atomic_orbital * atomlist_HEAD)
+{
+    atomic_orbital * temp1, * temp2;
+
+    double result;
+    double distance;
+
+    result = 0;
+    distance = 0;
+
+    temp1 = atomlist_HEAD;
+    while(temp1->NEXT != NULL)
+    {
+        temp2 = atomlist_HEAD;
+        while(temp2->NEXT != NULL)
+        {
+            if(temp2 != temp1)
+            {
+                distance = sqrt((temp1->cartesian[0] - temp2->cartesian[0]) * (temp1->cartesian[0] - temp2->cartesian[0]) + (temp1->cartesian[1] - temp2->cartesian[1]) * (temp1->cartesian[1] - temp2->cartesian[1]) + (temp1->cartesian[2] - temp2->cartesian[2]) * (temp1->cartesian[2] - temp2->cartesian[2]));
+
+                result += (double) temp1->N * (double) temp2->N / distance;
+            }
+
+            temp2 = temp2->NEXT;
+        }
+        if(temp2 != temp1)
+        {
+            distance = sqrt((temp1->cartesian[0] - temp2->cartesian[0]) * (temp1->cartesian[0] - temp2->cartesian[0]) + (temp1->cartesian[1] - temp2->cartesian[1]) * (temp1->cartesian[1] - temp2->cartesian[1]) + (temp1->cartesian[2] - temp2->cartesian[2]) * (temp1->cartesian[2] - temp2->cartesian[2]));
+
+            result += (double) temp1->N * (double) temp2->N / distance;
+        }
+    }
+
+    temp2 = atomlist_HEAD;
+    while(temp2->NEXT != NULL)
+    {
+        if(temp2 != temp1)
+        {
+            distance = sqrt((temp1->cartesian[0] - temp2->cartesian[0]) * (temp1->cartesian[0] - temp2->cartesian[0]) + (temp1->cartesian[1] - temp2->cartesian[1]) * (temp1->cartesian[1] - temp2->cartesian[1]) + (temp1->cartesian[2] - temp2->cartesian[2]) * (temp1->cartesian[2] - temp2->cartesian[2]));
+
+            result += (double) temp1->N * (double) temp2->N / distance;
+        }
+
+        temp2 = temp2->NEXT;
+    }
+    if(temp2 != temp1)
+    {
+        distance = sqrt((temp1->cartesian[0] - temp2->cartesian[0]) * (temp1->cartesian[0] - temp2->cartesian[0]) + (temp1->cartesian[1] - temp2->cartesian[1]) * (temp1->cartesian[1] - temp2->cartesian[1]) + (temp1->cartesian[2] - temp2->cartesian[2]) * (temp1->cartesian[2] - temp2->cartesian[2]));
+
+    result += (double) temp1->N * (double) temp2->N / distance;
+
+    return result;
 }
