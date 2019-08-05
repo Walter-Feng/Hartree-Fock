@@ -1,5 +1,4 @@
 #include "../include/RHF.h"
-#include "../include/gslprint.h"
 
 int main(int argc, char const *argv[])
 {
@@ -19,7 +18,7 @@ int main(int argc, char const *argv[])
     strcpy(basis,"basis/");
     strcpy(input,"NULL");
 
-    orbital * orbitals, orbital_temp;
+    orbital * orbitals, * orbital_temp;
     atomic_orbital * basis_HEAD;
     atomic_orbital * atoms, * atoms_temp, * atoms_bk;
     atomic_orbital * basis_scanner;
@@ -168,7 +167,7 @@ int main(int argc, char const *argv[])
     length = orbital_count(orbitals);
 
     energy = gsl_vector_calloc(length);
-    coef = gsl_vector_calloc(length,length);
+    coef = gsl_matrix_calloc(length,length);
 
     for(i=0;i<length;i++)
         gsl_matrix_set(coef,i,i,1.0);
@@ -199,9 +198,9 @@ int main(int argc, char const *argv[])
     orbital_temp = orbitals;
     while(orbital_temp->NEXT != NULL)
     {
-        printf(" %s ,"orbital_temp->label);
+        printf(" %s ,",orbital_temp->label);
     }
-    printf(" %s ]\n\n,"orbital_temp->label);
+    printf(" %s ]\n\n,",orbital_temp->label);
 
     printf("MO_COEFF:\n\n");
     gsl_matrix_printf(coef,length,length,"%12.6f");

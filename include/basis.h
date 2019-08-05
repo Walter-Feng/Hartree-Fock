@@ -1,11 +1,13 @@
 #ifndef __BASIS_H__
 #define __BASIS_H__
-#endif
 
 #include <iostream>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+
+
+#endif
 
 //This struct is aimed to store each electronic shell of an atom
 typedef struct orbital

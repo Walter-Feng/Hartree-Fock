@@ -27,8 +27,6 @@ Y   (ab|[\hat{t}_1,r_{12}^{-1}])
 
 #ifndef __INTEGRAL_H__
 #define __INTEGRAL_H__
-#endif
-
 
 #include "basis.h"
 #include <math.h>
@@ -36,6 +34,8 @@ Y   (ab|[\hat{t}_1,r_{12}^{-1}])
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_matrix.h>
 #include <gsl/gsl_sf.h>
+
+#endif
 
 typedef struct gaussian_chain{
     double R[3];
