@@ -13,7 +13,6 @@ int main(int argc, char const *argv[])
     char basis[30];
     char input[30];
     char reader[30];
-    char orbital_temp[30];
 
     strcpy(basis,"basis/");
     strcpy(input,"NULL");
@@ -105,7 +104,7 @@ int main(int argc, char const *argv[])
                     {
                         if(strcmp(basis_scanner->name,reader)==0)
                         {
-                            atom_orbital_single_cpy(atoms,basis_scanner);
+                            atomic_orbital_single_cpy(atoms,basis_scanner);
 
                             break;
                         }
@@ -113,7 +112,7 @@ int main(int argc, char const *argv[])
 
                     if(strcmp(basis_scanner->name,reader)==0)
                     {
-                        atom_orbital_single_cpy(atoms,basis_scanner);
+                        atomic_orbital_single_cpy(atoms,basis_scanner);
 
                         el_num += basis_scanner->N;
                     }
@@ -154,7 +153,7 @@ int main(int argc, char const *argv[])
     {
         orbital_cpy(orbital_temp,atoms_temp->orbital_HEAD);
         while(orbital_temp->NEXT != NULL)
-            orbital_temp = orbital->NEXT;
+            orbital_temp = orbitals->NEXT;
 
         atoms_temp = atoms_temp->NEXT;
         orbital_temp->NEXT = orbital_calloc((atoms_temp->orbital_HEAD)->total);

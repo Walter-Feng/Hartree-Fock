@@ -1,13 +1,9 @@
-#ifndef __BASIS_H__
 #define __BASIS_H__
 
 #include <iostream>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
-
-
-#endif
 
 //This struct is aimed to store each electronic shell of an atom
 typedef struct orbital
@@ -62,7 +58,7 @@ typedef struct atomic_orbital
     atomic_orbital * NEXT;
 }atomic_orbital;
 
-orbital* orbital_calloc(size_t);
+orbital* orbital_calloc(int);
 void orbital_free(orbital *);
 
 atomic_orbital* atomic_orbital_calloc();

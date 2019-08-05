@@ -1,7 +1,7 @@
 #include "../include/basis.h"
 
 //To allocate the memory for struct orbital
-orbital* orbital_calloc(size_t n)
+orbital* orbital_calloc(int n)
 {
     orbital * pointer;
 

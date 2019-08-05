@@ -91,7 +91,7 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int le
     for(i=0;i<iteration_max;i++)
     {
         fock_matrix(F,coef,HEAD,length,el_num);
-        gsl_eigen_Lowdin_diag(F,S,energy,coef);
+        gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
 
         energy_temp = 0;
 
