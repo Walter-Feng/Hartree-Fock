@@ -1,2 +1,4 @@
-g++ -c ../src/*.cpp -I /usr/local/include
-g++ *.o -g -static -lgsl -lgslcblas -lm -o ../HF
+GSL_HOME=/Users/dj19970/usr/local
+
+g++ -c ../src/*.cpp -I${GSL_HOME}/include
+g++ *.o -g -L${GSL_HOME}/lib -lgsl -lgslcblas -lm -o ../HF

@@ -1,13 +1,19 @@
-#ifndef __RHF_H__
-#define __RHF_H__
-
+#ifndef __INTEGRAL_H__
+#define __INTEGRAL_H__
 #include "integral.h"
-#include "../include/basis.h"
-#include "../include/gslextra.h"
-#include "../include/gslprint.h"
-#include <gsl/gsl_eigen.h>
-
 #endif
+
+#ifndef __GSLEXTRA_H__
+#define __GSLEXTRA_H__
+#include "../include/gslextra.h"
+#endif
+
+#ifndef __GSLPRINT_H__
+#define __GSLPRINT_H__
+#include "../include/gslprint.h"
+#endif
+
+#include <gsl/gsl_eigen.h>
 
 
 double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix * coef, int length, int el_num);
