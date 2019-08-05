@@ -12,7 +12,7 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix 
 
     coef_vector_temp = gsl_vector_calloc(length);
 
-    result = 2.0 * orbital_kinetic_energy(a,b);
+    result =orbital_kinetic_energy(a,b);
 
     for(i=0;i<el_num/2;i++)
     {
@@ -21,13 +21,13 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix 
         
         j=0;
 
-        result += 4.0 * two_electron_JIntegral(a,b,orbital_temp,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
-        result -= 2.0 * two_electron_JIntegral(a,orbital_temp,b,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
+        result += 2.0 * two_electron_JIntegral(a,b,orbital_temp,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
+        result -= two_electron_JIntegral(a,orbital_temp,b,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
         for(j=1;j<length;j++)
         {
             orbital_temp = orbital_temp->NEXT;
-            result += 4.0 * two_electron_JIntegral(a,b,orbital_temp,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
-            result -= 2.0 * two_electron_JIntegral(a,orbital_temp,b,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
+            result += 2.0 * two_electron_JIntegral(a,b,orbital_temp,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
+            result -= two_electron_JIntegral(a,orbital_temp,b,orbital_temp) * gsl_vector_get(coef_vector_temp,j) * gsl_vector_get(coef_vector_temp,j);
         }
     }
 

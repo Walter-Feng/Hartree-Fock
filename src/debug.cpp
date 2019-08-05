@@ -32,6 +32,9 @@ int main(int argc, char const *argv[])
     int COUNTER;
 
     double coord_temp;
+    double total_energy;
+
+    total_energy = 0;
 
     
 
@@ -185,11 +188,16 @@ int main(int argc, char const *argv[])
         printf("MO_NUM: %d,    MO_ENERGY = %lf , occ = ",i,gsl_vector_get(energy,i));
 
         if(el_num_counter < el_num)
+        {
             printf("2\n");
+            total_energy += gsl_vector_get(energy,i) * 2.0;
+        }
         else printf("0\n");
 
         el_num_counter += 2;
     }
+
+    printf("\nTotal Energy: %lf",total_energy - nuclei_repulsion(atoms));
 
     printf("\n\n");
 
