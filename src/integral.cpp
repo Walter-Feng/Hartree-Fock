@@ -188,7 +188,7 @@ void single_electron_transform(gaussian_chain * HEAD, orbital * a)
     {
         for(j=0;j<a->total;j++)
         {
-            temp->coefficient = a->A[i].coef * *(a->coefficients + j);
+            temp->coefficient = a->A[i].coef * *(a->coefficients + j) * normalize(*(a->exponents + j),a->A[i].a[0],a->A[i].a[1],a->A[i].a[2]);
             temp->exponent = *(a->exponents + j);
             for(q=0;q<3;q++)
             {
@@ -257,7 +257,7 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
                             for(p[2]=0;p[2]<=(a->A[i].a[2]+b->A[k].a[2]);p[2]++)
                             {
 
-                                coefficient = a->A[i].coef * *(a->coefficients + j) * b->A[i].coef * *(b->coefficients + j);
+                                coefficient = a->A[i].coef * *(a->coefficients + j) * normalize(*(a->exponents + j),a->A[i].a[0],a->A[i].a[1],a->A[i].a[2]) * b->A[i].coef * *(b->coefficients + j) * normalize(*(b->exponents + j),b->A[i].a[0],b->A[i].a[1],b->A[i].a[2]);
                                 coefficient *= tranformation_coefficient(a->A[j].a,b->A[j].a,p,PA,PB,xi,AB);
 
                                 for(q=0;q<3;q++)

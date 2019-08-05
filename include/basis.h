@@ -31,7 +31,7 @@ typedef struct orbital
 
     //The list of exponents
     double * exponents;
-    //THe corresponding coefficient list, which will be normalized during the process;
+    //The corresponding coefficient list, which will be normalized during the process;
     double * coefficients;
 
     //The cartesian coordinate of the center of the orbital;
@@ -58,24 +58,41 @@ typedef struct atomic_orbital
     atomic_orbital * NEXT;
 }atomic_orbital;
 
+//To allocate the memory for struct orbital
 orbital* orbital_calloc(int);
-void orbital_free(orbital *);
+// free the memory for struct orbital
+void orbital_free(orbital * HEAD);
 
+//To allocate the memory for struct atomic_orbital
 atomic_orbital* atomic_orbital_calloc();
-void atomic_orbital_free(atomic_orbital *);
+//To free the memory for struct atomic_orbital
+void atomic_orbital_free(atomic_orbital * HEAD);
 
+//To help scanning information from basis files and store it in the form of struct atomic_orbital
 void basis_fscanf(FILE *,atomic_orbital *);
 
+//set the label of a particular electron shell
 void orbital_label(char *,int,int,int);
+//set the angular-coefficient pair for a particular electron shell (consider d_x^2-y^2)
 void orbital_angcoef_set(orbital *);
 
 //copying the struct atomic_orbital. WARNING: you MUST allocate memory dest_HEAD before using this function
 void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src);
-//copying the struct atomic_orbital. WARNING: you MUST allocate memory to dest_HEAD before using this function
+//copying a single knot of the struct atomic_orbital. WARNING: you MUST allocate memory to dest_HEAD before using this function
 void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src);
+//copying the struct atomic_orbital. WARNING: you MUST allocate memory to dest_HEAD before using this function
 void orbital_cpy(orbital *, orbital *);
 
-int orbital_count(orbital *);
+//To count all the electron shells in this linked list
+int orbital_count(orbital * HEAD);
 
+//To synchronize the coordinates of the atom with all its electron shells
 void atomic_orbital_sync_coord(atomic_orbital * atom);
+//To print the name of the atom into the label of its each electron shells
 void atomic_orbital_name_print(atomic_orbital * atom);
+
+
+//basic functions
+
+double double_factorial(unsigned int n);
+double normalize(double alpha, int ax, int ay, int az);

@@ -180,7 +180,7 @@ void atomic_orbital_cpy(atomic_orbital * dest_HEAD, atomic_orbital * src_HEAD)
     orbital_cpy(temp1->orbital_HEAD,temp2->orbital_HEAD);
 }
 
-//copying single knot of the struct atomic_orbital. WARNING: you MUST allocate memory dest before using this function
+//copying single knot of the struct atomic_orbital. WARNING1: you MUST allocate memory dest before using this function; WARNING2: you need to assign NEXT of the destination atomic_orbital yourself
 void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src)
 {
     int i;
@@ -196,7 +196,7 @@ void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src)
         orbital_cpy(dest->orbital_HEAD,src->orbital_HEAD);
 }
 
-//decide the label for orbital label
+//decide the label for a particular electron orbital
 void orbital_label(char * dest, int n, int l, int m)
 {
     char * n_str;
@@ -320,11 +320,12 @@ void orbital_angcoef_set(orbital * target)
     }
 }
 
+//To help scanning information from basis files and store it in the form of struct atomic_orbital. WARNING: HEAD must be allocated before using
 void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
 {
     atomic_orbital *temp1, *temp2;
 
-    orbital *orbit_temp1,*orbit_temp2;
+    orbital *orbit_temp1,*orbit_temp2, *all_orbit, * all_orbit_head;
 
     char * str;
 
@@ -359,7 +360,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
 
     //flags
     int HEADFLAG = 0;
-
+    int ALL_ORBITHEADFLAG = 0;
     int ORBITHEADFLAG = 0;
 
     while(fscanf(basis,"%s",str)!=EOF)
@@ -373,6 +374,8 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
                 temp1 = HEAD;
                 HEADFLAG = 1;
             }
+
+            // if it is not, create new knot and have this atom linked with the previous atom
             else
             {
                 temp2 = temp1;
@@ -380,78 +383,111 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
                 temp2->NEXT = temp1;
             }
 
-            //Read Name
-            if(strcmp(str,"Name:")==0)
-            {
-                fscanf(basis,"%s",str);
-                strcpy(temp1->name,str);
-            }
+            //initialize
+            n_counter = 0;
+            l_temp = -1;
+            l_ref = -1;
+            ALL_ORBITHEADFLAG = 0;         
         }
 
+        //Reading the name of the atom
+        if(strcmp(str,"Name:")==0)
+        {
+            fscanf(basis,"%s",str);
+            strcpy(temp1->name,str);
+        }
         //Start reading orbitals (electronic shells)
 
-        //Read L
+        //Read L: when there is a new L, there is a new electron shell that needs to be interpreted, with a set of exponents and coefficients
         if(strcmp(str,"L=")==0)
         {
             fscanf(basis,"%s",str);
             fscanf(basis,"%d",&l_temp);
-        }
+
+            //Check if all_orbit has been assigned (or whether all_orbit will be the head of a new atom -> which means it will certainly be the tail of the linked list), and ensure that all_orbit is the tail of the list
+            if(ALL_ORBITHEADFLAG == 1)
+                while(all_orbit->NEXT != NULL)
+                    all_orbit = all_orbit->NEXT;
         
-        //check whether it has a change compared with the former l_temp, so to restart counting the main magnetic number n
-        if(l_temp == l_ref) n_counter ++;
-        else n_counter = l_temp + 1;
-
-        //set l_ref to the current value of l_temp for next loop
-        l_ref = l_temp;
-
-        //Read total
-        fscanf(basis,"%s",str);
-        fscanf(basis,"%d",&tot_temp);
-
-        //Read exponents
-        fscanf(basis,"%s",str);
-
-        exponents_temp = new double[tot_temp];
-
-        for(i=0;i<tot_temp;i++)
-            fscanf(basis,"%lf",exponents_temp + i);
-
-        //Read coefficients
-        fscanf(basis,"%s",str);
-
-        coefficients_temp = new double[tot_temp];
-
-        for(i=0;i<tot_temp;i++)
-            fscanf(basis,"%lf",coefficients_temp + i);
-
-
-        //create a series of orbitals in different 'direction', namely the different magnetic quantum number
         
-        for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
-        {
-            orbit_temp1 = orbital_calloc(tot_temp);
-            if(ORBITHEADFLAG == 1) 
-            {
-                orbit_temp2->NEXT = orbit_temp1;
-                temp1->orbital_HEAD = orbit_temp1;
-            }
-            else ORBITHEADFLAG = 1;
+            //check whether it has a change compared with the former l_temp, so to restart counting the main magnetic number n
+            if(l_temp == l_ref) n_counter ++;
+            else n_counter = l_temp + 1;
 
-            orbit_temp1->L = l_temp;
-            orbit_temp1->total = tot_temp;
-            orbit_temp1->n = n_counter;
-            orbit_temp1->m = m_temp;
+            //set l_ref to the current value of l_temp for next loop
+            l_ref = l_temp;
 
-            orbital_label(orbit_temp1->label,n_counter,l_temp,m_temp);
-            orbital_angcoef_set(orbit_temp1);
+            //Read total
+            fscanf(basis,"%s",str);
+            fscanf(basis,"%d",&tot_temp);
+
+            //Read exponents
+            fscanf(basis,"%s",str);
+
+            exponents_temp = new double[tot_temp];
 
             for(i=0;i<tot_temp;i++)
+                fscanf(basis,"%lf",exponents_temp + i);
+
+            //Read coefficients
+            fscanf(basis,"%s",str);
+
+            coefficients_temp = new double[tot_temp];
+
+            for(i=0;i<tot_temp;i++)
+                fscanf(basis,"%lf",coefficients_temp + i);
+
+
+            //create a series of orbitals in different 'direction', namely the different magnetic quantum number
+            
+            for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
             {
-                *(orbit_temp1->exponents + i) = *(exponents_temp + i);
-                *(orbit_temp1->coefficients + i) = *(coefficients_temp + i);
+                orbit_temp1 = orbital_calloc(tot_temp);
+                //Check if orbit_temp1 should be the head of the linked list of orbitals in the same l. If not, link it with the previous orbital whose pointer is stored in orbit_temp2
+                if(ORBITHEADFLAG == 1) //It's not the head
+                {
+                    orbit_temp2->NEXT = orbit_temp1;
+                }
+                else //It's the head, and thus orbit_temp2 is not assigned
+                {
+                    ORBITHEADFLAG = 1;
+
+                    //It might be that all_orbit, containing all the orbitals of the atom the program is currently interpreting, has not assigned, in which case all_orbit will be the head of the linked list of orbitals
+                    // P.S.: It is only possible that all_orbit can be the head when orbit_temp1 is the head
+                    if(ALL_ORBITHEADFLAG == 0) //It's the head
+                    {
+                        all_orbit = orbit_temp1;
+                        ALL_ORBITHEADFLAG = 1;
+                    }
+                    else
+                    {
+                        all_orbit->NEXT = orbit_temp1;
+                    }
+                }
+
+                //Copying the information
+                orbit_temp1->L = l_temp;
+                orbit_temp1->total = tot_temp;
+                orbit_temp1->n = n_counter;
+                orbit_temp1->m = m_temp;
+
+                orbital_label(orbit_temp1->label,n_counter,l_temp,m_temp);
+                orbital_angcoef_set(orbit_temp1);
+
+                for(i=0;i<tot_temp;i++)
+                {
+                    *(orbit_temp1->exponents + i) = *(exponents_temp + i);
+                    *(orbit_temp1->coefficients + i) = *(coefficients_temp + i);
+                }
+
+                orbit_temp2 = orbit_temp1;
             }
 
-            orbit_temp2 = orbit_temp1;
+            //delete all what have been allocated
+
+            delete exponents_temp;
+            delete coefficients_temp;
+
         }
     }
 }
@@ -520,4 +556,16 @@ void atomic_orbital_name_print(atomic_orbital * atom)
     strcpy(strtemp,atom->name);
     strcat(strtemp,temp->label);
     strcpy(temp->label,strtemp);
+}
+
+double double_factorial(unsigned int n)
+{
+    if (n == 0 || n == 1) 
+        return 1; 
+    return n * double_factorial(n-2);  
+}
+
+double normalize(double alpha, int ax, int ay, int az)
+{
+    return pow(2 * alpha / M_PI, 0.75) * pow(4 * alpha, (double) (ax + ay + az) / 2.0) / sqrt(double_factorial(2 * ax - 1) * double_factorial(2 * ay - 1) * double_factorial(2 * az - 1));
 }

@@ -60,6 +60,7 @@ int main(int argc, char const *argv[])
             strcat(basis,reader);
             strcat(basis,".txt");
             FILE * basisfile = fopen(basis,"r");
+            basis_HEAD = atomic_orbital_calloc();
             basis_fscanf(basisfile,basis_HEAD);
         }
 
