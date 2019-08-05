@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
         }
     }
 
-    if(strcmp(input,"NULL"))
+    if(strcmp(input,"NULL")==0)
     {
         printf("NO INPUT FILE!\n");
 
@@ -57,7 +57,7 @@ int main(int argc, char const *argv[])
 
     while(fscanf(inputfile,"%s",reader)!=EOF)
     {
-        if(strcmp(reader,"&basis")==0)
+        if(strcmp(reader,"&BASIS")==0)
         {
             fscanf(inputfile,"%s",reader);
             strcat(basis,reader);
