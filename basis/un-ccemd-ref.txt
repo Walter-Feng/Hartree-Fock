@@ -5,34 +5,6 @@ Name: H
 L= 0
 total= 1
 Exponents:
-1.0160381305E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3209845940E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5920018604E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.8608329347E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
 1.9850407436E+03
 Coefficients:
 1.0000000
@@ -40,28 +12,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.2575191754E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2064002809E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5049166152E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.8475195738E-01
+1.0160381305E+03
 Coefficients:
 1.0000000
 
@@ -75,14 +26,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.4594511546E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.8678400297E-02
+1.8608329347E+02
 Coefficients:
 1.0000000
 
@@ -96,35 +40,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2064002809E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3209845940E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.4594511546E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2575191754E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.2805489445E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8379856508E+00
+3.8475195738E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.5873130539E-01
+1.5920018604E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-3.7097381621E+00
+6.8678400297E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-4.4670425550E-01
+3.5049166152E-02
 Coefficients:
 1.0000000
 
@@ -138,7 +110,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7097381621E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8379856508E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.9669828380E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.4670425550E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.5873130539E-01
 Coefficients:
 1.0000000
 
@@ -170,34 +170,6 @@ Name: He
 L= 0
 total= 1
 Exponents:
-1.0160381305E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3209845940E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5920018604E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.8608329347E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
 1.9850407436E+03
 Coefficients:
 1.0000000
@@ -205,28 +177,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.2575191754E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2064002809E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5049166152E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.8475195738E-01
+1.0160381305E+03
 Coefficients:
 1.0000000
 
@@ -240,14 +191,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.4594511546E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.8678400297E-02
+1.8608329347E+02
 Coefficients:
 1.0000000
 
@@ -261,35 +205,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2064002809E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3209845940E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.4594511546E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2575191754E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.2805489445E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8379856508E+00
+3.8475195738E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.5873130539E-01
+1.5920018604E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-3.7097381621E+00
+6.8678400297E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-4.4670425550E-01
+3.5049166152E-02
 Coefficients:
 1.0000000
 
@@ -303,7 +275,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7097381621E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8379856508E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.9669828380E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.4670425550E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.5873130539E-01
 Coefficients:
 1.0000000
 
@@ -335,42 +335,7 @@ Name: Li
 L= 0
 total= 1
 Exponents:
-1.0926827622E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.1531290248E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3463154130E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5884319079E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9031632816E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2870181148E+00
+4.8704863236E+03
 Coefficients:
 1.0000000
 
@@ -384,21 +349,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.6928684679E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2496185482E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.8644902862E-01
+1.0926827622E+03
 Coefficients:
 1.0000000
 
@@ -412,28 +363,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-4.8704863236E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5318236845E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.8927201663E-03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4899858224E-02
+1.9031632816E+02
 Coefficients:
 1.0000000
 
@@ -447,7 +377,77 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2496185482E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3463154130E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5318236845E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2870181148E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3634760814E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3.8644902862E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.5884319079E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.4899858224E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.6928684679E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1531290248E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.8927201663E-03
 Coefficients:
 1.0000000
 
@@ -461,21 +461,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.5367454783E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-1.6095071231E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.1569433418E-02
+6.5595316385E+00
 Coefficients:
 1.0000000
 
@@ -489,21 +475,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-3.4098183844E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7687475537E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-6.5595316385E+00
+1.5367454783E+00
 Coefficients:
 1.0000000
 
@@ -517,28 +489,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.4098183844E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.6095071231E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 7.6681585584E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.0577023667E-01
+3.7687475537E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.9425423986E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.5383574250E-01
+2.1569433418E-02
 Coefficients:
 1.0000000
 
@@ -552,6 +531,27 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+3.5383574250E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.9425423986E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.0577023667E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.5628977026E-02
 Coefficients:
 1.0000000
@@ -559,14 +559,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-2.2061555560E-01
+2.7871294897E-01
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-2.7871294897E-01
+2.2061555560E-01
 Coefficients:
 1.0000000
 
@@ -577,42 +577,7 @@ Name: Be
 L= 0
 total= 1
 Exponents:
-1.0926827622E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.1531290248E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3463154130E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5884319079E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9031632816E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2870181148E+00
+4.8704863236E+03
 Coefficients:
 1.0000000
 
@@ -626,21 +591,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.6928684679E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2496185482E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.8644902862E-01
+1.0926827622E+03
 Coefficients:
 1.0000000
 
@@ -654,28 +605,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-4.8704863236E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5318236845E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.8927201663E-03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4899858224E-02
+1.9031632816E+02
 Coefficients:
 1.0000000
 
@@ -689,7 +619,77 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2496185482E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3463154130E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5318236845E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2870181148E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3634760814E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+3.8644902862E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.5884319079E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.4899858224E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.6928684679E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1531290248E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.8927201663E-03
 Coefficients:
 1.0000000
 
@@ -703,21 +703,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.5367454783E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-1.6095071231E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.1569433418E-02
+6.5595316385E+00
 Coefficients:
 1.0000000
 
@@ -731,21 +717,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-3.4098183844E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7687475537E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-6.5595316385E+00
+1.5367454783E+00
 Coefficients:
 1.0000000
 
@@ -759,28 +731,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.4098183844E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.6095071231E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 7.6681585584E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.0577023667E-01
+3.7687475537E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.9425423986E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.5383574250E-01
+2.1569433418E-02
 Coefficients:
 1.0000000
 
@@ -794,14 +773,28 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-6.5628977026E-02
+3.5383574250E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.2061555560E-01
+1.9425423986E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.0577023667E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+6.5628977026E-02
 Coefficients:
 1.0000000
 
@@ -812,6 +805,13 @@ Exponents:
 Coefficients:
 1.0000000
 
+L= 3
+total= 1
+Exponents:
+2.2061555560E-01
+Coefficients:
+1.0000000
+
 
 N: 5
 Name: B
@@ -819,14 +819,7 @@ Name: B
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -840,21 +833,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -868,28 +847,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -903,21 +861,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -931,63 +875,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -1001,7 +945,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -1015,35 +987,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -1057,14 +1029,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -1072,6 +1065,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -1089,14 +1089,7 @@ Name: C
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -1110,21 +1103,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -1138,28 +1117,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -1173,21 +1131,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -1201,63 +1145,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -1271,7 +1215,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -1285,35 +1257,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -1327,14 +1299,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -1342,6 +1335,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -1359,14 +1359,7 @@ Name: N
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -1380,21 +1373,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -1408,28 +1387,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -1443,21 +1401,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -1471,63 +1415,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -1541,7 +1485,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -1555,35 +1527,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -1597,14 +1569,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -1612,6 +1605,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -1629,14 +1629,7 @@ Name: O
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -1650,21 +1643,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -1678,28 +1657,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -1713,21 +1671,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -1741,63 +1685,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -1811,7 +1755,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -1825,35 +1797,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -1867,14 +1839,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -1882,6 +1875,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -1899,14 +1899,7 @@ Name: F
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -1920,21 +1913,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -1948,28 +1927,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -1983,21 +1941,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -2011,63 +1955,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -2081,7 +2025,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -2095,35 +2067,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -2137,14 +2109,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -2152,6 +2145,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -2169,14 +2169,7 @@ Name: Ne
 L= 0
 total= 1
 Exponents:
-1.1472496527E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3786419500E+01
+2.9359875724E+04
 Coefficients:
 1.0000000
 
@@ -2190,21 +2183,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.6232934107E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9589090368E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.3295610951E+00
+6.5868227465E+03
 Coefficients:
 1.0000000
 
@@ -2218,28 +2197,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9359875724E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.3346496656E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.5522023934E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.9122412945E-01
+1.1472496527E+03
 Coefficients:
 1.0000000
 
@@ -2253,21 +2211,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.6444156872E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5868227465E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.9512000678E-02
+1.9589090368E+02
 Coefficients:
 1.0000000
 
@@ -2281,63 +2225,63 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.3346496656E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3786419500E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.6444156872E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.3295610951E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.5752580570E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8294641646E+01
+3.9122412945E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9104156173E+00
+1.6232934107E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0142202645E-01
+6.9512000678E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6671455432E-02
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.7174569603E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.0715724075E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.2415035253E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6745801960E-02
+3.5522023934E-02
 Coefficients:
 1.0000000
 
@@ -2351,7 +2295,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+3.7174569603E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8294641646E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.6340330283E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.0715724075E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9104156173E+00
 Coefficients:
 1.0000000
 
@@ -2365,35 +2337,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.2415035253E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0142202645E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5133856348E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.1968791564E+00
+4.6745801960E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-2.0835700875E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.2057578968E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-3.3756274549E-01
+2.6671455432E-02
 Coefficients:
 1.0000000
 
@@ -2407,14 +2379,35 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
+2.2057578968E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1968791564E+00
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
 6.2550873740E-01
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-1.4744706471E+00
+3.3756274549E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.0835700875E-01
 Coefficients:
 1.0000000
 
@@ -2422,6 +2415,13 @@ L= 3
 total= 1
 Exponents:
 1.8627610419E+00
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+1.4744706471E+00
 Coefficients:
 1.0000000
 
@@ -2439,21 +2439,7 @@ Name: Na
 L= 0
 total= 1
 Exponents:
-1.1105032195E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.1484610547E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3203466950E+01
+2.9058192043E+04
 Coefficients:
 1.0000000
 
@@ -2467,28 +2453,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.5653376377E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.8829144097E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2431675172E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.6725823728E-02
+6.4571806939E+03
 Coefficients:
 1.0000000
 
@@ -2502,21 +2467,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9058192043E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.1884071733E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.7925016269E-01
+1.1105032195E+03
 Coefficients:
 1.0000000
 
@@ -2530,28 +2481,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.4377650897E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.9018238943E-03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4375470190E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4571806939E+03
+1.8829144097E+02
 Coefficients:
 1.0000000
 
@@ -2565,56 +2495,84 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.1884071733E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3203466950E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.4377650897E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2431675172E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.2064495137E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.2715453065E+01
+3.7925016269E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.5653376377E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.4375470190E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.6725823728E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1484610547E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.9018238943E-03
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-1.3387016945E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-1.4010487120E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.6942757392E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.8134939995E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.9663684575E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.9279400323E-02
+9.5849462932E+01
 Coefficients:
 1.0000000
 
@@ -2628,7 +2586,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+2.6942757392E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2715453065E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 5.9962577952E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.8134939995E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.3387016945E+00
 Coefficients:
 1.0000000
 
@@ -2642,6 +2628,20 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+2.9663684575E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.4010487120E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 6.8843152311E-02
 Coefficients:
 1.0000000
@@ -2649,28 +2649,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-9.5849462932E+01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-1.1702356434E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-1.4916054473E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.1756271696E-01
+3.9279400323E-02
 Coefficients:
 1.0000000
 
@@ -2684,14 +2663,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.1811625951E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-7.1982311003E-02
+1.4916054473E+00
 Coefficients:
 1.0000000
 
@@ -2699,6 +2671,34 @@ L= 2
 total= 1
 Exponents:
 8.0713941784E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.1811625951E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.1756271696E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1702356434E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7.1982311003E-02
 Coefficients:
 1.0000000
 
@@ -2716,21 +2716,7 @@ Name: Mg
 L= 0
 total= 1
 Exponents:
-1.1105032195E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.1484610547E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3203466950E+01
+2.9058192043E+04
 Coefficients:
 1.0000000
 
@@ -2744,28 +2730,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.5653376377E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.8829144097E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2431675172E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.6725823728E-02
+6.4571806939E+03
 Coefficients:
 1.0000000
 
@@ -2779,21 +2744,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.9058192043E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.1884071733E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.7925016269E-01
+1.1105032195E+03
 Coefficients:
 1.0000000
 
@@ -2807,28 +2758,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-5.4377650897E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.9018238943E-03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4375470190E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.4571806939E+03
+1.8829144097E+02
 Coefficients:
 1.0000000
 
@@ -2842,56 +2772,84 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.1884071733E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3203466950E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.4377650897E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2431675172E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.2064495137E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.2715453065E+01
+3.7925016269E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.5653376377E-01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+6.4375470190E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.6725823728E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1484610547E-02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.9018238943E-03
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-1.3387016945E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-1.4010487120E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.6942757392E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.8134939995E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-2.9663684575E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-3.9279400323E-02
+9.5849462932E+01
 Coefficients:
 1.0000000
 
@@ -2905,7 +2863,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+2.6942757392E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2715453065E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 5.9962577952E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.8134939995E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.3387016945E+00
 Coefficients:
 1.0000000
 
@@ -2919,6 +2905,20 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+2.9663684575E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.4010487120E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 6.8843152311E-02
 Coefficients:
 1.0000000
@@ -2926,28 +2926,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-9.5849462932E+01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-1.1702356434E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-1.4916054473E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.1756271696E-01
+3.9279400323E-02
 Coefficients:
 1.0000000
 
@@ -2961,14 +2940,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.1811625951E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-7.1982311003E-02
+1.4916054473E+00
 Coefficients:
 1.0000000
 
@@ -2976,6 +2948,34 @@ L= 2
 total= 1
 Exponents:
 8.0713941784E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+4.1811625951E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.1756271696E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.1702356434E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+7.1982311003E-02
 Coefficients:
 1.0000000
 
@@ -2993,70 +2993,7 @@ Name: Al
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -3070,28 +3007,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -3105,7 +3021,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -3119,42 +3056,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -3168,28 +3133,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -3203,7 +3147,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -3217,28 +3189,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -3252,14 +3231,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -3270,17 +3242,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -3294,7 +3287,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 
@@ -3312,70 +3312,7 @@ Name: Si
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -3389,28 +3326,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -3424,7 +3340,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -3438,42 +3375,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -3487,28 +3452,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -3522,7 +3466,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -3536,28 +3508,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -3571,14 +3550,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -3589,17 +3561,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -3613,7 +3606,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 
@@ -3631,70 +3631,7 @@ Name: P
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -3708,28 +3645,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -3743,7 +3659,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -3757,42 +3694,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -3806,28 +3771,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -3841,7 +3785,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -3855,28 +3827,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -3890,14 +3869,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -3908,17 +3880,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -3932,7 +3925,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 
@@ -3950,70 +3950,7 @@ Name: S
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -4027,28 +3964,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -4062,7 +3978,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -4076,42 +4013,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -4125,28 +4090,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -4160,7 +4104,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -4174,28 +4146,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -4209,14 +4188,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -4227,17 +4199,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -4251,7 +4244,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 
@@ -4269,70 +4269,7 @@ Name: Cl
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -4346,28 +4283,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -4381,7 +4297,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -4395,42 +4332,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -4444,28 +4409,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -4479,7 +4423,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -4493,28 +4465,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -4528,14 +4507,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -4546,17 +4518,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -4570,7 +4563,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 
@@ -4588,70 +4588,7 @@ Name: Ar
 L= 0
 total= 1
 Exponents:
-1.1238854161E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.3375810287E+01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.4517301770E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5835073090E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.5883367988E+04
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-1.9108777572E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.2646017267E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.7316149452E+03
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-2.8249835984E-02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-3.2477877610E+01
+7.1477317914E+04
 Coefficients:
 1.0000000
 
@@ -4665,28 +4602,7 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-3.8504162891E-01
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-4.6315913828E+02
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-5.5177416932E+00
-Coefficients:
-1.0000000
-
-L= 0
-total= 1
-Exponents:
-6.5740160171E-02
+1.5883367988E+04
 Coefficients:
 1.0000000
 
@@ -4700,7 +4616,28 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-7.1477317914E+04
+2.7316149452E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.1238854161E+03
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+4.6315913828E+02
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.9108777572E+02
 Coefficients:
 1.0000000
 
@@ -4714,42 +4651,70 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
+3.2477877610E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+1.3375810287E+01
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+5.5177416932E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
+2.2646017267E+00
+Coefficients:
+1.0000000
+
+L= 0
+total= 1
+Exponents:
 9.3287925167E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.7260227677E+02
+3.8504162891E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.8867486842E+01
+1.5835073090E-01
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-1.9540854211E+00
+6.5740160171E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.0210439853E-01
+2.8249835984E-02
 Coefficients:
 1.0000000
 
-L= 1
+L= 0
 total= 1
 Exponents:
-2.6724135569E-02
+1.4517301770E-02
 Coefficients:
 1.0000000
 
@@ -4763,28 +4728,7 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.0119443000E+01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.1640399009E+00
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.3106059481E-01
-Coefficients:
-1.0000000
-
-L= 1
-total= 1
-Exponents:
-4.6806332392E-02
+1.7260227677E+02
 Coefficients:
 1.0000000
 
@@ -4798,7 +4742,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.0119443000E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.8867486842E+01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 8.8645929392E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+4.1640399009E+00
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.9540854211E+00
 Coefficients:
 1.0000000
 
@@ -4812,28 +4784,35 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
+4.3106059481E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
+2.0210439853E-01
+Coefficients:
+1.0000000
+
+L= 1
+total= 1
+Exponents:
 9.5749614772E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.3931001032E-01
+4.6806332392E-02
 Coefficients:
 1.0000000
 
-L= 2
+L= 1
 total= 1
 Exponents:
-1.7756728863E+00
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-2.5899625017E-01
+2.6724135569E-02
 Coefficients:
 1.0000000
 
@@ -4847,14 +4826,7 @@ Coefficients:
 L= 2
 total= 1
 Exponents:
-4.9774402920E-01
-Coefficients:
-1.0000000
-
-L= 2
-total= 1
-Exponents:
-8.5690916570E-02
+1.7756728863E+00
 Coefficients:
 1.0000000
 
@@ -4865,17 +4837,38 @@ Exponents:
 Coefficients:
 1.0000000
 
-L= 3
+L= 2
 total= 1
 Exponents:
-2.0483371212E-01
+4.9774402920E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+2.5899625017E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+1.3931001032E-01
+Coefficients:
+1.0000000
+
+L= 2
+total= 1
+Exponents:
+8.5690916570E-02
 Coefficients:
 1.0000000
 
 L= 3
 total= 1
 Exponents:
-3.0928737168E-01
+7.7963362103E-01
 Coefficients:
 1.0000000
 
@@ -4889,7 +4882,14 @@ Coefficients:
 L= 3
 total= 1
 Exponents:
-7.7963362103E-01
+3.0928737168E-01
+Coefficients:
+1.0000000
+
+L= 3
+total= 1
+Exponents:
+2.0483371212E-01
 Coefficients:
 1.0000000
 

@@ -5,7 +5,7 @@ Name: Si
 L= 0
 total= 1
 Exponents:
-0.0931000
+1.2220000
 Coefficients:
 1.0000000
 
@@ -19,21 +19,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.2220000
+0.0931000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0237
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0885000
+2.5800000
 Coefficients:
 1.0000000
 
@@ -47,9 +40,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-2.5800000
+0.0885000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0237
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -65,7 +65,7 @@ Name: P
 L= 0
 total= 1
 Exponents:
-0.1211000
+1.5160000
 Coefficients:
 1.0000000
 
@@ -79,21 +79,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.5160000
+0.1211000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0298
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1190000
+3.7050000
 Coefficients:
 1.0000000
 
@@ -107,9 +100,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-3.7050000
+0.1190000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0298
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -125,7 +125,7 @@ Name: S
 L= 0
 total= 1
 Exponents:
-0.1438000
+1.8500000
 Coefficients:
 1.0000000
 
@@ -139,21 +139,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.8500000
+0.1438000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0347
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1379000
+4.9450000
 Coefficients:
 1.0000000
 
@@ -167,9 +160,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-4.9450000
+0.1379000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0347
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -185,7 +185,7 @@ Name: Cl
 L= 0
 total= 1
 Exponents:
-0.1631000
+2.2310000
 Coefficients:
 1.0000000
 
@@ -199,21 +199,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-2.2310000
+0.1631000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0467
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1819000
+6.2960000
 Coefficients:
 1.0000000
 
@@ -227,9 +220,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-6.2960000
+0.1819000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0467
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -245,7 +245,7 @@ Name: Ge
 L= 0
 total= 1
 Exponents:
-0.1162000
+0.8935000
 Coefficients:
 1.0000000
 
@@ -259,21 +259,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.8935000
+0.1162000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0209
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0798000
+1.8770000
 Coefficients:
 1.0000000
 
@@ -287,9 +280,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.8770000
+0.0798000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0209
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -305,7 +305,7 @@ Name: As
 L= 0
 total= 1
 Exponents:
-0.1407000
+0.9635000
 Coefficients:
 1.0000000
 
@@ -319,21 +319,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.9635000
+0.1407000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0263
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1020000
+2.0840000
 Coefficients:
 1.0000000
 
@@ -347,9 +340,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-2.0840000
+0.1020000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0263
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -365,7 +365,7 @@ Name: Se
 L= 0
 total= 1
 Exponents:
-0.1660000
+1.0330000
 Coefficients:
 1.0000000
 
@@ -379,21 +379,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.0330000
+0.1660000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0328
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1186000
+2.3660000
 Coefficients:
 1.0000000
 
@@ -407,9 +400,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-2.3660000
+0.1186000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0328
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -425,7 +425,7 @@ Name: Br
 L= 0
 total= 1
 Exponents:
-0.1905000
+1.1590000
 Coefficients:
 1.0000000
 
@@ -439,21 +439,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-1.1590000
+0.1905000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0376
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1377000
+2.6910000
 Coefficients:
 1.0000000
 
@@ -467,9 +460,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-2.6910000
+0.1377000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0376
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -485,7 +485,7 @@ Name: Sn
 L= 0
 total= 1
 Exponents:
-0.0926000
+0.5418000
 Coefficients:
 1.0000000
 
@@ -499,21 +499,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.5418000
+0.0926000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0174
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0630000
+1.0470000
 Coefficients:
 1.0000000
 
@@ -527,9 +520,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.0470000
+0.0630000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0174
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -545,7 +545,7 @@ Name: Sb
 L= 0
 total= 1
 Exponents:
-0.1078000
+0.5863000
 Coefficients:
 1.0000000
 
@@ -559,21 +559,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.5863000
+0.1078000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0220
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0800000
+1.1110000
 Coefficients:
 1.0000000
 
@@ -587,9 +580,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.1110000
+0.0800000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0220
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -605,7 +605,7 @@ Name: Te
 L= 0
 total= 1
 Exponents:
-0.1165000
+0.6938000
 Coefficients:
 1.0000000
 
@@ -619,21 +619,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.6938000
+0.1165000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0274
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0911000
+1.2310000
 Coefficients:
 1.0000000
 
@@ -647,9 +640,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.2310000
+0.0911000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0274
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -665,7 +665,7 @@ Name: I
 L= 0
 total= 1
 Exponents:
-0.1336000
+0.7242000
 Coefficients:
 1.0000000
 
@@ -679,21 +679,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.7242000
+0.1336000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0308
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.1053000
+1.2900000
 Coefficients:
 1.0000000
 
@@ -707,9 +700,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-1.2900000
+0.1053000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0308
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -725,7 +725,7 @@ Name: Pb
 L= 0
 total= 1
 Exponents:
-0.0944000
+0.5135000
 Coefficients:
 1.0000000
 
@@ -739,21 +739,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.5135000
+0.0944000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0168
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0598000
+0.8748000
 Coefficients:
 1.0000000
 
@@ -767,9 +760,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-0.8748000
+0.0598000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0168
+Coefficients:
+1.0
 
 L= 2
 total= 1
@@ -785,7 +785,7 @@ Name: Bi
 L= 0
 total= 1
 Exponents:
-0.1050000
+0.5744000
 Coefficients:
 1.0000000
 
@@ -799,21 +799,14 @@ Coefficients:
 L= 0
 total= 1
 Exponents:
-0.5744000
+0.1050000
 Coefficients:
 1.0000000
 
 L= 1
 total= 1
 Exponents:
-0.0204
-Coefficients:
-1.0
-
-L= 1
-total= 1
-Exponents:
-0.0745000
+0.9105000
 Coefficients:
 1.0000000
 
@@ -827,9 +820,16 @@ Coefficients:
 L= 1
 total= 1
 Exponents:
-0.9105000
+0.0745000
 Coefficients:
 1.0000000
+
+L= 1
+total= 1
+Exponents:
+0.0204
+Coefficients:
+1.0
 
 L= 2
 total= 1
