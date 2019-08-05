@@ -169,6 +169,7 @@ double nuclei_repulsion(atomic_orbital * atomlist_HEAD)
         distance = sqrt((temp1->cartesian[0] - temp2->cartesian[0]) * (temp1->cartesian[0] - temp2->cartesian[0]) + (temp1->cartesian[1] - temp2->cartesian[1]) * (temp1->cartesian[1] - temp2->cartesian[1]) + (temp1->cartesian[2] - temp2->cartesian[2]) * (temp1->cartesian[2] - temp2->cartesian[2]));
 
     result += (double) temp1->N * (double) temp2->N / distance;
+    }
 
     return result;
 }
