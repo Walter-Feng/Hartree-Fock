@@ -327,9 +327,11 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
 
     orbital *orbit_temp1,*orbit_temp2, *all_orbit, * all_orbit_head;
 
-    char * str;
+    char str[60];
 
-    
+    // temporary storing of the atomic number
+    int N_temp;
+
     //temporary storing of angular quantum number l
     int l_temp;
 
@@ -387,7 +389,10 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
             n_counter = 0;
             l_temp = -1;
             l_ref = -1;
-            ALL_ORBITHEADFLAG = 0;         
+            ALL_ORBITHEADFLAG = 0;     
+
+            //scan the atomic number
+            fscanf(basis,"%d",&N_temp);    
         }
 
         //Reading the name of the atom
