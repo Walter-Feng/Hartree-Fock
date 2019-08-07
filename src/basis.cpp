@@ -392,7 +392,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
             ALL_ORBITHEADFLAG = 0;     
 
             //scan the atomic number
-            fscanf(basis,"%d",&N_temp);    
+            fscanf(basis,"%d",&temp1->N);
         }
 
         //Reading the name of the atom

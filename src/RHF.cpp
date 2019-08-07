@@ -1,6 +1,6 @@
 #include "../include/RHF.h"
 
-double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix * coef, int length, int el_num)
+double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, gsl_matrix * coef, int length, int el_num)
 {
     double result;
 
@@ -10,9 +10,21 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix 
 
     orbital * orbital_temp;
 
+    atomic_orbital * atom_temp;
+
     coef_vector_temp = gsl_vector_calloc(length);
 
-    result =orbital_kinetic_energy(a,b);
+    result = orbital_kinetic_energy(a,b);
+
+    atom_temp = atom_HEAD;
+    
+    while(atom_temp->NEXT != NULL)
+    {
+        result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+        atom_temp = atom_temp->NEXT;
+    }
+
+    result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
 
     for(i=0;i<el_num/2;i++)
     {
@@ -36,7 +48,7 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix 
     return result;
 }
 
-void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, int length, int el_num)
+void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num)
 {
     orbital * temp1, * temp2;
 
@@ -47,28 +59,28 @@ void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, int lengt
 
     temp1 = HEAD;
     temp2 = HEAD;
-    gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,coef,length,el_num));
+    gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,atom_HEAD,coef,length,el_num));
 
     for(i=1;i<length;i++)
     {
         temp2 = temp2->NEXT;
-        gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,coef,length,el_num));
+        gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,atom_HEAD,coef,length,el_num));
     }
 
     for(j=1;j<length;j++)
     {
         temp2 = HEAD;
-        gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,coef,length,el_num));
+        gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,atom_HEAD,coef,length,el_num));
 
         for(i=1;i<length;i++)
         {
             temp2 = temp2->NEXT;
-            gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,coef,length,el_num));
+            gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,atom_HEAD,coef,length,el_num));
         }
     }
 }
 
-int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int length, int el_num, int iteration_max, double errmax, int countmax)
+int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax)
 {
     gsl_matrix * F, * S;
 
@@ -89,7 +101,7 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int le
 
     for(i=0;i<iteration_max;i++)
     {
-        fock_matrix(F,coef,HEAD,length,el_num);
+        fock_matrix(F,coef,HEAD,atom_HEAD,length,el_num);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
 
         energy_temp = 0;

@@ -1,4 +1,4 @@
-&BASIS 3_21g
+&BASIS 3-21g
 
 &SCF
     &ERR 1e-6

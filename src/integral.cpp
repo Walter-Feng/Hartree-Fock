@@ -122,21 +122,61 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
     if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
 
     //Provide recurrence relation
-    else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + ax/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- ax /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
+    else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + (ax - 1)/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- (ax - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
-    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + ay/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- ay /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (ay - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- (ay - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
-    else if(az > 0) return ((P[2]-ra[2])*JIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + az/2.0/alpha * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m)- az /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + bz/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(az > 0) return ((P[2]-ra[2])*JIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + (az - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m)- (az - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + bz/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
-    else if(bx > 0) return ((P[0]-rb[0])*JIntegral(ra,rb,ax,ay,az,bx-1,by,bz,alpha,beta,m+1) + bx/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m)- bx /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m+1) + ax/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
+    else if(bx > 0) return ((P[0]-rb[0])*JIntegral(ra,rb,ax,ay,az,bx-1,by,bz,alpha,beta,m+1) + (bx - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m)- (bx - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m+1) + ax/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
-    else if(by > 0) return ((P[1]-rb[1])*JIntegral(ra,rb,ax,ay,az,bx,by-1,bz,alpha,beta,m+1) + by/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m)- by /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m+1) + ay/2.0 /xi * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
+    else if(by > 0) return ((P[1]-rb[1])*JIntegral(ra,rb,ax,ay,az,bx,by-1,bz,alpha,beta,m+1) + (by - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m)- (by - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m+1) + ay/2.0 /xi * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
 
-    else if(bz > 0) return ((P[2]-rb[2])*JIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + bz/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m)- bz /2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m+1) + az/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(bz > 0) return ((P[2]-rb[2])*JIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + (bz-1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m)- (bz-1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m+1) + az/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
     //Set the starting point
     else return 2.0 * pow(M_PI,2.5) / alpha / beta / sqrt(zeta) *Boys(xi * AB,m);
 }
+
+double ZIntegral(double ra[3], double rb[3], double rz[3], int ax, int ay, int az, int bx, int by, int bz, double alpha, double beta, int m)
+{
+    double zeta = alpha + beta;
+    double xi = alpha * beta / zeta;
+    double P[3];
+    double AB,PC;
+
+    int i;
+
+    for(i=0;i<3;i++)
+        P[i] = (alpha * ra[i] + beta * rb[i]) / zeta;
+
+    AB = 0;
+    for(i=0;i<3;i++)
+        AB += (ra[i]-rb[i])*(ra[i]-rb[i]);
+
+    PC = 0;
+    for(i=0;i<3;i++)
+        PC += (P[i] - rz[i]) * (P[i] - rz[i]);
+
+
+
+    if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
+
+    else if(ax > 0) return beta/(alpha+beta) * (rb[0] - ra[0]) * ZIntegral(ra,rb,rz,ax-1,ay,az,bx,by,bz,alpha,beta,m) + (rz[0] - ra[0] - beta/(alpha + beta) * (rb[0] - ra[0])) * ZIntegral(ra,rb,rz,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + (double) (ax-1) / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax-2,ay,az,bx,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax-2,ay,az,bx,by,bz,alpha,beta,m+1)) + (double) bx / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax-1,ay,az,bx-1,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax-1,ay,az,bx-1,by,bz,alpha,beta,m + 1));
+
+    else if(ay > 0) return beta/(alpha+beta) * (rb[1] - ra[1]) * ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by,bz,alpha,beta,m) + (rz[1] - ra[1] - beta/(alpha + beta) * (rb[1] - ra[1])) * ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (double) (ay-1) / 2.0 /(alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay-2,az,bx,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay-2,az,bx,by,bz,alpha,beta,m+1)) + (double) by / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by-1,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by-1,bz,alpha,beta,m + 1));
+
+    else if(az > 0) return beta/(alpha+beta) * (rb[2] - ra[2]) * ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz,alpha,beta,m) + (rz[2] - ra[2] - beta/(alpha + beta) * (rb[2] - ra[2])) * ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + (double) (az-1) / 2.0 /(alpha + beta) *(ZIntegral(ra,rb,rz,ax,ay,az-2,bx,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az-2,bx,by,bz,alpha,beta,m+1)) + (double) bz / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m + 1));
+
+    else if(bx > 0) return alpha/(alpha+beta) * (ra[0] - rb[0]) * ZIntegral(ra,rb,rz,ax,ay,az,bx-1,by,bz,alpha,beta,m) + (rz[0] - rb[0] - alpha/(alpha + beta) * (ra[0] - rb[0])) * ZIntegral(ra,rb,rz,ax,ay,az,bx-1,by,bz,alpha,beta,m+1) + (double) (bx-1) / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay,az,bx-2,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az,bx-2,by,bz,alpha,beta,m+1)) + (double) ax / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax-1,ay,az,bx-1,by,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax-1,ay,az,bx-1,by,bz,alpha,beta,m + 1));
+
+    else if(by > 0) return alpha/(alpha+beta) * (ra[1] - rb[1]) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by-1,bz,alpha,beta,m) + (rz[1] - rb[1] - alpha/(alpha + beta) * (ra[1] - rb[1])) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by-1,bz,alpha,beta,m+1) + (double) (by-1) / 2.0 /(alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay,az,bx,by-2,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az,bx,by-2,bz,alpha,beta,m+1)) + (double) ay / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by-1,bz,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay-1,az,bx,by-1,bz,alpha,beta,m + 1));
+
+    else if(bz > 0) return alpha/(alpha+beta) * (ra[2] - rb[2]) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-1,alpha,beta,m) + (rz[2] - rb[2] - alpha/(alpha + beta) * (ra[2] - rb[2])) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + (double) (bz-1) / 2.0 /(alpha + beta) *(ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-2,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-2,alpha,beta,m+1)) + (double) az / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m + 1));
+
+    else return 2 * M_PI / (alpha + beta) * exp(-alpha * beta /zeta * AB) * Boys((alpha * beta) * PC,m);
+}
+
 
 //allocate memory for struct gaussian_chain
 gaussian_chain * gaussian_chain_calloc()
@@ -294,6 +334,11 @@ double gaussian_chain_JIntegral(gaussian_chain * a, gaussian_chain * b)
     return a->coefficient * b->coefficient *JIntegral(a->R,b->R,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent,0);
 }
 
+double gaussian_chain_ZIntegral(gaussian_chain * a, gaussian_chain * b, double rz[3])
+{
+    return a->coefficient * b->coefficient *ZIntegral(a->R,b->R,rz,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent,0);
+}
+
 //enabling overlap integrals for gaussian_chain format, calculating the whole chain
 double gaussian_chain_full_SIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
 {
@@ -361,6 +406,76 @@ double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b
     }
 
     result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+    return result;
+}
+
+double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_temp, * b_temp;
+    
+    a_temp = a_HEAD;
+
+    while(a_temp->NEXT != NULL)
+    {
+        b_temp = b_HEAD;
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        a_temp = a_temp->NEXT;
+    }
+
+    b_temp = b_HEAD;
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_JIntegral(a_temp,b_temp);
+        
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+    return result;
+}
+
+double gaussian_chain_full_ZIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD, double rz[3])
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_temp, * b_temp;
+    
+    a_temp = a_HEAD;
+
+    while(a_temp->NEXT != NULL)
+    {
+        b_temp = b_HEAD;
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+        a_temp = a_temp->NEXT;
+    }
+
+    b_temp = b_HEAD;
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+        
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
 
     return result;
 }
@@ -441,6 +556,46 @@ double orbital_JIntegral(orbital * a, orbital * b)
     }
 
     result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+    return result;
+}
+
+double orbital_ZIntegral(orbital * a, orbital * b, double rz[3])
+{
+    double result;
+
+    result = 0;
+    gaussian_chain * a_head, * b_head, * a_temp, * b_temp;
+    a_head = gaussian_chain_calloc();
+    b_head = gaussian_chain_calloc();
+
+    single_electron_transform(a_head,a);
+    single_electron_transform(b_head,b);
+
+    a_temp = a_head;
+
+    while(a_temp->NEXT != NULL)
+    {
+        b_temp = b_head;
+        while(b_temp->NEXT != NULL)
+        {
+            result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+
+            b_temp = b_temp->NEXT;
+        }
+        result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+        a_temp = a_temp->NEXT;
+    }
+
+    b_temp = b_head;
+    while(b_temp->NEXT != NULL)
+    {
+        result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
+        
+        b_temp = b_temp->NEXT;
+    }
+
+    result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
 
     return result;
 }

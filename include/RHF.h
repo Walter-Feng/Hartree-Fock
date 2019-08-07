@@ -16,9 +16,9 @@
 #include <gsl/gsl_eigen.h>
 
 
-double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, gsl_matrix * coef, int length, int el_num);
+double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, gsl_matrix * coef, int length, int el_num);
 
-void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, int length, int el_num);
+void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num);
 
 int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int length, int el_num, int iteration_max, double errmax, int countmax);
 

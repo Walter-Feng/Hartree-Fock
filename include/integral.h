@@ -21,6 +21,7 @@ F-F (a|f_{12}|b|f_{23}|c)
 J-F (a|r_{12}^{-1}|b|f_{23}|c)
 X   (ab|[\hat{t}_1,r_{12}]|c)
 Y   (ab|[\hat{t}_1,r_{12}^{-1}])
+Z   (a|\frac{1}{r_{1Z}}|b)
 
 
  */
@@ -61,10 +62,14 @@ double tranformation_coefficient(int a[3], int b[3], int p[3], double PA[3], dou
 
 double SIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta);
 double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int by, int bz, double alpha,double beta, int m);
+double ZIntegral(double ra[3], double rb[3], double rz[3], int ax, int ay, int az, int bx, int by, int bz, double alpha, double beta, int m);
 
 double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b);
 double gaussian_chain_JIntegral(gaussian_chain * a, gaussian_chain * b);
+double gaussian_chain_ZIntegral(gaussian_chain * a, gaussian_chain * b, double rz[3]);
+double gaussian_chain_full_SIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD);
 double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD);
+double gaussian_chain_full_ZIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD, double rz[3]);
 
 void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key);
 void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key);
@@ -77,6 +82,7 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b);
 
 double orbital_SIntegral(orbital * a,orbital * b);
 double orbital_JIntegral(orbital * a,orbital * b);
+double orbital_ZIntegral(orbital * a,orbital * b, double rz[3]);
 //double orbital_GIntegral(orbital *,orbital *);
 //double orbital_FIntegral(orbital *,orbital *);
 //double orbital_GJIntegral(orbital *,orbital *);
