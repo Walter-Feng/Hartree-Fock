@@ -175,7 +175,7 @@ int main(int argc, char const *argv[])
     for(i=0;i<length;i++)
         gsl_matrix_set(coef,i,i,1.0);
     
-    RHF_SCF_print(energy,coef,orbitals,length,el_num,SCF_MAX,ERR_MAX,COUNTER);
+    RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER);
 
     printf("\n\n");
 

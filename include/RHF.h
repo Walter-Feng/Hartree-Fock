@@ -20,6 +20,6 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbi
 
 void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num);
 
-int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, int length, int el_num, int iteration_max, double errmax, int countmax);
+int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax);
 
 double nuclei_repulsion(atomic_orbital * atomlist_HEAD);
