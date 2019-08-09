@@ -204,8 +204,7 @@ void orbital_label(char * dest, int n, int l, int m)
     strcpy(n_str,"1");
     n_str[0] = '1' + n -1;
 
-    strcpy(dest,"");
-    strcat(dest,n_str);
+    strcpy(dest,n_str);
 
     switch(l)
     {
@@ -230,6 +229,17 @@ void orbital_label(char * dest, int n, int l, int m)
                 case 0: strcat(dest,"dz^2");break;
                 case 1: strcat(dest,"dxz");break;
                 case 2: strcat(dest,"dxy");break;
+            }
+        case 3:
+            switch(m)
+            {
+                case -3: strcat(dest,"fy(3x^2-y^2)");break;
+                case -2: strcat(dest,"fz(x^2-y^2)");break;
+                case -1: strcat(dest,"fyz^2");break;
+                case 0: strcat(dest,"fz^3");break;
+                case 1: strcat(dest,"fxz^2");break;
+                case 2: strcat(dest,"fxyz");break;
+                case 3: strcat(dest,"x(x^2-3y^2)");break;
             }
     }
 }
@@ -317,6 +327,62 @@ void orbital_angcoef_set(orbital * target)
                     target->length=1;
                     break;    
             }
+        
+        case 3:
+        {
+            switch(target->m)
+            {
+                case -3:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;
+                case -2:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+                case -1:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+                case 0:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+                case 1:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+                case 2:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;    
+                case 3:
+                    target->A[0].a[0] = 1;
+                    target->A[0].a[1] = 1;
+                    target->A[0].a[2] = 0;
+                    target->A[0].coef = 1.0;   
+                    target->length=1;
+                    break;                                                                                                        
+            }
+        }
     }
 }
 
@@ -377,7 +443,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
                 HEADFLAG = 1;
             }
 
-            // if it is not, create new knot and have this atom linked with the previous atom
+            // if it is not, create new knot and have this atom linked with the previous atom, and seal the former atom
             else
             {
                 temp2 = temp1;
@@ -389,6 +455,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
             n_counter = 0;
             l_temp = -1;
             l_ref = -1;
+            ORBITHEADFLAG = 0;
             ALL_ORBITHEADFLAG = 0;     
 
             //scan the atomic number
@@ -406,7 +473,6 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
         //Read L: when there is a new L, there is a new electron shell that needs to be interpreted, with a set of exponents and coefficients
         if(strcmp(str,"L=")==0)
         {
-            fscanf(basis,"%s",str);
             fscanf(basis,"%d",&l_temp);
 
             //Check if all_orbit has been assigned (or whether all_orbit will be the head of a new atom -> which means it will certainly be the tail of the linked list), and ensure that all_orbit is the tail of the list
@@ -448,7 +514,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
             for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
             {
                 orbit_temp1 = orbital_calloc(tot_temp);
-                //Check if orbit_temp1 should be the head of the linked list of orbitals in the same l. If not, link it with the previous orbital whose pointer is stored in orbit_temp2
+                //Check if orbit_temp1 should be the head of the linked list of orbitals in the same atom. If not, link it with the previous orbital whose pointer is stored in orbit_temp2
                 if(ORBITHEADFLAG == 1) //It's not the head
                 {
                     orbit_temp2->NEXT = orbit_temp1;
@@ -463,6 +529,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
                     {
                         all_orbit = orbit_temp1;
                         ALL_ORBITHEADFLAG = 1;
+                        temp1->orbital_HEAD = all_orbit;
                     }
                     else
                     {
@@ -565,9 +632,8 @@ void atomic_orbital_name_print(atomic_orbital * atom)
 
 double double_factorial(unsigned int n)
 {
-    if (n == 0 || n == 1) 
-        return 1; 
-    return n * double_factorial(n-2);  
+    if(n == 0 || n == 1) return 1; 
+    else return n * double_factorial(n-2);  
 }
 
 double normalize(double alpha, int ax, int ay, int az)

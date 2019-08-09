@@ -67,7 +67,7 @@ int main(int argc, char const *argv[])
             basis_fscanf(basisfile,basis_HEAD);
         }
 
-        if(strcmp(reader,"&SCF"))
+        if(strcmp(reader,"&SCF")==0)
         {
             while(fscanf(inputfile,"%s",reader))
             {
@@ -112,6 +112,8 @@ int main(int argc, char const *argv[])
 
                             break;
                         }
+
+                        basis_scanner = basis_scanner->NEXT;
                     }
 
                     if(strcmp(basis_scanner->name,reader)==0)
