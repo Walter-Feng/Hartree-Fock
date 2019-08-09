@@ -333,54 +333,66 @@ void orbital_angcoef_set(orbital * target)
             switch(target->m)
             {
                 case -3:
-                    target->A[0].a[0] = 1;
+                    target->A[0].a[0] = 2;
                     target->A[0].a[1] = 1;
                     target->A[0].a[2] = 0;
-                    target->A[0].coef = 1.0;   
-                    target->length=1;
+                    target->A[0].coef = 3.0 / sqrt(10.0);   
+                    target->A[1].a[0] = 0;
+                    target->A[1].a[1] = 3;
+                    target->A[1].a[2] = 0;
+                    target->A[0].coef = - 1.0/sqrt(10.0);
+                    target->length=2;
                     break;
                 case -2:
-                    target->A[0].a[0] = 1;
-                    target->A[0].a[1] = 1;
-                    target->A[0].a[2] = 0;
-                    target->A[0].coef = 1.0;   
-                    target->length=1;
-                    break;    
+                    target->A[0].a[0] = 2;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 1;
+                    target->A[0].coef = 1.0 / sqrt(2.0);   
+                    target->A[1].a[0] = 0;
+                    target->A[1].a[1] = 2;
+                    target->A[1].a[2] = 1;
+                    target->A[0].coef = - 1.0/sqrt(2.0);
+                    target->length=2;
+                    break;
                 case -1:
-                    target->A[0].a[0] = 1;
+                    target->A[0].a[0] = 0;
                     target->A[0].a[1] = 1;
-                    target->A[0].a[2] = 0;
+                    target->A[0].a[2] = 2;
                     target->A[0].coef = 1.0;   
                     target->length=1;
                     break;    
                 case 0:
-                    target->A[0].a[0] = 1;
-                    target->A[0].a[1] = 1;
-                    target->A[0].a[2] = 0;
+                    target->A[0].a[0] = 0;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 3;
                     target->A[0].coef = 1.0;   
                     target->length=1;
                     break;    
                 case 1:
                     target->A[0].a[0] = 1;
-                    target->A[0].a[1] = 1;
-                    target->A[0].a[2] = 0;
+                    target->A[0].a[1] = 0;
+                    target->A[0].a[2] = 2;
                     target->A[0].coef = 1.0;   
                     target->length=1;
                     break;    
                 case 2:
                     target->A[0].a[0] = 1;
                     target->A[0].a[1] = 1;
-                    target->A[0].a[2] = 0;
+                    target->A[0].a[2] = 1;
                     target->A[0].coef = 1.0;   
                     target->length=1;
                     break;    
                 case 3:
-                    target->A[0].a[0] = 1;
-                    target->A[0].a[1] = 1;
+                    target->A[0].a[0] = 3;
+                    target->A[0].a[1] = 0;
                     target->A[0].a[2] = 0;
-                    target->A[0].coef = 1.0;   
-                    target->length=1;
-                    break;                                                                                                        
+                    target->A[0].coef = 1.0 / sqrt(10.0);   
+                    target->A[1].a[0] = 1;
+                    target->A[1].a[1] = 2;
+                    target->A[1].a[2] = 0;
+                    target->A[0].coef = - 3.0/sqrt(10.0);
+                    target->length=2;
+                    break;                                                                                                     
             }
         }
     }
@@ -564,6 +576,7 @@ void basis_fscanf(FILE * basis,atomic_orbital * HEAD)
     }
 }
 
+//To count all the electron shells in this linked list
 int orbital_count(orbital * HEAD)
 {
     if(HEAD == NULL) return 0;
@@ -573,6 +586,7 @@ int orbital_count(orbital * HEAD)
 
     orbital * temp = HEAD;
 
+    //Go counting until temp reaches the tail 
     while(temp->NEXT != NULL)
     {
         i++;
@@ -582,6 +596,7 @@ int orbital_count(orbital * HEAD)
     return i;
 }
 
+//To synchronize the coordinates of the atom with all its electron shells
 void atomic_orbital_sync_coord(atomic_orbital * atom)
 {
     orbital * temp;
@@ -592,6 +607,7 @@ void atomic_orbital_sync_coord(atomic_orbital * atom)
 
     while(temp->NEXT != NULL)
     {
+        //copying all the cartesian coordinates
         for(i=0;i<3;i++)
         {
             temp->cartesian[i] = atom->cartesian[i];
@@ -600,12 +616,14 @@ void atomic_orbital_sync_coord(atomic_orbital * atom)
         temp = temp->NEXT;
     }
 
+    //copying cartesian coordinates for the tail
     for(i=0;i<3;i++)
     {
         temp->cartesian[i] = atom->cartesian[i];
     }
 }
 
+//To print the name of the atom into the label of its each electron shells
 void atomic_orbital_name_print(atomic_orbital * atom)
 {
     orbital * temp;
@@ -630,12 +648,14 @@ void atomic_orbital_name_print(atomic_orbital * atom)
     strcpy(temp->label,strtemp);
 }
 
+//Calculate n!!
 double double_factorial(unsigned int n)
 {
     if(n == 0 || n == 1) return 1; 
     else return n * double_factorial(n-2);  
 }
 
+//Calculate the normalization coefficient for the gaussian orbital
 double normalize(double alpha, int ax, int ay, int az)
 {
     return pow(2 * alpha / M_PI, 0.75) * pow(4 * alpha, (double) (ax + ay + az) / 2.0) / sqrt(double_factorial(2 * ax - 1) * double_factorial(2 * ay - 1) * double_factorial(2 * az - 1));
