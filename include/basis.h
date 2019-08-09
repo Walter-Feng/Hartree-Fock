@@ -94,5 +94,5 @@ void atomic_orbital_name_print(atomic_orbital * atom);
 
 //basic functions
 
-double double_factorial(unsigned int n);
+double double_factorial(int n);
 double normalize(double alpha, int ax, int ay, int az);

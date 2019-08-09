@@ -649,9 +649,10 @@ void atomic_orbital_name_print(atomic_orbital * atom)
 }
 
 //Calculate n!!
-double double_factorial(unsigned int n)
+double double_factorial(int n)
 {
     if(n == 0 || n == 1) return 1; 
+    else if(n==-1) return 1;
     else return n * double_factorial(n-2);  
 }
 

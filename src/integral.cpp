@@ -482,6 +482,9 @@ double orbital_SIntegral(orbital * a, orbital * b)
 
     result += gaussian_chain_SIntegral(a_temp,b_temp);
 
+    gaussian_chain_free(a_head);
+    gaussian_chain_free(b_head);
+
     return result;
 }
 
@@ -521,6 +524,9 @@ double orbital_JIntegral(orbital * a, orbital * b)
     }
 
     result += gaussian_chain_JIntegral(a_temp,b_temp);
+
+    gaussian_chain_free(a_head);
+    gaussian_chain_free(b_head);
 
     return result;
 }
@@ -562,6 +568,9 @@ double orbital_ZIntegral(orbital * a, orbital * b, double rz[3])
 
     result += gaussian_chain_ZIntegral(a_temp,b_temp,rz);
 
+    gaussian_chain_free(a_head);
+    gaussian_chain_free(b_head);
+    
     return result;
 }
 
