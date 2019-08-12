@@ -53,29 +53,20 @@ void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
 
     temp1 = dest_HEAD;
     temp2 = src_HEAD;
+
+    double * doubletemp1, * doubletemp2;
     while(temp2->NEXT!=NULL)
     {
-        temp1->L = temp2->L;
-        temp1->m = temp2->m;
-        temp1->n = temp2->n;
-        strcpy(temp1->label,temp2->label);
-        temp1->total = temp2->total;
-        for(i=0;i<4;i++)
-            temp1->A[i] = temp2->A[i];
-        temp1->length = temp2->length;
-
-        for(i=0;i<3;i++)
-            temp1->cartesian[i] = temp2->cartesian[i];
-        
-        temp1->exponents = new double[temp1->total];
-        temp1->coefficients = new double[temp1->total];
-
-        for(i=0;i<temp1->total;i++)
+        doubletemp1 = temp1->exponents;
+        doubletemp2 = temp1->coefficients;
+        * temp1 = * temp2;
+        temp1->exponents = doubletemp1;
+        temp1->coefficients = doubletemp2;
+        for(i=0;i<temp2->total;i++)
         {
-            *(temp1->exponents + i) = *(temp2->exponents +  i);
-            *(temp1->coefficients + i) = *(temp2->coefficients +  i);
+            *(temp1->exponents + i) = *(temp2->exponents + i);
+            *(temp1->coefficients + i) = *(temp2->coefficients + i);
         }
-
         temp3 = temp1;
         temp1 = orbital_calloc(temp2->total);
         temp3->NEXT = temp1;
@@ -83,22 +74,15 @@ void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
     }
 
     //Doing the tail of the struct orbital
-    temp1->L = temp2->L;
-    temp1->m = temp2->m;
-    temp1->n = temp2->n;
-    strcpy(temp1->label,temp2->label);
-    temp1->total = temp2->total;
-    for(i=0;i<4;i++)
-        temp1->A[i] = temp2->A[i];
-    temp1->length = temp2->length;
-        
-    temp1->exponents = new double[temp1->total];
-    temp1->coefficients = new double[temp1->total];
-
-    for(i=0;i<temp1->total;i++)
+    doubletemp1 = temp1->exponents;
+    doubletemp2 = temp1->coefficients;
+    * temp1 = * temp2;
+    temp1->exponents = doubletemp1;
+    temp1->coefficients = doubletemp2;
+    for(i=0;i<temp2->total;i++)
     {
-        *(temp1->exponents + i) = *(temp2->exponents +  i);
-        *(temp1->coefficients + i) = *(temp2->coefficients +  i);
+        *(temp1->exponents + i) = *(temp2->exponents + i);
+        *(temp1->coefficients + i) = *(temp2->coefficients + i);
     }
 }
 

@@ -30,7 +30,8 @@ double Gamma(double z)
 //Calculate the Boys function
 double Boys(double x, int n)
 {
-    return 0.5* pow(x,-0.5-n) * (Gamma(0.5 + n) - gsl_sf_gamma_inc(0.5+n,x));
+    if(x==0) return (1.0/(1.0+2.0 * (double) n));
+    else return 0.5* pow(x,-0.5-n) * (Gamma(0.5 + n) - gsl_sf_gamma_inc(0.5+n,x));
 }
 
 //Calculate the binomials
@@ -55,8 +56,11 @@ double f(int k, int a, int b, double PA, double PB)
     int i;
     double result;
     result = 0;
+    
     for(i=0;i<=k;i++)
-        result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i) * pow(PB,b-k+i);
+        if(PA==0&&a-i==0) result += Binomials(a,i) * Binomials(a,k-i)* pow(PB,b-k+i);
+        else if(PB==0&&b-k+i==0) result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i);
+        else result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i) * pow(PB,b-k+i);
 
     return result;
 }
@@ -91,9 +95,9 @@ double SIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
 
     else if(az > 0) return ((alpha*ra[2]+beta*rb[2])/(alpha + beta)-ra[2])*SIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta) + (az-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta) + bz/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta);
 
-    else if(bx > 0) return ((alpha*ra[0]+beta*rb[0])/(alpha + beta)-rb[0])*SIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta) + ax/2.0/(alpha+beta) * SIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta) + (bx-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta);
+    else if(bx > 0) return ((alpha*ra[0]+beta*rb[0])/(alpha + beta)-rb[0])*SIntegral(ra,rb,ax,ay,az,bx-1,by,bz,alpha,beta) + ax/2.0/(alpha+beta) * SIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta) + (bx-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta);
 
-    else if(by > 0) return ((alpha*ra[1]+beta*rb[1])/(alpha + beta)-rb[1])*SIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta) + ay/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta) + (by-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta);
+    else if(by > 0) return ((alpha*ra[1]+beta*rb[1])/(alpha + beta)-rb[1])*SIntegral(ra,rb,ax,ay,az,bx,by-1,bz,alpha,beta) + ay/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta) + (by-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta);
 
     else if(bz > 0) return ((alpha*ra[2]+beta*rb[2])/(alpha + beta)-rb[2])*SIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta) + az/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta) + (bz-1)/2.0/(alpha+beta) * SIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta) ;
 
@@ -124,7 +128,7 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
     //Provide recurrence relation
     else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + (ax - 1)/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- (ax - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
-    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (ay - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- (ay - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (ay - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- (ay - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
 
     else if(az > 0) return ((P[2]-ra[2])*JIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + (az - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m)- (az - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + bz/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
@@ -157,8 +161,6 @@ double ZIntegral(double ra[3], double rb[3], double rz[3], int ax, int ay, int a
     PC = 0;
     for(i=0;i<3;i++)
         PC += (P[i] - rz[i]) * (P[i] - rz[i]);
-
-
 
     if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
 
@@ -297,8 +299,8 @@ void two_electron_transform(gaussian_chain * HEAD, orbital * a, orbital * b)
                             for(p[2]=0;p[2]<=(a->A[i].a[2]+b->A[k].a[2]);p[2]++)
                             {
 
-                                coefficient = a->A[i].coef * *(a->coefficients + j) * normalize(*(a->exponents + j),a->A[i].a[0],a->A[i].a[1],a->A[i].a[2]) * b->A[i].coef * *(b->coefficients + j) * normalize(*(b->exponents + j),b->A[i].a[0],b->A[i].a[1],b->A[i].a[2]);
-                                coefficient *= tranformation_coefficient(a->A[j].a,b->A[j].a,p,PA,PB,xi,AB);
+                                coefficient = a->A[i].coef * *(a->coefficients + j) * normalize(*(a->exponents + j),a->A[i].a[0],a->A[i].a[1],a->A[i].a[2]) * b->A[k].coef * *(b->coefficients + l) * normalize(*(b->exponents + l),b->A[k].a[0],b->A[k].a[1],b->A[k].a[2]);
+                                coefficient *= tranformation_coefficient(a->A[i].a,b->A[k].a,p,PA,PB,xi,AB);
 
                                 for(q=0;q<3;q++)
                                 {
@@ -570,7 +572,7 @@ double orbital_ZIntegral(orbital * a, orbital * b, double rz[3])
 
     gaussian_chain_free(a_head);
     gaussian_chain_free(b_head);
-    
+
     return result;
 }
 
@@ -725,7 +727,7 @@ double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b
 
     gaussian_chain_laplacian(laplacian_temp, b_HEAD);
 
-    result = - 0.5 * gaussian_chain_SIntegral(a_HEAD,laplacian_temp);
+    result = - 0.5 * gaussian_chain_full_SIntegral(a_HEAD,laplacian_temp);
 
     gaussian_chain_free(laplacian_temp);
 

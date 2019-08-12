@@ -36,8 +36,6 @@ int main(int argc, char const *argv[])
 
     total_energy = 0;
 
-    
-
     for(i=0;i<argc;i++)
     {
         if(strcmp(argv[i],"-f")==0)
@@ -121,6 +119,21 @@ int main(int argc, char const *argv[])
                         atomic_orbital_single_cpy(atoms,basis_scanner);
 
                         el_num += basis_scanner->N;
+                        
+                        for(i=0;i<3;i++)
+                        {
+                            fscanf(inputfile,"%lf",&coord_temp);
+                            atoms->cartesian[i] = coord_temp / 0.529;
+                        }
+
+                        atomic_orbital_sync_coord(atoms);
+                        atomic_orbital_name_print(atoms);
+
+                        atoms->NEXT = atomic_orbital_calloc();
+
+                        atoms_temp = atoms;
+
+                        atoms = atoms->NEXT;                        
                     }
 
                     else
@@ -130,20 +143,6 @@ int main(int argc, char const *argv[])
                         return 2;
                     }
                     
-                    for(i=0;i<3;i++)
-                    {
-                        fscanf(inputfile,"%lf",&coord_temp);
-                        atoms->cartesian[i] = coord_temp / 0.529;
-                    }
-
-                    atomic_orbital_sync_coord(atoms);
-                    atomic_orbital_name_print(atoms);
-
-                    atoms->NEXT = atomic_orbital_calloc();
-
-                    atoms_temp = atoms;
-
-                    atoms = atoms->NEXT;
 
                 }
             }
