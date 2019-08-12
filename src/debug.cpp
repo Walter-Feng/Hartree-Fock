@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int i;
+    int i,j;
 
     int length;
     int el_num;
@@ -35,6 +35,18 @@ int main(int argc, char const *argv[])
     double total_energy;
 
     total_energy = 0;
+
+    for(i=0;i<=2;i++)
+        {
+            printf("%lf\n",f(i,1,1,0,0));
+            printf("%lf\n",Binomials(1,i));
+            printf("%lf\n",Binomials(1,2-i));
+            printf("%lf\n",pow(1,1-i));
+            printf("%lf\n",pow(0,1-2+i));
+            printf("\n");
+        }
+
+    return 0;
 
     for(i=0;i<argc;i++)
     {

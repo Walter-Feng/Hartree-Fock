@@ -41,11 +41,12 @@ double Binomials(int n, int k)
     double result = 1.0;
     if(n==k) return 1;
     if(k==0) return 1;
-    if(k>n) return 0;
-    for(i=0;i<k;i++)
-        result *= n-i;
+    if(k<n) return 0;
+    if(k<0) return 0;
+    for(i=1;i<k;i++)
+        result *= (double) n-i;
     for(i=1;i<=k;i++)
-        result /= i;
+        result = result /(double) i;
 
     return result;
 }
@@ -58,9 +59,13 @@ double f(int k, int a, int b, double PA, double PB)
     result = 0;
     
     for(i=0;i<=k;i++)
-        if(PA==0&&a-i==0) result += Binomials(a,i) * Binomials(a,k-i)* pow(PB,b-k+i);
+    {
+        if(a<i||b-k+i<0) continue;
+        if(PA==0&&a-i==0&&PB==0&&b-k+i==0) result += Binomials(a,i) * Binomials(b,k-i);
+        else if(PA==0&&a-i==0) result += Binomials(a,i) * Binomials(b,k-i)* pow(PB,b-k+i);
         else if(PB==0&&b-k+i==0) result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i);
         else result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i) * pow(PB,b-k+i);
+    }
 
     return result;
 }
