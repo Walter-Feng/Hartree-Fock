@@ -36,18 +36,6 @@ int main(int argc, char const *argv[])
 
     total_energy = 0;
 
-    for(i=0;i<=2;i++)
-        {
-            printf("%lf\n",f(i,1,1,0,0));
-            printf("%lf\n",Binomials(1,i));
-            printf("%lf\n",Binomials(1,2-i));
-            printf("%lf\n",pow(1,1-i));
-            printf("%lf\n",pow(0,1-2+i));
-            printf("\n");
-        }
-
-    return 0;
-
     for(i=0;i<argc;i++)
     {
         if(strcmp(argv[i],"-f")==0)
@@ -184,6 +172,11 @@ int main(int argc, char const *argv[])
 
     energy = gsl_vector_calloc(length);
     coef = gsl_matrix_calloc(length,length);
+
+    orbital * a, * b;
+    a = orbitals->NEXT->NEXT->NEXT->NEXT;
+    b = orbitals->NEXT->NEXT->NEXT->NEXT->NEXT->NEXT;
+    two_electron_JIntegral(a,b,b,b);
 
     for(i=0;i<length;i++)
         gsl_matrix_set(coef,i,i,1.0);

@@ -70,6 +70,8 @@ void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_or
     for(j=1;j<length;j++)
     {
         temp2 = HEAD;
+        temp1 = temp1->NEXT;
+        i = 0;
         gsl_matrix_set(dest,i,j,fock_matrix_element(temp1,temp2,HEAD,atom_HEAD,coef,length,el_num));
 
         for(i=1;i<length;i++)

@@ -30,7 +30,7 @@ double Gamma(double z)
 //Calculate the Boys function
 double Boys(double x, int n)
 {
-    if(x==0) return (1.0/(1.0+2.0 * (double) n));
+    if(abs(x)<1e-6) return (1.0/(1.0+2.0 * (double) n));
     else return 0.5* pow(x,-0.5-n) * (Gamma(0.5 + n) - gsl_sf_gamma_inc(0.5+n,x));
 }
 
