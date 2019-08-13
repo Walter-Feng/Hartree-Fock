@@ -82,19 +82,53 @@ void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_or
     }
 }
 
-int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax)
+int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha)
 {
-    gsl_matrix * F, * S;
+    gsl_matrix * F, * S, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp;
+    
+    gsl_vector * coef_vector, * difference, * vector_temp1, * vector_temp2;
 
+    // allocating memories
+
+    // Fock Matrix
     F = gsl_matrix_calloc(length,length);
+    // Overlap Matrix
     S = gsl_matrix_calloc(length,length);
+    // Storing the old input coefficient matrix
+    input_coef_temp = gsl_matrix_calloc(length,length);
+    // Storing the old output coefficient matrix
+    output_coef_temp = gsl_matrix_calloc(length,length);
+    // difference between the coef and the input_coef_temp
+    diff = gsl_matrix_calloc(length,length);
+    // Sorting the old diff matrix
+    diff_temp = gsl_matrix_calloc(length,length);
+    // temporary matrix that helps mixing the coef matrix
+    mixing_temp = gsl_matrix_calloc(length,length);
 
-    int i,j,count;
+    gsl_matrix_memcpy(input_coef_temp,coef);
 
+    // vector from coef matrix
+    coef_vector = gsl_vector_calloc(length);
+    // norm vector of the diff matrix
+    difference = gsl_vector_calloc(length);
+    // temporary vector, used for mixing the coef vectors
+    vector_temp1 = gsl_vector_calloc(length);
+    vector_temp2 = gsl_vector_calloc(length);
+
+
+    int i,j,k,count; // iterators
+
+    // energy variables
     double energy_temp, energy_bk;
 
+    // parameter for mixing the previous coef vector with the new one, according to Anderson's mixing method
+    double beta;
+    double difference_temp;
+
+    //Initialization
     energy_bk = 0;
     count = 0;
+    beta = 0;
 
     orbital_S_matrix(S,HEAD);
 
@@ -106,7 +140,21 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
         fock_matrix(F,coef,HEAD,atom_HEAD,length,el_num);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
         gsl_matrix_normalize(coef,length,length);
-        gsl_matrix_printf(coef,length,length,"%10.4f");
+        // keep the sign of each vector
+        for(j=0;j<length;j++)
+        {
+            gsl_matrix_get_col(vector_temp1,coef,j);
+            gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+            for(k=0;k<length;k++)
+            {
+                if(gsl_vector_get(vector_temp1,k)*gsl_vector_get(vector_temp2,k)<0)
+                {
+                    gsl_vector_scale(vector_temp1,-1.0);
+                    gsl_matrix_set_col(coef,j,vector_temp1);
+                    break;
+                }
+            }
+        }
 
         energy_temp = 0;
 
@@ -119,7 +167,64 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
         if(count >= countmax) break;
 
         printf("iteration = %d, energy = %lf",i+1,energy_temp);
+        gsl_matrix_printf(coef,length,length,"%10.4f");
+
+
+        gsl_matrix_memcpy(diff_temp,diff);
+
+        gsl_matrix_memcpy(diff,coef);
+        gsl_matrix_sub(diff,input_coef_temp);
+
+
         energy_bk = energy_temp;
+
+        //Anderson's mixing
+        // if(i>10)
+        // {
+        //     for(j=0;j<length;j++)
+        //     {
+        //         //calculating parameter beta
+        //         gsl_matrix_get_col(vector_temp1,diff,j);
+        //         gsl_matrix_get_col(vector_temp2,diff_temp,j);
+
+        //         difference_temp = gsl_vector_inner_product(vector_temp1,vector_temp1,length) - gsl_vector_inner_product(vector_temp1,vector_temp2,length);
+
+        //         gsl_vector_sub(vector_temp2,vector_temp1);
+
+        //         beta = difference_temp/gsl_vector_inner_product(vector_temp2,vector_temp2,length);
+
+        //         // Set the output part |n_{out}>
+        //         gsl_matrix_get_col(vector_temp1,coef,j);
+        //         gsl_vector_scale(vector_temp1,1.0 - beta);
+        //         gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+        //         gsl_vector_scale(vector_temp2,beta);
+        //         gsl_vector_add(vector_temp1,vector_temp2);
+
+        //         // Start writing the next input matrix
+        //         gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+
+        //         // Set the input part |n_{in>}
+        //         gsl_matrix_get_col(vector_temp1,input_coef_temp,j);
+        //         gsl_vector_scale(vector_temp1,1.0-beta);
+        //         gsl_matrix_get_col(vector_temp2,diff_temp,j);
+        //         gsl_vector_scale(vector_temp2,beta);
+        //         gsl_vector_sub(vector_temp1,vector_temp2);
+        //         gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+        //         gsl_vector_scale(vector_temp2,beta);
+        //         gsl_vector_add(vector_temp1,vector_temp2);                
+
+        //         gsl_vector_scale(vector_temp1,1.0-alpha);
+        //         gsl_matrix_get_col(vector_temp2,mixing_temp,j);
+        //         gsl_vector_scale(vector_temp2,alpha);
+        //         gsl_vector_add(vector_temp1,vector_temp2);
+        //         gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+        //     }
+
+            // overwrite the coef matrix
+            gsl_matrix_memcpy(output_coef_temp,coef);
+            // gsl_matrix_memcpy(coef,mixing_temp);
+        // }     
+        gsl_matrix_memcpy(input_coef_temp,coef);   
     }
 
     printf("\n===================================================================\n\n");

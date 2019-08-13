@@ -1,9 +1,10 @@
-&BASIS 6-31g 
+&BASIS 3-21g 
 
 &SCF
     &ERR 1e-6
     &MAX 100
     &COUNT 3
+    &ALPHA 0.04
 &END_SCF
 
 &COORD

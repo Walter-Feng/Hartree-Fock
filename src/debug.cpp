@@ -30,6 +30,8 @@ int main(int argc, char const *argv[])
     double ERR_MAX;
     int SCF_MAX;
     int COUNTER;
+    double ALPHA;
+
 
     double coord_temp;
     double total_energy;
@@ -82,6 +84,8 @@ int main(int argc, char const *argv[])
                 
                 if(strcmp(reader,"&COUNT")==0)
                     fscanf(inputfile,"%d",&COUNTER);
+                if(strcmp(reader,"&ALPHA")==0)
+                    fscanf(inputfile,"%lf",&ALPHA);
                 if(strcmp(reader,"&END_SCF")==0)
                     break;
             }
@@ -186,7 +190,7 @@ int main(int argc, char const *argv[])
     for(i=0;i<length;i++)
         gsl_matrix_set(coef,i,i,1.0);
     
-    RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER);
+    RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER,ALPHA);
 
     printf("\n\n");
 
