@@ -105,11 +105,13 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     {
         fock_matrix(F,coef,HEAD,atom_HEAD,length,el_num);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
+        gsl_matrix_normalize(coef,length,length);
+        gsl_matrix_printf(coef,length,length,"%10.4f");
 
         energy_temp = 0;
 
         for(j=0;j<el_num/2;j++)
-            energy_temp += gsl_vector_get(energy,i) * 2.0;
+            energy_temp += gsl_vector_get(energy,j) * 2.0;
 
         if(abs(energy_temp - energy_bk) < errmax) count++;
         else count = 0;
@@ -164,6 +166,8 @@ double nuclei_repulsion(atomic_orbital * atomlist_HEAD)
 
             result += (double) temp1->N * (double) temp2->N / distance;
         }
+
+        temp1 = temp1->NEXT;
     }
 
     temp2 = atomlist_HEAD;

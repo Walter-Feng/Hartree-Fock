@@ -321,3 +321,21 @@ void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, g
     gsl_vector_free(S_eigen_minus_half);
 }
 
+void gsl_matrix_normalize(gsl_matrix * coef,int length, int columns)
+{
+    int i;
+
+    double norm;
+
+    gsl_vector * temp;
+
+    temp = gsl_vector_calloc(length);
+
+    for(i=0;i<columns;i++)
+    {
+        gsl_matrix_get_col(temp,coef,i);
+        norm = gsl_vector_inner_product(temp,temp,length);
+        gsl_vector_scale(temp,sqrt(1.0/norm));
+        gsl_matrix_set_col(coef,i,temp);
+    }
+}

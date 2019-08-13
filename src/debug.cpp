@@ -61,6 +61,11 @@ int main(int argc, char const *argv[])
             strcat(basis,reader);
             strcat(basis,".txt");
             FILE * basisfile = fopen(basis,"r");
+            if(basisfile==NULL)
+            {
+                printf("BASIS NOT SUPPORTED!");
+                return 2;
+            }
 	        basis_HEAD = atomic_orbital_calloc();
             basis_fscanf(basisfile,basis_HEAD);
         }
@@ -203,7 +208,7 @@ int main(int argc, char const *argv[])
         el_num_counter += 2;
     }
 
-    printf("\nTotal Energy: %lf",total_energy - nuclei_repulsion(atoms));
+    printf("\nTotal Energy: %lf",total_energy + nuclei_repulsion(atoms));
 
     printf("\n\n");
 
@@ -213,6 +218,7 @@ int main(int argc, char const *argv[])
     while(orbital_temp->NEXT != NULL)
     {
         printf(" %s ,",orbital_temp->label);
+        orbital_temp = orbital_temp->NEXT;
     }
     printf(" %s ]\n\n,",orbital_temp->label);
 
