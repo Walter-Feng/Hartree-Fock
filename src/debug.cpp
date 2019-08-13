@@ -163,7 +163,7 @@ int main(int argc, char const *argv[])
     {
         orbital_cpy(orbital_temp,atoms_temp->orbital_HEAD);
         while(orbital_temp->NEXT != NULL)
-            orbital_temp = orbitals->NEXT;
+            orbital_temp = orbital_temp->NEXT;
 
         atoms_temp = atoms_temp->NEXT;
         orbital_temp->NEXT = orbital_calloc((atoms_temp->orbital_HEAD)->total);
@@ -220,7 +220,7 @@ int main(int argc, char const *argv[])
         printf(" %s ,",orbital_temp->label);
         orbital_temp = orbital_temp->NEXT;
     }
-    printf(" %s ]\n\n,",orbital_temp->label);
+    printf(" %s ]\n\n",orbital_temp->label);
 
     printf("MO_COEFF:\n\n");
     gsl_matrix_printf(coef,length,length,"%12.6f");

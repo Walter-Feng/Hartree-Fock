@@ -57,16 +57,16 @@ void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
     double * doubletemp1, * doubletemp2;
     while(temp2->NEXT!=NULL)
     {
-        doubletemp1 = temp1->exponents;
-        doubletemp2 = temp1->coefficients;
+        // doubletemp1 = temp1->exponents;
+        // doubletemp2 = temp1->coefficients;
         * temp1 = * temp2;
-        temp1->exponents = doubletemp1;
-        temp1->coefficients = doubletemp2;
-        for(i=0;i<temp2->total;i++)
-        {
-            *(temp1->exponents + i) = *(temp2->exponents + i);
-            *(temp1->coefficients + i) = *(temp2->coefficients + i);
-        }
+        // temp1->exponents = doubletemp1;
+        // temp1->coefficients = doubletemp2;
+        // for(i=0;i<temp2->total;i++)
+        // {
+        //     *(temp1->exponents + i) = *(temp2->exponents + i);
+        //     *(temp1->coefficients + i) = *(temp2->coefficients + i);
+        // }
         temp3 = temp1;
         temp1 = orbital_calloc(temp2->total);
         temp3->NEXT = temp1;
@@ -74,16 +74,16 @@ void orbital_cpy(orbital * dest_HEAD,orbital * src_HEAD)
     }
 
     //Doing the tail of the struct orbital
-    doubletemp1 = temp1->exponents;
-    doubletemp2 = temp1->coefficients;
+    // doubletemp1 = temp1->exponents;
+    // doubletemp2 = temp1->coefficients;
     * temp1 = * temp2;
-    temp1->exponents = doubletemp1;
-    temp1->coefficients = doubletemp2;
-    for(i=0;i<temp2->total;i++)
-    {
-        *(temp1->exponents + i) = *(temp2->exponents + i);
-        *(temp1->coefficients + i) = *(temp2->coefficients + i);
-    }
+    // temp1->exponents = doubletemp1;
+    // temp1->coefficients = doubletemp2;
+    // for(i=0;i<temp2->total;i++)
+    // {
+    //     *(temp1->exponents + i) = *(temp2->exponents + i);
+    //     *(temp1->coefficients + i) = *(temp2->coefficients + i);
+    // }
 }
 
 //To allocate the memory for struct atomic_orbital
@@ -214,6 +214,8 @@ void orbital_label(char * dest, int n, int l, int m)
                 case 1: strcat(dest,"dxz");break;
                 case 2: strcat(dest,"dxy");break;
             }
+        break;
+
         case 3:
             switch(m)
             {
@@ -225,6 +227,7 @@ void orbital_label(char * dest, int n, int l, int m)
                 case 2: strcat(dest,"fxyz");break;
                 case 3: strcat(dest,"x(x^2-3y^2)");break;
             }
+        break;
     }
 }
 
@@ -312,6 +315,8 @@ void orbital_angcoef_set(orbital * target)
                     break;    
             }
         
+        break;
+
         case 3:
         {
             switch(target->m)
@@ -379,6 +384,8 @@ void orbital_angcoef_set(orbital * target)
                     break;                                                                                                     
             }
         }
+
+        break;
     }
 }
 

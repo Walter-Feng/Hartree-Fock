@@ -15,7 +15,7 @@ typedef struct orbital
     //main quantum number;
     int n;
     //the name of the orbital;
-    char label[10];
+    char label[20];
 
     //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
     struct  angcoef{
