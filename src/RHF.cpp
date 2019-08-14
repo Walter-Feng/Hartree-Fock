@@ -135,11 +135,11 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     printf("\n");
     printf("============================= Start SCF =============================\n\n");
 
+    
     for(i=0;i<iteration_max;i++)
     {
         fock_matrix(F,coef,HEAD,atom_HEAD,length,el_num);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
-        gsl_matrix_normalize(coef,length,length);
         // keep the sign of each vector
         for(j=0;j<length;j++)
         {
@@ -166,7 +166,10 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
 
         if(count >= countmax) break;
 
-        printf("iteration = %d, energy = %lf",i+1,energy_temp);
+        printf("iteration = %d, energy = %lf\n",i+1,energy_temp);
+        printf("\nFock matrix:\n");
+        gsl_matrix_printf(F,length,length,"%10.4f");
+        printf("\nCoefficient matrix:\n");
         gsl_matrix_printf(coef,length,length,"%10.4f");
 
 

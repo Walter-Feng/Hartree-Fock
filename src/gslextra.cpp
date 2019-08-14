@@ -270,6 +270,39 @@ void gsl_matrix_complex_conjugate(gsl_matrix_complex * m, int rows, int columns)
     }
 }
 
+void gsl_matrix_inverse_square_root(gsl_matrix * dest, gsl_matrix * src, int length)
+{
+    gsl_eigen_symmv_workspace * w;
+
+    gsl_vector * eigenvalues;
+    gsl_matrix * eigenvecs;
+    gsl_matrix * temp;
+
+    eigenvalues = gsl_vector_calloc(length);
+    eigenvecs = gsl_matrix_calloc(length,length);
+    temp = gsl_matrix_calloc(length,length);
+    w = gsl_eigen_symmv_alloc(length);
+
+    gsl_eigen_symmv(src,eigenvalues,eigenvecs,w);
+
+    gsl_matrix_set_zero(dest);
+
+    int i;
+    for(i=0;i<length;i++)
+        gsl_matrix_set(dest,i,i,1.0/sqrt(gsl_vector_get(eigenvalues,i)));
+
+    gsl_matrix_mul(eigenvecs,dest,temp,length,length,length);
+
+    gsl_matrix_transpose(eigenvecs);
+    gsl_matrix_mul(temp,eigenvecs,dest,length,length,length);
+
+    gsl_matrix_free(eigenvecs);
+    gsl_matrix_free(temp);
+    gsl_vector_free(eigenvalues);
+    gsl_eigen_symmv_free(w);
+
+}
+
 void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, gsl_matrix * eigenvec, int length)
 {
     int i;
@@ -319,6 +352,8 @@ void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, g
     
     gsl_vector_free(S_eigen);
     gsl_vector_free(S_eigen_minus_half);
+
+    gsl_eigen_symmv_free(w);
 }
 
 void gsl_matrix_normalize(gsl_matrix * coef,int length, int columns)

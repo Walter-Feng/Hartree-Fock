@@ -30,7 +30,7 @@ double Gamma(double z)
 //Calculate the Boys function
 double Boys(double x, int n)
 {
-    if(abs(x)<1e-6) return (1.0/(1.0+2.0 * (double) n));
+    if(abs(x)<1e-8) return (1.0/(1.0+2.0 * (double) n));
     else return 0.5* pow(x,-0.5-n) * (Gamma(0.5 + n) - gsl_sf_gamma_inc(0.5+n,x));
 }
 
@@ -665,7 +665,6 @@ void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int 
         temp1->exponent = temp2->exponent;
         temp1->NEXT = gaussian_chain_calloc();
         temp1 = temp1->NEXT;
-        temp2 = temp2->NEXT;
     }
     else
     {

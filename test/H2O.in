@@ -1,8 +1,8 @@
-&BASIS 3-21g 
+&BASIS 6-31g
 
 &SCF
     &ERR 1e-6
-    &MAX 100
+    &MAX 20
     &COUNT 3
     &ALPHA 0.04
 &END_SCF

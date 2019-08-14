@@ -25,6 +25,7 @@ int main(int argc, char const *argv[])
     gsl_vector * energy;
 
     gsl_matrix * coef;
+    gsl_matrix * temp;
 
 
     double ERR_MAX;
@@ -181,14 +182,14 @@ int main(int argc, char const *argv[])
 
     energy = gsl_vector_calloc(length);
     coef = gsl_matrix_calloc(length,length);
-
-    orbital * a, * b;
-    a = orbitals->NEXT->NEXT->NEXT->NEXT;
-    b = orbitals->NEXT->NEXT->NEXT->NEXT->NEXT->NEXT;
-    two_electron_JIntegral(a,b,b,b);
+    temp = gsl_matrix_calloc(length,length);
 
     for(i=0;i<length;i++)
         gsl_matrix_set(coef,i,i,1.0);
+
+    gsl_matrix_inverse_square_root(temp,coef,length);
+    gsl_matrix_memcpy(coef,temp);
+    gsl_matrix_free(temp);
     
     RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER,ALPHA);
 
