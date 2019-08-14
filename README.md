@@ -23,8 +23,10 @@ And something bad:
 
 3. BAD PROGRAMMING STYLE
 
-4. The output functions still seem to be disordered and scattered in the whole program, which may cause problem in trying to configure the output format and the total amount of information int it.
+4. The output functions still seem to be disordered and scattered in the whole program, which may cause problem in trying to configure the output format and the total amount of information in it.
 
 Currently the program can be compiled using the `build/build.sh` script, but the path for GSL should be stated first in the script (the default install path for GSL should be /usr/local). It is also able to run `build/debug.sh` to get the debug version of the program, which can be used in debugging programs like gdb or lldb. Considering that the program itself is quite simple, you can also try to compile the program all by yourself - writing a makefile or cmakelist should be fine and easy to get it working.
+
+Future plan should be completing the program and achieving adding comments on each line. Also it is planned to write a document written in Chinese (English ver. may come later?) describing the mechanisms of each step, which enables understanding of Hartree Fock from a physical/mathematical background.
 
 All comments on how to improve this program is much appreciated.
