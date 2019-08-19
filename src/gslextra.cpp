@@ -98,10 +98,10 @@ void gsl_matrix_mul(gsl_matrix * A, gsl_matrix *B, gsl_matrix * Result,int Acolu
     
     gsl_matrix_set_zero(Result);
 
-    for(i=0;i<Arow;i++){
-        gsl_matrix_get_row(temp1,A,i);
-        for(j=0;j<Bcolumn;j++){
-            gsl_matrix_get_col(temp2,B,j);
+    for(j=0;j<Bcolumn;j++){
+        gsl_matrix_get_col(temp2,B,j);
+        for(i=0;i<Arow;i++){
+            gsl_matrix_get_row(temp1,A,i);
             innerproduct=0;
             for(k=0;k<Acolumn;k++)
                 innerproduct += gsl_vector_get(temp1,k) * gsl_vector_get(temp2,k);
@@ -126,10 +126,10 @@ void gsl_matrix_complex_mul(gsl_matrix_complex * A, gsl_matrix_complex *B, gsl_m
     
     gsl_matrix_complex_set_zero(Result);
 
-    for(i=0;i<Arow;i++){
-        gsl_matrix_complex_get_row(temp1,A,i);
-        for(j=0;j<Bcolumn;j++){
-            gsl_matrix_complex_get_col(temp2,B,j);
+    for(j=0;j<Bcolumn;j++){
+        gsl_matrix_complex_get_col(temp2,B,j);
+        for(i=0;i<Arow;i++){
+            gsl_matrix_complex_get_row(temp1,A,i);
 
             GSL_SET_REAL(&innerproduct,0);
             GSL_SET_IMAG(&innerproduct,0);

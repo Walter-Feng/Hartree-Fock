@@ -1,5 +1,36 @@
 #include "../include/RHF.h"
 
+double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+{
+    double result;
+
+    int i,j;
+
+    gsl_vector * coef_vector_temp;
+
+    orbital * orbital_temp;
+
+    atomic_orbital * atom_temp;
+
+    coef_vector_temp = gsl_vector_calloc(length);
+
+    result = orbital_kinetic_energy(a,b);
+
+    atom_temp = atom_HEAD;
+    
+    while(atom_temp->NEXT != NULL)
+    {
+        result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+        atom_temp = atom_temp->NEXT;
+    }
+
+    result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+
+    gsl_vector_free(coef_vector_temp);
+
+    return result;
+}
+
 double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, gsl_matrix * coef, int length, int el_num)
 {
     double result;
@@ -82,6 +113,49 @@ void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_or
     }
 }
 
+void initial_guess(gsl_matrix * dest, gsl_matrix * S, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+{
+    int i;
+
+    i = 0;
+
+    gsl_matrix * S_minus_half;
+    gsl_matrix * dest_temp;
+    gsl_vector * energy;
+    orbital * temp;
+
+    S_minus_half = gsl_matrix_calloc(length,length);
+    dest_temp = gsl_matrix_calloc(length,length);
+
+    gsl_matrix_inverse_square_root(S_minus_half,S,length);
+
+    energy = gsl_vector_calloc(length);
+
+    temp = HEAD;
+
+    gsl_matrix_set(dest,i,i,1);
+    gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,HEAD,atom_HEAD,length));
+
+
+    for(i=1;i<length;i++)
+    {
+        temp = temp->NEXT;
+        gsl_matrix_set(dest,i,i,1);
+        gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,HEAD,atom_HEAD,length));
+    }
+
+    gsl_eigen_symmv_sort(energy,dest,GSL_EIGEN_SORT_VAL_ASC);
+    gsl_matrix_mul(S_minus_half,dest,dest_temp,length,length,length);
+
+    gsl_matrix_memcpy(dest,dest_temp);
+
+    gsl_matrix_free(dest_temp);
+    gsl_matrix_free(S_minus_half);
+
+    gsl_vector_free(energy);
+
+}
+
 int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha)
 {
     gsl_matrix * F, * S, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp;
@@ -135,8 +209,16 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     printf("\n");
     printf("============================= Start SCF =============================\n\n");
 
+    initial_guess(coef,S,HEAD,atom_HEAD,length);
+
+    // gsl_matrix_unitmatrix(coef,length);
+
+    printf("Initial guess:\n");
+    printf("\nCoefficient matrix:\n");
+    gsl_matrix_printf(coef,length,length,"%10.4f");
     
-    for(i=0;i<iteration_max;i++)
+
+    for(i=0;i<=iteration_max;i++)
     {
         fock_matrix(F,coef,HEAD,atom_HEAD,length,el_num);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
