@@ -15,9 +15,19 @@
 
 #include <gsl/gsl_eigen.h>
 
-double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
+double nuclear_attraction_energy_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD);
+
+double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD);
 
 double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, gsl_matrix * coef, int length, int el_num);
+
+void kinetic_energy_matrix(gsl_matrix * dest, orbital * HEAD, int length);
+
+void nuclear_attraction_energy_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
+
+void core_hamiltonian_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
+
+void two_electron_quad_tensor(gsl_quad_tensor * dest, orbital * HEAD, int length);
 
 void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num);
 

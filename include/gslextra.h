@@ -21,6 +21,31 @@
 
 #endif
 
+typedef struct gsl_quad_tensor
+{
+    int i;
+    int j;
+    int k;
+    int l;
+
+    gsl_matrix *** element;
+}gsl_quad_tensor;
+
+gsl_quad_tensor * gsl_quad_tensor_alloc(int i, int j, int k, int l);
+gsl_quad_tensor * gsl_quad_tensor_calloc(int i,int j, int k, int l);
+void gsl_quad_tensor_free(gsl_quad_tensor * q);
+
+double gsl_quad_tensor_get(gsl_quad_tensor * q, int i, int j, int k, int l);
+void gsl_quad_tensor_get_matrix(gsl_matrix * m, gsl_quad_tensor * q, int i, int j);
+
+void gsl_quad_tensor_set(gsl_quad_tensor * q, int i, int j, int k, int l, double x);
+void gsl_quad_tensor_set_matrix(gsl_quad_tensor * q, int i, int j, const gsl_matrix * m);
+
+void gsl_quad_tensor_add(gsl_quad_tensor * A, gsl_quad_tensor * b);
+void gsl_quad_tensor_sub(gsl_quad_tensor * A, gsl_quad_tensor * b);
+void gsl_quad_tensor_scale(gsl_quad_tensor * q, double x);
+
+
 
 void gsl_vector_complex_convert(gsl_vector * source, gsl_vector_complex * target, int length);
 void gsl_matrix_complex_convert(gsl_matrix * source, gsl_matrix_complex * target, int rows, int columns);

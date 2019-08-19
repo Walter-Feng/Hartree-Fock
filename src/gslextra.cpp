@@ -1,5 +1,134 @@
 #include "../include/gslextra.h"
 
+gsl_quad_tensor * gsl_quad_tensor_alloc(int i, int j, int k, int l)
+{
+    gsl_quad_tensor * result;
+
+    result = new gsl_quad_tensor;
+
+    result->i = i;
+    result->j = j;
+    result->k = k;
+    result->l = l;
+
+    int a,b;
+
+    result->element = (gsl_matrix ***) malloc(i * sizeof(gsl_matrix **));
+
+    for(a=0;a<i;a++)
+    {
+        * (result->element + a) = (gsl_matrix **) malloc(j*sizeof(gsl_matrix *));
+        for(b=0;b<j;b++)
+        {
+            *(*(result->element + a) + b) = gsl_matrix_alloc(k,l); 
+        }
+    }
+
+    return result;
+}
+
+gsl_quad_tensor * gsl_quad_tensor_calloc(int i, int j, int k, int l)
+{
+    gsl_quad_tensor * result;
+
+    result = new gsl_quad_tensor;
+
+    result->i = i;
+    result->j = j;
+    result->k = k;
+    result->l = l;
+
+    int a,b;
+
+    result->element = (gsl_matrix ***) malloc(i * sizeof(gsl_matrix **));
+
+    for(a=0;a<i;a++)
+    {
+        * (result->element + a) = (gsl_matrix **) malloc(j*sizeof(gsl_matrix *));
+        for(b=0;b<j;b++)
+        {
+            *(*(result->element + a) + b) = gsl_matrix_calloc(k,l); 
+        }
+    }
+
+    return result;
+}
+
+void gsl_quad_tensor_free(gsl_quad_tensor * q)
+{
+    int a,b;
+
+    for(a=0;a<q->i;a++)
+    {
+        for(b=0;b<q->j;b++)
+        {
+            gsl_matrix_free(*((* q->element + a) + b)); 
+        }
+
+        free(*(q->element + a));
+    }
+    free(q->element);
+}
+
+double gsl_quad_tensor_get(gsl_quad_tensor * q, int i, int j,int k, int l)
+{
+    return gsl_matrix_get(*(*(q->element + i) + j),k,l);
+}
+
+void gsl_quad_tensor_get_matrix(gsl_matrix * m, gsl_quad_tensor * q, int i, int j)
+{
+    gsl_matrix_memcpy(m,*(*(q->element + i) + j));
+}
+
+void gsl_quad_tensor_set(gsl_quad_tensor * q, int i, int j, int k, int l, double x)
+{
+    gsl_matrix_set(*(*(q->element + i) +j),k,l,x);
+}
+
+void gsl_quad_tensor_set_matrix(gsl_quad_tensor * q, int i, int j, gsl_matrix * m)
+{
+    gsl_matrix_memcpy(*(*(q->element + i) + j),m);
+}
+
+void gsl_quad_tensor_add(gsl_quad_tensor * A, gsl_quad_tensor * b)
+{
+    int i,j;
+
+    for(i=0;i<A->i;i++)
+    {
+        for(j=0;j<A->j;j++)
+        {
+            gsl_matrix_add(*(*(A->element + i) + j), *(*(A->element + i) + j));
+        }
+    }
+}
+
+void gsl_quad_tensor_sub(gsl_quad_tensor * A, gsl_quad_tensor * b)
+{
+    int i,j;
+
+    for(i=0;i<A->i;i++)
+    {
+        for(j=0;j<A->j;j++)
+        {
+            gsl_matrix_sub(*(*(A->element + i) + j), *(*(A->element + i) + j));
+        }
+    }
+}
+
+void gsl_quad_tensor_scale(gsl_quad_tensor * A, double x)
+{
+    int i,j;
+
+    for(i=0;i<A->i;i++)
+    {
+        for(j=0;j<A->j;j++)
+        {
+            gsl_matrix_scale(*(*(A->element + i) + j),x);
+        }
+    }
+}
+
 void gsl_vector_complex_convert(gsl_vector * source, gsl_vector_complex * target, int length)
 {
     int i;

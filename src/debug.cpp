@@ -132,7 +132,7 @@ int main(int argc, char const *argv[])
                         for(i=0;i<3;i++)
                         {
                             fscanf(inputfile,"%lf",&coord_temp);
-                            atoms->cartesian[i] = coord_temp / 0.529;
+                            atoms->cartesian[i] = coord_temp / 0.529177210903;
                         }
 
                         atomic_orbital_sync_coord(atoms);
@@ -181,6 +181,8 @@ int main(int argc, char const *argv[])
 
     energy = gsl_vector_calloc(length);
     coef = gsl_matrix_calloc(length,length);
+
+    printf("Total electrons: %d\n",el_num);
 
     RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER,ALPHA);
 

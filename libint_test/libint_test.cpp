@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
             std::ostream_iterator<Shell>(std::cout, "\n"));
 
 
-    libint2::finalize();  // do not use libint after this
+     libint2::finalize();  // do not use libint after this
 
     // can repeat the libint2::initialize() ... finalize() cycle as many times as
     // necessary

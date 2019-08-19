@@ -181,7 +181,7 @@ double ZIntegral(double ra[3], double rb[3], double rz[3], int ax, int ay, int a
 
     else if(bz > 0) return alpha/(alpha+beta) * (ra[2] - rb[2]) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-1,alpha,beta,m) + (rz[2] - rb[2] - alpha/(alpha + beta) * (ra[2] - rb[2])) * ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + (double) (bz-1) / 2.0 /(alpha + beta) *(ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-2,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az,bx,by,bz-2,alpha,beta,m+1)) + (double) az / 2.0 / (alpha + beta) * (ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m) - ZIntegral(ra,rb,rz,ax,ay,az-1,bx,by,bz-1,alpha,beta,m + 1));
 
-    else return 2 * M_PI / (alpha + beta) * exp(-alpha * beta /zeta * AB) * Boys((alpha * beta) * PC,m);
+    else return 2 * M_PI / (alpha + beta) * exp(-alpha * beta /zeta * AB) * Boys((alpha + beta) * PC,m);
 }
 
 

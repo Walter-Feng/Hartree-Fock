@@ -180,6 +180,22 @@ void atomic_orbital_single_cpy(atomic_orbital * dest, atomic_orbital * src)
         orbital_cpy(dest->orbital_HEAD,src->orbital_HEAD);
 }
 
+orbital * orbital_enquiry(orbital * HEAD, int index)
+{
+    orbital * temp;
+
+    temp = HEAD;
+
+    if(index==0) return HEAD;
+    else
+    {
+        for(int i=0;i<index;i++)
+            temp = temp->NEXT;
+
+        return temp;
+    }
+}
+
 //decide the label for a particular electron orbital
 void orbital_label(char * dest, int n, int l, int m)
 {

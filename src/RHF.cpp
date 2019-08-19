@@ -1,18 +1,32 @@
 #include "../include/RHF.h"
 
-double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+double nuclear_attraction_energy_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD)
 {
     double result;
 
-    int i,j;
-
-    gsl_vector * coef_vector_temp;
-
-    orbital * orbital_temp;
-
     atomic_orbital * atom_temp;
 
-    coef_vector_temp = gsl_vector_calloc(length);
+
+    result = 0;
+
+    atom_temp = atom_HEAD;
+    
+    while(atom_temp->NEXT != NULL)
+    {
+        result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+        atom_temp = atom_temp->NEXT;
+    }
+
+    result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+
+    return result;
+}
+
+double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD)
+{
+    double result;
+
+    atomic_orbital * atom_temp;
 
     result = orbital_kinetic_energy(a,b);
 
@@ -26,10 +40,9 @@ double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, orbi
 
     result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
 
-    gsl_vector_free(coef_vector_temp);
-
     return result;
 }
+
 
 double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbital * atom_HEAD, gsl_matrix * coef, int length, int el_num)
 {
@@ -77,6 +90,130 @@ double fock_matrix_element(orbital * a, orbital * b, orbital * HEAD, atomic_orbi
     gsl_vector_free(coef_vector_temp);
 
     return result;
+}
+
+void kinetic_energy_matrix(gsl_matrix * dest, orbital * HEAD, int length)
+{
+    orbital * temp1, * temp2;
+
+    int i,j;
+
+    i = 0;
+    j = 0;
+
+    temp1 = HEAD;
+    temp2 = HEAD;
+    gsl_matrix_set(dest,i,j,orbital_kinetic_energy(temp1,temp2));
+
+    for(i=1;i<length;i++)
+    {
+        temp2 = temp2->NEXT;
+        gsl_matrix_set(dest,i,j,orbital_kinetic_energy(temp1,temp2));
+    }
+
+    for(j=1;j<length;j++)
+    {
+        temp2 = HEAD;
+        temp1 = temp1->NEXT;
+        i = 0;
+        gsl_matrix_set(dest,i,j,orbital_kinetic_energy(temp1,temp2));
+
+        for(i=1;i<length;i++)
+        {
+            temp2 = temp2->NEXT;
+            gsl_matrix_set(dest,i,j,orbital_kinetic_energy(temp1,temp2));
+        }
+    }
+}
+
+void nuclear_attraction_energy_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+{
+    orbital * temp1, * temp2;
+
+    int i,j;
+
+    i = 0;
+    j = 0;
+
+    temp1 = HEAD;
+    temp2 = HEAD;
+
+    gsl_matrix_set(dest,i,j,nuclear_attraction_energy_matrix_element(temp1,temp2,atom_HEAD));
+
+    for(i=1;i<length;i++)
+    {
+        temp2 = temp2->NEXT;
+        gsl_matrix_set(dest,i,j,nuclear_attraction_energy_matrix_element(temp1,temp2,atom_HEAD));
+    }
+
+    for(j=1;j<length;j++)
+    {
+        temp2 = HEAD;
+        temp1 = temp1->NEXT;
+        i = 0;
+        gsl_matrix_set(dest,i,j,nuclear_attraction_energy_matrix_element(temp1,temp2,atom_HEAD));
+
+        for(i=1;i<length;i++)
+        {
+            temp2 = temp2->NEXT;
+            gsl_matrix_set(dest,i,j,nuclear_attraction_energy_matrix_element(temp1,temp2,atom_HEAD));
+        }
+    }
+}
+
+void core_hamiltonian_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+{
+    orbital * temp1, * temp2;
+
+    int i,j;
+
+    i = 0;
+    j = 0;
+
+    temp1 = HEAD;
+    temp2 = HEAD;
+
+    gsl_matrix_set(dest,i,j,single_electron_hamiltonian_matrix_element(temp1,temp2,atom_HEAD));
+
+    for(i=1;i<length;i++)
+    {
+        temp2 = temp2->NEXT;
+        gsl_matrix_set(dest,i,j,single_electron_hamiltonian_matrix_element(temp1,temp2,atom_HEAD));
+    }
+
+    for(j=1;j<length;j++)
+    {
+        temp2 = HEAD;
+        temp1 = temp1->NEXT;
+        i = 0;
+        gsl_matrix_set(dest,i,j,single_electron_hamiltonian_matrix_element(temp1,temp2,atom_HEAD));
+
+        for(i=1;i<length;i++)
+        {
+            temp2 = temp2->NEXT;
+            gsl_matrix_set(dest,i,j,single_electron_hamiltonian_matrix_element(temp1,temp2,atom_HEAD));
+        }
+    }    
+}
+
+void two_electron_quad_tensor(gsl_quad_tensor * dest, orbital * HEAD, int length)
+{
+    int i,j,k,l;
+
+
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            for(k=0;k<length;k++)
+            {
+                for(l=0;l<length;l++)
+                {
+                    gsl_quad_tensor_set(dest,i,j,k,l,two_electron_JIntegral(orbital_enquiry(HEAD,i),orbital_enquiry(HEAD,j),orbital_enquiry(HEAD,k),orbital_enquiry(HEAD,l)));
+                }
+            }
+        }
+    }
 }
 
 void fock_matrix(gsl_matrix * dest, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num)
@@ -134,14 +271,14 @@ void initial_guess(gsl_matrix * dest, gsl_matrix * S, orbital * HEAD, atomic_orb
     temp = HEAD;
 
     gsl_matrix_set(dest,i,i,1);
-    gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,HEAD,atom_HEAD,length));
+    gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,atom_HEAD));
 
 
     for(i=1;i<length;i++)
     {
         temp = temp->NEXT;
         gsl_matrix_set(dest,i,i,1);
-        gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,HEAD,atom_HEAD,length));
+        gsl_vector_set(energy,i,single_electron_hamiltonian_matrix_element(temp,temp,atom_HEAD));
     }
 
     gsl_eigen_symmv_sort(energy,dest,GSL_EIGEN_SORT_VAL_ASC);
@@ -158,9 +295,11 @@ void initial_guess(gsl_matrix * dest, gsl_matrix * S, orbital * HEAD, atomic_orb
 
 int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha)
 {
-    gsl_matrix * F, * S, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp;
+    gsl_matrix * F, * S, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp, * debug_temp, * density_matrix;
     
     gsl_vector * coef_vector, * difference, * vector_temp1, * vector_temp2;
+
+    gsl_quad_tensor * v;
 
     // allocating memories
 
@@ -179,6 +318,17 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     // temporary matrix that helps mixing the coef matrix
     mixing_temp = gsl_matrix_calloc(length,length);
 
+    debug_temp = gsl_matrix_calloc(length,length);
+
+    density_matrix = gsl_matrix_calloc(length,length);
+    gsl_matrix_set(density_matrix,0,0,0.5);
+    gsl_matrix_set(density_matrix,1,1,0.5);
+    gsl_matrix_set(density_matrix,2,2,1);
+    gsl_matrix_set(density_matrix,3,3,1);
+    gsl_matrix_set(density_matrix,4,4,2.0/3.0);
+    gsl_matrix_set(density_matrix,5,5,2.0/3.0);
+    gsl_matrix_set(density_matrix,6,6,2.0/3.0);
+
     gsl_matrix_memcpy(input_coef_temp,coef);
 
     // vector from coef matrix
@@ -189,8 +339,9 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     vector_temp1 = gsl_vector_calloc(length);
     vector_temp2 = gsl_vector_calloc(length);
 
+    v = gsl_quad_tensor_calloc(length,length,length,length);
 
-    int i,j,k,count; // iterators
+    int i,j,k,l,count; // iterators
 
     // energy variables
     double energy_temp, energy_bk;
@@ -204,14 +355,84 @@ int RHF_SCF_print(gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic
     count = 0;
     beta = 0;
 
+    printf("Nuclear repulsions: %10.6f\n",nuclei_repulsion(atom_HEAD));
+
     orbital_S_matrix(S,HEAD);
+    printf("Overlap Integrals:\n");
+    gsl_matrix_printf(S,length,length,"%10.6f");
+
+    kinetic_energy_matrix(debug_temp,HEAD,length);
+    printf("Kinetic Energy Integrals:\n");
+    gsl_matrix_printf(debug_temp,length,length,"%10.6f");
+
+    nuclear_attraction_energy_matrix(debug_temp,HEAD,atom_HEAD,length);
+    printf("Nuclear Attraction Integrals:\n");
+    gsl_matrix_printf(debug_temp,length,length,"%10.6f");
+
+    core_hamiltonian_matrix(debug_temp,HEAD,atom_HEAD,length);
+    printf("Core Hamiltonian Matrix:\n");
+    gsl_matrix_printf(debug_temp,length,length,"%10.6f");
+
+    printf("Initial Density Matrix:\n");
+    gsl_matrix_printf(density_matrix,length,length,"%10.6f");
+
+    two_electron_quad_tensor(v,HEAD,length);
+    energy_temp = 0;
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            energy_temp += gsl_matrix_get(debug_temp,i,j) * gsl_matrix_get(density_matrix,j,i);
+        }
+    }
+
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            for(k=0;k<length;k++)
+            {
+                for(l=0;l<length;l++)
+                {
+                    energy_temp += gsl_quad_tensor_get(v,i,j,k,l) * gsl_matrix_get(density_matrix,j,i) * gsl_matrix_get(density_matrix,l,k);
+                    energy_temp -= 0.5 * gsl_quad_tensor_get(v,i,k,j,l) * gsl_matrix_get(density_matrix,j,i) * gsl_matrix_get(density_matrix,l,k);
+                }
+            }
+        }
+    }
+
+    double fock_matrix_temp;
+
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            fock_matrix_temp = gsl_matrix_get(debug_temp,i,j);
+
+            for(k=0;k<length;k++)
+            {
+                for(l=0;l<length;l++)
+                {
+                    fock_matrix_temp += gsl_quad_tensor_get(v,i,j,k,l) * gsl_matrix_get(density_matrix,l,k);
+                    fock_matrix_temp -= 0.5 * gsl_quad_tensor_get(v,i,k,j,l) * gsl_matrix_get(density_matrix,l,k);               
+                }
+            }
+
+            gsl_matrix_set(F,i,j,fock_matrix_temp);
+        }
+    }
+
+    printf("Fock Matrix: \n");
+    gsl_matrix_printf(F,length,length,"%10.6f");
+
+    printf("Energy: %lf\n", energy_temp);
 
     printf("\n");
     printf("============================= Start SCF =============================\n\n");
 
-    initial_guess(coef,S,HEAD,atom_HEAD,length);
+    // initial_guess(coef,S,HEAD,atom_HEAD,length);
 
-    // gsl_matrix_unitmatrix(coef,length);
+    gsl_matrix_unitmatrix(coef,length);
 
     printf("Initial guess:\n");
     printf("\nCoefficient matrix:\n");
@@ -379,5 +600,5 @@ double nuclei_repulsion(atomic_orbital * atomlist_HEAD)
     result += (double) temp1->N * (double) temp2->N / distance;
     }
 
-    return result;
+    return result/2.0;
 }

@@ -63,6 +63,8 @@ orbital* orbital_calloc(int);
 // free the memory for struct orbital
 void orbital_free(orbital * HEAD);
 
+orbital * orbital_enquiry(orbital * HEAD, int index);
+
 //To allocate the memory for struct atomic_orbital
 atomic_orbital* atomic_orbital_calloc();
 //To free the memory for struct atomic_orbital
