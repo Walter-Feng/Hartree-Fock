@@ -184,7 +184,7 @@ int main(int argc, char const *argv[])
 
     printf("Total electrons: %d\n",el_num);
 
-    RHF_SCF_print(energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER,ALPHA);
+    RHF_SCF_print(&total_energy,energy,coef,orbitals,atoms,length,el_num,SCF_MAX,ERR_MAX,COUNTER,ALPHA);
 
     printf("\n\n");
 
@@ -199,7 +199,6 @@ int main(int argc, char const *argv[])
         if(el_num_counter < el_num)
         {
             printf("2\n");
-            total_energy += gsl_vector_get(energy,i) * 2.0;
         }
         else printf("0\n");
 

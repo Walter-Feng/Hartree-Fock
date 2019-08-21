@@ -399,6 +399,44 @@ void gsl_matrix_complex_conjugate(gsl_matrix_complex * m, int rows, int columns)
     }
 }
 
+void gsl_matrix_square_root(gsl_matrix * dest, gsl_matrix * src, int length)
+{
+    gsl_eigen_symmv_workspace * w;
+
+    gsl_vector * eigenvalues;
+    gsl_matrix * eigenvecs;
+    gsl_matrix * temp;
+    gsl_matrix * src_temp;
+
+    eigenvalues = gsl_vector_calloc(length);
+    eigenvecs = gsl_matrix_calloc(length,length);
+    temp = gsl_matrix_calloc(length,length);
+    src_temp = gsl_matrix_calloc(length,length);
+    w = gsl_eigen_symmv_alloc(length);
+
+    gsl_matrix_memcpy(src_temp,src);
+    gsl_eigen_symmv(src_temp,eigenvalues,eigenvecs,w);
+    gsl_eigen_symmv_sort(eigenvalues,eigenvecs,GSL_EIGEN_SORT_VAL_ASC);
+
+    gsl_matrix_set_zero(dest);
+
+    int i;
+    for(i=0;i<length;i++)
+        gsl_matrix_set(dest,i,i,sqrt(gsl_vector_get(eigenvalues,i)));
+
+    gsl_matrix_mul(eigenvecs,dest,temp,length,length,length);
+
+    gsl_matrix_transpose(eigenvecs);
+    gsl_matrix_mul(temp,eigenvecs,dest,length,length,length);
+
+    gsl_matrix_free(eigenvecs);
+    gsl_matrix_free(temp);
+    gsl_vector_free(eigenvalues);
+    gsl_matrix_free(src_temp);
+    gsl_eigen_symmv_free(w);
+
+}
+
 void gsl_matrix_inverse_square_root(gsl_matrix * dest, gsl_matrix * src, int length)
 {
     gsl_eigen_symmv_workspace * w;
@@ -406,13 +444,18 @@ void gsl_matrix_inverse_square_root(gsl_matrix * dest, gsl_matrix * src, int len
     gsl_vector * eigenvalues;
     gsl_matrix * eigenvecs;
     gsl_matrix * temp;
+    gsl_matrix * src_temp;
 
     eigenvalues = gsl_vector_calloc(length);
     eigenvecs = gsl_matrix_calloc(length,length);
     temp = gsl_matrix_calloc(length,length);
+    src_temp = gsl_matrix_calloc(length,length);
     w = gsl_eigen_symmv_alloc(length);
 
-    gsl_eigen_symmv(src,eigenvalues,eigenvecs,w);
+    gsl_matrix_memcpy(src_temp,src);
+    gsl_eigen_symmv(src_temp,eigenvalues,eigenvecs,w);
+
+    gsl_eigen_symmv_sort(eigenvalues,eigenvecs,GSL_EIGEN_SORT_VAL_ASC);
 
     gsl_matrix_set_zero(dest);
 
@@ -428,6 +471,7 @@ void gsl_matrix_inverse_square_root(gsl_matrix * dest, gsl_matrix * src, int len
     gsl_matrix_free(eigenvecs);
     gsl_matrix_free(temp);
     gsl_vector_free(eigenvalues);
+    gsl_matrix_free(src_temp);
     gsl_eigen_symmv_free(w);
 
 }
