@@ -23,6 +23,7 @@ X   (ab|[\hat{t}_1,r_{12}]|c)
 Y   (ab|[\hat{t}_1,r_{12}^{-1}])
 Z   (a|\frac{1}{r_{1Z}}|b)
 
+Currently only S integrals and J integrals are supported.
 
  */
 
@@ -52,6 +53,9 @@ typedef struct gaussian_chain{
 gaussian_chain * gaussian_chain_calloc();
 
 void gaussian_chain_free(gaussian_chain * HEAD);
+
+double gaussian_chain_get(gaussian_chain * HEAD,double x, double y, double z);
+double orbital_get(orbital * orbital,double x, double y, double z);
 
 double Gamma(double z);
 double Boys(double x, int n);
