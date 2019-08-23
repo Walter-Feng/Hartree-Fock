@@ -15,18 +15,25 @@
 
 #include <gsl/gsl_eigen.h>
 
+// calculate the attraction energy matrix element (Z integral)
 double nuclear_attraction_energy_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD);
 
+// calculate the single electron hamiltonian matrix (core hamiltonian matrix) element
 double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD);
 
+// calculate the fock matrix element
 double fock_matrix_element(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int i, int j, int length);
 
+// calculate the Hartree-Fock energy of the system
 double HF_energy(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int length);
 
+// calculate the kinetic energy matrix 
 void kinetic_energy_matrix(gsl_matrix * dest, orbital * HEAD, int length);
 
+// calculate the attraction energy matrix (Z integrals)
 void nuclear_attraction_energy_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
 
+// calculate the single electron hamiltonian matrix (core hamiltonian matrix)
 void core_hamiltonian_matrix(gsl_matrix * dest, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
 
 //obtain the quad tensor of the two-electron Coulomb integrals 
