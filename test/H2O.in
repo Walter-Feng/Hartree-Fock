@@ -1,14 +1,29 @@
-&BASIS sto-3g
+&BASIS 6-31g
 
 &SCF
     &ERR 1e-6
-    &MAX 20
+    &MAX 50
     &COUNT 3
     &ALPHA 0.04
+    &MIXING ANDERSON
+    &INITIAL
+    &FOCK
+    &COEFF
 &END_SCF
 
 &COORD
-H 0.0000 0.757706 -0.50839
-H 0.0000 -0.757706 -0.50839
-O 0.0000 0.00000 0.127098
+    H 0.0000 0.757706 -0.50839
+    H 0.0000 -0.757706 -0.50839
+    O 0.0000 0.00000 0.127098
 &END_COORD
+
+&PRINT
+    &CHK
+        &BEGIN  -5 -5 -5
+        &END    5  5  5
+        &GRID  0.5
+    &END_CHK
+    
+    &FOCK
+    &COEFF
+&END_PRINT

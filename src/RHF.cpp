@@ -107,8 +107,8 @@ double fock_matrix_element(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl
     {
         for(l=0;l<length;l++)
         {
-            fock_matrix_temp += 2 * gsl_quad_tensor_get(v,i,j,k,l) * gsl_matrix_get(density_matrix,l,k);
-            fock_matrix_temp -=  gsl_quad_tensor_get(v,i,k,j,l) * gsl_matrix_get(density_matrix,l,k);               
+            fock_matrix_temp += 2 * gsl_quad_tensor_get(v,j,i,k,l) * gsl_matrix_get(density_matrix,l,k);
+            fock_matrix_temp -=  gsl_quad_tensor_get(v,j,k,i,l) * gsl_matrix_get(density_matrix,l,k);               
         }
     }
 
@@ -234,37 +234,50 @@ void fock_matrix(gsl_matrix * dest, gsl_quad_tensor * v, gsl_matrix * density_ma
     }
 }
 
-void initial_guess(gsl_matrix * dest, gsl_matrix * S, orbital * HEAD, atomic_orbital * atom_HEAD, int length)
+void initial_guess(gsl_matrix * dest, gsl_matrix * core_hamiltonian, gsl_matrix * S, int length)
 {
     int i;
 
     i = 0;
 
-    gsl_matrix * S_minus_half;
-    gsl_matrix * dest_temp;
+    gsl_vector * temp_vector;
 
-    S_minus_half = gsl_matrix_calloc(length,length);
-    dest_temp = gsl_matrix_calloc(length,length);
+    temp_vector = gsl_vector_calloc(length);
 
-    gsl_matrix_inverse_square_root(S_minus_half,S,length);
+    gsl_eigen_Lowdin_diag(core_hamiltonian,S,temp_vector,dest,length);
 
-    for(i=0;i<length;i++)
-    {
-        gsl_matrix_set(dest,i,i,1);
-    }
-
-    gsl_matrix_mul(S_minus_half,dest,dest_temp,length,length,length);
-
-    gsl_matrix_memcpy(dest,dest_temp);
-
-    gsl_matrix_free(dest_temp);
-    gsl_matrix_free(S_minus_half);
+    gsl_vector_free(temp_vector);
 
 }
 
-int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha)
+void density_matrix(gsl_matrix * dest, gsl_matrix * coef, int el_num, int length)
 {
-    gsl_matrix * F, * S, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp, * debug_temp, * h_matrix, * density_matrix, * S_square_root, * coef_temp, * occ_matrix;
+    gsl_matrix * temp1, * temp2;
+
+    gsl_vector * vector_temp;
+
+    temp1 = gsl_matrix_calloc(length,length);
+    temp2 = gsl_matrix_calloc(length,length);
+
+    vector_temp = gsl_vector_calloc(length);
+
+    int i;
+    for(i=0;i<el_num/2;i++)
+    {
+        gsl_matrix_get_col(vector_temp,coef,i);
+        gsl_matrix_set_col(temp1,i,vector_temp);
+        gsl_matrix_set_row(temp2,i,vector_temp);
+    }
+
+    gsl_matrix_mul(temp1,temp2,dest,length,length,length);
+
+    gsl_matrix_free(temp1);
+    gsl_matrix_free(temp2);
+}
+
+int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha, int mixing_type, int SCF_INITIAL_FLAG, int SCF_FOCK_FLAG, int SCF_COEF_FLAG, int FOCK_FLAG)
+{
+    gsl_matrix * F, * S, * D, * input_coef_temp, * output_coef_temp, * diff, * diff_temp, * mixing_temp, * debug_temp, * h_matrix, * S_square_root, * coef_temp, * occ_matrix;
     
     gsl_vector * coef_vector, * difference, * vector_temp1, * vector_temp2;
 
@@ -293,7 +306,7 @@ int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, o
 
     h_matrix = gsl_matrix_calloc(length,length);
 
-    density_matrix = gsl_matrix_calloc(length,length);
+    D = gsl_matrix_calloc(length,length);
 
     coef_temp = gsl_matrix_calloc(length,length);
 
@@ -337,73 +350,54 @@ int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, o
     printf("Nuclear repulsions: %10.6f\n",nuclei_repulsion(atom_HEAD));
 
     orbital_S_matrix(S,HEAD);
-    printf("Overlap Integrals:\n");
-    gsl_matrix_printf(S,length,length,"%10.6f");
-
-    gsl_matrix_square_root(S_square_root,S,length);
-
-    kinetic_energy_matrix(debug_temp,HEAD,length);
-    printf("Kinetic Energy Integrals:\n");
-    gsl_matrix_printf(debug_temp,length,length,"%10.6f");
-
-    nuclear_attraction_energy_matrix(debug_temp,HEAD,atom_HEAD,length);
-    printf("Nuclear Attraction Integrals:\n");
-    gsl_matrix_printf(debug_temp,length,length,"%10.6f");
-
     core_hamiltonian_matrix(h_matrix,HEAD,atom_HEAD,length);
-    printf("Core Hamiltonian Matrix:\n");
-    gsl_matrix_printf(h_matrix,length,length,"%10.6f");
+    initial_guess(coef,h_matrix,S,length);
+    density_matrix(D,coef,el_num,length);
 
-    initial_guess(coef,S,HEAD,atom_HEAD,length);
-    gsl_matrix_mul(S_square_root,coef,coef_temp,length,length,length);
-    gsl_matrix_mul(occ_matrix,coef_temp,density_matrix,length,length,length);
-    printf("Initial Density Matrix:\n");
-    gsl_matrix_printf(density_matrix,length,length,"%10.6f");
+    if(SCF_INITIAL_FLAG==1){
+        printf("Overlap Integrals:\n");
+        gsl_matrix_printf(S,length,length,"%10.6f");
+
+        gsl_matrix_square_root(S_square_root,S,length);
+
+        kinetic_energy_matrix(debug_temp,HEAD,length);
+        printf("Kinetic Energy Integrals:\n");
+        gsl_matrix_printf(debug_temp,length,length,"%10.6f");
+
+        nuclear_attraction_energy_matrix(debug_temp,HEAD,atom_HEAD,length);
+        printf("Nuclear Attraction Integrals:\n");
+        gsl_matrix_printf(debug_temp,length,length,"%10.6f");
+
+        printf("Core Hamiltonian Matrix:\n");
+        gsl_matrix_printf(h_matrix,length,length,"%10.6f");
+
+        printf("\nCoefficient matrix:\n");
+        gsl_matrix_printf(coef,length,length,"%10.4f");
+
+        printf("Initial Density Matrix:\n");
+        gsl_matrix_printf(D,length,length,"%10.6f");
+    }
 
     two_electron_quad_tensor(v,HEAD,length);
-
-    fock_matrix(F,v,density_matrix,h_matrix,length);
-    printf("Fock Matrix: \n");
-    gsl_matrix_printf(F,length,length,"%10.6f");
-
-    energy_temp = HF_energy(v,density_matrix,h_matrix,length);
-    printf("Energy: %lf\n", energy_temp);
+    fock_matrix(F,v,D,h_matrix,length);
+    energy_temp = HF_energy(v,D,h_matrix,length);
+    if(SCF_INITIAL_FLAG == 0)
+    {
+        printf("Fock Matrix: \n");
+        gsl_matrix_printf(F,length,length,"%10.6f");
+        printf("Energy: %lf\n", energy_temp);
+    }
 
     printf("\n");
     printf("============================= Start SCF =============================\n\n");
-
-    printf("Initial guess:\n");
-    printf("\nCoefficient matrix:\n");
-    gsl_matrix_printf(coef,length,length,"%10.4f");
     
-
     for(i=0;i<iteration_max;i++)
     {
-        fock_matrix(F,v,density_matrix,h_matrix,length);
+        fock_matrix(F,v,D,h_matrix,length);
         gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
-        // keep the sign of each vector
-        // for(j=0;j<length;j++)
-        // {
-        //     gsl_matrix_get_col(vector_temp1,coef,j);
-        //     gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
-        //     for(k=0;k<length;k++)
-        //     {
-        //         if(gsl_vector_get(vector_temp1,k)*gsl_vector_get(vector_temp2,k)<0)
-        //         {
-        //             gsl_vector_scale(vector_temp1,-1.0);
-        //             gsl_matrix_set_col(coef,j,vector_temp1);
-        //             break;
-        //         }
-        //     }
-        // }
-        for(j=0;j<el_num/2;j++)
-        {
-            gsl_matrix_set(occ_matrix,j,j,1);
-        }
-        gsl_matrix_mul(S_square_root,coef,coef_temp,length,length,length);
-        gsl_matrix_mul(occ_matrix,coef_temp,density_matrix,length,length,length);        
+        density_matrix(D,coef,el_num,length);     
 
-        energy_temp = HF_energy(v,density_matrix,h_matrix,length);
+        energy_temp = HF_energy(v,D,h_matrix,length);
 
         if(abs(energy_temp - energy_bk) < errmax) count++;
         else count = 0;
@@ -411,10 +405,16 @@ int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, o
         if(count >= countmax) break;
 
         printf("iteration = %d, energy = %lf\n",i+1,energy_temp);
-        printf("\nFock matrix:\n");
-        gsl_matrix_printf(F,length,length,"%10.4f");
-        printf("\nCoefficient matrix:\n");
-        gsl_matrix_printf(coef,length,length,"%10.4f");
+        if(SCF_FOCK_FLAG==1)
+        {
+            printf("\nFock matrix:\n");
+            gsl_matrix_printf(F,length,length,"%10.4f");
+        }
+        if(SCF_COEF_FLAG==1)
+        {
+            printf("\nCoefficient matrix:\n");
+            gsl_matrix_printf(coef,length,length,"%10.4f");
+        }
 
 
         gsl_matrix_memcpy(diff_temp,diff);
@@ -425,66 +425,79 @@ int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, o
 
         energy_bk = energy_temp;
 
-        //Anderson's mixing
-        // if(i>10)
-        // {
-        //     for(j=0;j<length;j++)
-        //     {
-        //         //calculating parameter beta
-        //         gsl_matrix_get_col(vector_temp1,diff,j);
-        //         gsl_matrix_get_col(vector_temp2,diff_temp,j);
+        // Anderson's mixing
+        if(i>3 && mixing_type==1)
+        {
+            for(j=0;j<length;j++)
+            {
+                //calculating parameter beta
+                gsl_matrix_get_col(vector_temp1,diff,j);
+                gsl_matrix_get_col(vector_temp2,diff_temp,j);
 
-        //         difference_temp = gsl_vector_inner_product(vector_temp1,vector_temp1,length) - gsl_vector_inner_product(vector_temp1,vector_temp2,length);
+                difference_temp = gsl_vector_inner_product(vector_temp1,vector_temp1,length) - gsl_vector_inner_product(vector_temp1,vector_temp2,length);
 
-        //         gsl_vector_sub(vector_temp2,vector_temp1);
+                gsl_vector_sub(vector_temp2,vector_temp1);
 
-        //         beta = difference_temp/gsl_vector_inner_product(vector_temp2,vector_temp2,length);
+                beta = difference_temp/gsl_vector_inner_product(vector_temp2,vector_temp2,length);
 
-        //         // Set the output part |n_{out}>
-        //         gsl_matrix_get_col(vector_temp1,coef,j);
-        //         gsl_vector_scale(vector_temp1,1.0 - beta);
-        //         gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
-        //         gsl_vector_scale(vector_temp2,beta);
-        //         gsl_vector_add(vector_temp1,vector_temp2);
+                // Set the output part |n_{out}>
+                gsl_matrix_get_col(vector_temp1,coef,j);
+                gsl_vector_scale(vector_temp1,1.0 - beta);
+                gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+                gsl_vector_scale(vector_temp2,beta);
+                gsl_vector_add(vector_temp1,vector_temp2);
 
-        //         // Start writing the next input matrix
-        //         gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+                // Start writing the next input matrix
+                gsl_matrix_set_col(mixing_temp,j,vector_temp1);
 
-        //         // Set the input part |n_{in>}
-        //         gsl_matrix_get_col(vector_temp1,input_coef_temp,j);
-        //         gsl_vector_scale(vector_temp1,1.0-beta);
-        //         gsl_matrix_get_col(vector_temp2,diff_temp,j);
-        //         gsl_vector_scale(vector_temp2,beta);
-        //         gsl_vector_sub(vector_temp1,vector_temp2);
-        //         gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
-        //         gsl_vector_scale(vector_temp2,beta);
-        //         gsl_vector_add(vector_temp1,vector_temp2);                
+                // Set the input part |n_{in>}
+                gsl_matrix_get_col(vector_temp1,input_coef_temp,j);
+                gsl_vector_scale(vector_temp1,1.0-beta);
+                gsl_matrix_get_col(vector_temp2,diff_temp,j);
+                gsl_vector_scale(vector_temp2,beta);
+                gsl_vector_sub(vector_temp1,vector_temp2);
+                gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+                gsl_vector_scale(vector_temp2,beta);
+                gsl_vector_add(vector_temp1,vector_temp2);                
 
-        //         gsl_vector_scale(vector_temp1,1.0-alpha);
-        //         gsl_matrix_get_col(vector_temp2,mixing_temp,j);
-        //         gsl_vector_scale(vector_temp2,alpha);
-        //         gsl_vector_add(vector_temp1,vector_temp2);
-        //         gsl_matrix_set_col(mixing_temp,j,vector_temp1);
-        //     }
+                gsl_vector_scale(vector_temp1,1.0-alpha);
+                gsl_matrix_get_col(vector_temp2,mixing_temp,j);
+                gsl_vector_scale(vector_temp2,alpha);
+                gsl_vector_add(vector_temp1,vector_temp2);
+                gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+            }
 
             // overwrite the coef matrix
             gsl_matrix_memcpy(output_coef_temp,coef);
-            // gsl_matrix_memcpy(coef,mixing_temp);
+            gsl_matrix_memcpy(coef,mixing_temp);
         // }     
         gsl_matrix_memcpy(input_coef_temp,coef);   
+        }
     }
 
     printf("\n===================================================================\n\n");
     if(i==iteration_max)
     {
         printf("WARNING: SCF not converged.\n");
-        *tot_energy = HF_energy(v,density_matrix,h_matrix,length);
+        *tot_energy = energy_temp;
+        
+        if(FOCK_FLAG == 1)
+        {
+            printf("\nFock matrix:\n");
+            gsl_matrix_printf(F,length,length,"%10.6f");            
+        }
         return 1;
     }
     else 
     {
         printf("SCF converged.\n");
-        *tot_energy = HF_energy(v,density_matrix,h_matrix,length);
+        *tot_energy = energy_temp;
+
+        if(FOCK_FLAG == 1)
+        {
+            printf("\nFock matrix:\n");
+            gsl_matrix_printf(F,length,length,"%10.6f");            
+        }
         return 0;    
     }
 }

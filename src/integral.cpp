@@ -61,9 +61,9 @@ double f(int k, int a, int b, double PA, double PB)
     for(i=0;i<=k;i++)
     {
         if(a<i||b-k+i<0) continue;
-        if(PA==0&&a-i==0&&PB==0&&b-k+i==0) result += Binomials(a,i) * Binomials(b,k-i);
-        else if(PA==0&&a-i==0) result += Binomials(a,i) * Binomials(b,k-i)* pow(PB,b-k+i);
-        else if(PB==0&&b-k+i==0) result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i);
+        if(abs(PA)<1e-10&&a-i==0&&abs(PB)<1e-19&&b-k+i==0) result += Binomials(a,i) * Binomials(b,k-i);
+        else if(abs(PA)<1e-10&&a-i==0) result += Binomials(a,i) * Binomials(b,k-i)* pow(PB,b-k+i);
+        else if(abs(PB)<1e-19&&b-k+i==0) result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i);
         else result += Binomials(a,i) * Binomials(a,k-i) * pow(PA,a-i) * pow(PB,b-k+i);
     }
 
@@ -131,17 +131,17 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
     if(ax<0||ay<0||az<0||bx<0||by<0||bz<0) return 0;
 
     //Provide recurrence relation
-    else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + (ax - 1)/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- (ax - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
+    else if(ax > 0) return ((P[0]-ra[0])*JIntegral(ra,rb,ax-1,ay,az,bx,by,bz,alpha,beta,m+1) + (ax - 1)/2.0/alpha * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m)- (ax - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax-2,ay,az,bx,by,bz,alpha,beta,m+1) + bx/2.0 /zeta * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
-    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (ay - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- (ay - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m+1) + by/2.0 /xi * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
+    else if(ay > 0) return ((P[1]-ra[1])*JIntegral(ra,rb,ax,ay-1,az,bx,by,bz,alpha,beta,m+1) + (ay - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m)- (ay - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay-2,az,bx,by,bz,alpha,beta,m+1) + by/2.0 /zeta * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
 
-    else if(az > 0) return ((P[2]-ra[2])*JIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + (az - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m)- (az - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + bz/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(az > 0) return ((P[2]-ra[2])*JIntegral(ra,rb,ax,ay,az-1,bx,by,bz,alpha,beta,m+1) + (az - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m)- (az - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az-2,bx,by,bz,alpha,beta,m+1) + bz/2.0 /zeta * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
-    else if(bx > 0) return ((P[0]-rb[0])*JIntegral(ra,rb,ax,ay,az,bx-1,by,bz,alpha,beta,m+1) + (bx - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m)- (bx - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m+1) + ax/2.0 /xi * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
+    else if(bx > 0) return ((P[0]-rb[0])*JIntegral(ra,rb,ax,ay,az,bx-1,by,bz,alpha,beta,m+1) + (bx - 1)/2.0/beta * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m)- (bx - 1)/2.0/ beta * alpha/zeta * JIntegral(ra,rb,ax,ay,az,bx-2,by,bz,alpha,beta,m+1) + ax/2.0 /zeta * JIntegral(ra,rb,ax-1,ay,az,bx-1,by,bz,alpha,beta,m+1));
 
-    else if(by > 0) return ((P[1]-rb[1])*JIntegral(ra,rb,ax,ay,az,bx,by-1,bz,alpha,beta,m+1) + (by - 1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m)- (by - 1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m+1) + ay/2.0 /xi * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
+    else if(by > 0) return ((P[1]-rb[1])*JIntegral(ra,rb,ax,ay,az,bx,by-1,bz,alpha,beta,m+1) + (by - 1)/2.0/beta * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m)- (by - 1)/2.0/ beta * alpha/zeta * JIntegral(ra,rb,ax,ay,az,bx,by-2,bz,alpha,beta,m+1) + ay/2.0 /zeta * JIntegral(ra,rb,ax,ay-1,az,bx,by-1,bz,alpha,beta,m+1));
 
-    else if(bz > 0) return ((P[2]-rb[2])*JIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + (bz-1)/2.0/alpha * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m)- (bz-1)/2.0/ alpha * beta/zeta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m+1) + az/2.0 /xi * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
+    else if(bz > 0) return ((P[2]-rb[2])*JIntegral(ra,rb,ax,ay,az,bx,by,bz-1,alpha,beta,m+1) + (bz-1)/2.0/beta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m)- (bz-1)/2.0/ beta * alpha/zeta * JIntegral(ra,rb,ax,ay,az,bx,by,bz-2,alpha,beta,m+1) + az/2.0 /zeta * JIntegral(ra,rb,ax,ay,az-1,bx,by,bz-1,alpha,beta,m+1));
 
     //Set the starting point
     else return 2.0 * pow(M_PI,2.5) / alpha / beta / sqrt(zeta) *Boys(xi * AB,m);
@@ -220,6 +220,43 @@ void gaussian_chain_free(gaussian_chain * HEAD)
         delete temp2;
     }
     delete temp1;
+}
+
+double gaussian_chain_get(gaussian_chain * HEAD,double x,double y, double z)
+{
+    gaussian_chain * temp;
+
+    double result;
+
+    result = 0;
+
+    temp = HEAD;
+    result += pow(x - temp->R[0], temp->a[0]) * pow(y - temp->R[1],temp->a[1]) * pow(z - temp->R[2],temp->a[2]) * exp(- temp->exponent * ((x - temp->R[0]) * (x - temp->R[0]) + (y - temp->R[1]) * (y - temp->R[1]) + (z - temp->R[2]) * (z - temp->R[2])));
+
+    while(temp->NEXT != NULL)
+    {
+        temp = temp->NEXT;
+        result += pow(x - temp->R[0], temp->a[0]) * pow(y - temp->R[1],temp->a[1]) * pow(z - temp->R[2],temp->a[2]) * exp(- temp->exponent * ((x - temp->R[0]) * (x - temp->R[0]) + (y - temp->R[1]) * (y - temp->R[1]) + (z - temp->R[2]) * (z - temp->R[2])));
+    }
+
+    return result;
+}
+
+double orbital_get(orbital * orbital, double x, double y, double z)
+{
+    gaussian_chain * temp;
+
+    double result;
+
+    temp = gaussian_chain_calloc();
+
+    single_electron_transform(temp,orbital);
+
+    result = gaussian_chain_get(temp,x,y,z);
+
+    gaussian_chain_free(temp);
+
+    return result;
 }
 
 //transform the struct orbital to struct gaussian_chain

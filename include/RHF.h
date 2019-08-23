@@ -33,8 +33,10 @@ void two_electron_quad_tensor(gsl_quad_tensor * dest, orbital * HEAD, int length
 
 void fock_matrix(gsl_matrix * dest, gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int length);
 
-void initial_guess(gsl_matrix * dest, gsl_matrix * S, orbital * HEAD, atomic_orbital * atom_HEAD, int length);
+void initial_guess(gsl_matrix * dest, gsl_matrix * core_hamiltonian, gsl_matrix * S, int length);
 
-int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha);
+void density_matrix(gsl_matrix * dest, gsl_matrix * coef, int el_num, int length);
+
+int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, orbital * HEAD, atomic_orbital * atom_HEAD, int length, int el_num, int iteration_max, double errmax, int countmax, double alpha, int mixing_type, int SCF_INITIAL_FLAG, int SCF_FOCK_FLAG, int SCF_COEF_FLAG, int FOCK_FLAG);
 
 double nuclei_repulsion(atomic_orbital * atomlist_HEAD);
