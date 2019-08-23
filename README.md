@@ -27,7 +27,7 @@ Currently the optimized program can be compiled using the `build/build.sh` scrip
 
 Currently supported flags are:
 
-  -h : print this help message
+  -h : print the help message
   -f <filename> : specify the input file
   -F : print fock matrix (It can also be specified in the input file.)
   -C : print coefficient matrix (It can also be specified in the input file.)
