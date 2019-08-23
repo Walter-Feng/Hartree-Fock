@@ -27,11 +27,16 @@ Currently the optimized program can be compiled using the `build/build.sh` scrip
 
 Currently supported flags are:
 
-  -h : print the help message
-  -f <filename> : specify the input file
-  -F : print fock matrix (It can also be specified in the input file.)
-  -C : print coefficient matrix (It can also be specified in the input file.)
-  --input-help: print a template input file
+  `-h` : print the help message
+  
+  `-f <filename>` : specify the input file
+  
+  `-F` : print fock matrix (It can also be specified in the input file.)
+  
+  `-C` : print coefficient matrix (It can also be specified in the input file.)
+  
+  `--input-help`: print a template input file
+  
   P.S.: the input file should have .in postfix. (To be honest, any postfix would work, in current version, but it is still suggested not to do so.)
   
 Known issues:
