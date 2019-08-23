@@ -37,7 +37,7 @@ Currently supported flags are:
   
   `--input-help`: print a template input file
   
-  P.S.: the input file should have .in postfix. (To be honest, any postfix would work, in current version, but it is still suggested not to do so.)
+  P.S.: the input file should have `.in` postfix. (To be honest, any postfix would work, in current version, but it is still suggested not to do so.)
   
 Known issues:
   1. the program will receive wrong results if it uses a large basis (e.g. cc-pVDZ), but everything seems to be fine with small bases (e.g. sto-3G and 6-31G)
