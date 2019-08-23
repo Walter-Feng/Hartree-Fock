@@ -147,6 +147,7 @@ double JIntegral(double ra[3], double rb[3], int ax, int ay, int az, int bx, int
     else return 2.0 * pow(M_PI,2.5) / alpha / beta / sqrt(zeta) *Boys(xi * AB,m);
 }
 
+// The nuclear attraction integral 
 double ZIntegral(double ra[3], double rb[3], double rz[3], int ax, int ay, int az, int bx, int by, int bz, double alpha, double beta, int m)
 {
     double zeta = alpha + beta;
@@ -222,6 +223,7 @@ void gaussian_chain_free(gaussian_chain * HEAD)
     delete temp1;
 }
 
+// calculate the value of the gaussian function chain at a certain cartesian point
 double gaussian_chain_get(gaussian_chain * HEAD,double x,double y, double z)
 {
     gaussian_chain * temp;
@@ -454,6 +456,7 @@ double gaussian_chain_full_JIntegral(gaussian_chain * a_HEAD, gaussian_chain * b
     return result;
 }
 
+//enabling nuclear attraction integrals for gaussian_chain format, calculating the whole chain
 double gaussian_chain_full_ZIntegral(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD, double rz[3])
 {
     double result;
@@ -489,6 +492,7 @@ double gaussian_chain_full_ZIntegral(gaussian_chain * a_HEAD, gaussian_chain * b
     return result;
 }
 
+//enabling ovelap integrals for orbital format
 double orbital_SIntegral(orbital * a, orbital * b)
 {
     double result;
@@ -532,6 +536,7 @@ double orbital_SIntegral(orbital * a, orbital * b)
     return result;
 }
 
+//enabling Coulomb integrals for orbital format
 double orbital_JIntegral(orbital * a, orbital * b)
 {
     double result;
@@ -575,6 +580,7 @@ double orbital_JIntegral(orbital * a, orbital * b)
     return result;
 }
 
+//enabling nuclear attraction integrals for orbital format
 double orbital_ZIntegral(orbital * a, orbital * b, double rz[3])
 {
     double result;
@@ -618,6 +624,7 @@ double orbital_ZIntegral(orbital * a, orbital * b, double rz[3])
     return result;
 }
 
+//calculate two-electron Coulomb integrals
 double two_electron_JIntegral(orbital * a_1, orbital * b_1, orbital * c_2, orbital * d_2)
 {
     double result;
@@ -638,6 +645,8 @@ double two_electron_JIntegral(orbital * a_1, orbital * b_1, orbital * c_2, orbit
     return result;
 }
 
+// obtain the derivative of a gaussian function chain and store as another gaussian function chain over certain axis.
+// key: 0->x 1->y 2->z
 void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
 {
     gaussian_chain * temp1, * temp2;
@@ -725,7 +734,7 @@ void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int 
         temp1->a[key] = temp2->a[key] - 1;
     }
 }
-
+// obtain the second derivative of a gaussian function chain and store as another gaussian function chain over certain axis.
 void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
 {
     gaussian_chain * temp1, * temp2, * temp3;
@@ -758,7 +767,7 @@ void gaussian_chain_laplacian(gaussian_chain * dest, gaussian_chain * src)
     delete temp1;
     temp2->NEXT = NULL;
 }
-
+// obtain the expectation value of kinetic energy operator, T = p^2/ 2m = - \nabla^2 /2, for gaussian_chain struct
 double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
 {
     double result;
@@ -774,7 +783,7 @@ double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b
 
     return result;
 }
-
+// obtain the expectation value of kinetic energy operator, T = p^2/ 2m = - \nabla^2 /2, for orbital struct
 double orbital_kinetic_energy(orbital * a, orbital * b)
 {
     double result;
@@ -793,7 +802,7 @@ double orbital_kinetic_energy(orbital * a, orbital * b)
 
     return result;
 }
-
+//obtain the overlap matrix for orbitals
 void orbital_S_matrix(gsl_matrix * dest, orbital * HEAD)
 {
     orbital * temp1, * temp2;

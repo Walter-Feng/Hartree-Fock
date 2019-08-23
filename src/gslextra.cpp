@@ -68,6 +68,8 @@ void gsl_quad_tensor_free(gsl_quad_tensor * q)
         free(*(q->element + a));
     }
     free(q->element);
+
+    free(q);
 }
 
 double gsl_quad_tensor_get(gsl_quad_tensor * q, int i, int j,int k, int l)
@@ -482,18 +484,23 @@ void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, g
 
     gsl_matrix * M, * S_minus_half, * U, * S_cpy, * temp;
 
-    gsl_vector * S_eigen, * S_eigen_minus_half;
+    gsl_vector * S_eigen;
 
     M = gsl_matrix_calloc(length,length);
+    // inverse square root of S
     S_minus_half = gsl_matrix_calloc(length,length);
+    // copy of S
     S_cpy = gsl_matrix_calloc(length,length);
+    // transformation matrix (storing all eigenvectors)
     U = gsl_matrix_calloc(length,length);
+    // temporary matrix helping tranforming
     temp = gsl_matrix_calloc(length,length);
 
+    // copy S (gsl_eigen_symmv will distroy the source matrix)
     gsl_matrix_memcpy(S_cpy,S);
 
+    // vector storing eigenvalues
     S_eigen = gsl_vector_calloc(length);
-    S_eigen_minus_half = gsl_vector_calloc(length);
 
     gsl_eigen_symmv_workspace * w = gsl_eigen_symmv_alloc(length);
 
@@ -524,7 +531,6 @@ void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, g
     gsl_matrix_free(temp);
     
     gsl_vector_free(S_eigen);
-    gsl_vector_free(S_eigen_minus_half);
 
     gsl_eigen_symmv_free(w);
 }
