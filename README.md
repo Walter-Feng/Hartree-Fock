@@ -1,5 +1,5 @@
 # Hartree-Fock
-This is a Hartree-Fock program that aims to show how Hartree-Fock really works in every process. It is planned to add comments on almost each line in the source code describing what this is going to perform, what this line is intended for, etc.
+This is a Hartree-Fock program that aims to show how Hartree-Fock really works in every process. It is planned to add comments on almost each line in the source code describing what this is going to perform, what this line is intended for, etc. Currently it only supports Restricted Hartree-Fock (RHF) method.
 
 It is still at an eary stage, and there might be unexpected errors.
 
