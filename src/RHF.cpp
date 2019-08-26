@@ -401,7 +401,7 @@ int RHF_SCF_print(double * tot_energy, gsl_vector * energy, gsl_matrix * coef, o
 
         energy_temp = HF_energy(v,D,h_matrix,length);
 
-        if(abs(energy_temp - energy_bk) < errmax) count++;
+        if(fabs(energy_temp - energy_bk) < errmax) count++;
         else count = 0;
 
         if(count >= countmax) break;
