@@ -17,13 +17,15 @@ There are some features in this program:
 
 And something bad:
 
-  1. Currently it uses the simplest mixing method - NO MIXING method, namely the coefficient matrix obtained in each iteration is directly used in the next iteration.
+  1. Currently it can use either the simplest mixing method - NO MIXING method, namely the coefficient matrix obtained in each iteration is directly used in the next iteration, and the Anderson's mixing method 
 
   2. BAD PROGRAMMING STYLE
 
   3. The output functions still seem to be disordered and scattered in the whole program, which may cause problem in trying to configure the output format and the total amount of information in it.
 
 Currently the optimized program can be compiled using the `build/build.sh` script, but the path for GSL should be stated first in the script (the default install path for GSL should be /usr/local). It is also able to run `build/debug.sh` to get the debug version of the program, which can be used in debugging programs like gdb or lldb. Considering that the program itself is quite simple, you can also try to compile the program all by yourself - writing a makefile or cmakelist should be fine and easy to get it working.
+
+The program can also be fetched from release, containing a static program and corresponding basis sets. Only Mac OS X and Linux are supported (for I do not know how to compile this stuff with GSL dependency in Windows - and moreover, I guess it is really hard to use such an command-line-interface program in Windows).
 
 Currently supported flags are:
 
@@ -45,3 +47,9 @@ Known issues:
 Future plan should be achieving adding comments on each line. Also it is planned to write a document written in Chinese (English ver. may come later?) describing the mechanisms of each step, which enables understanding of Hartree Fock from a physical/mathematical background.
 
 All comments on how to improve this program is much appreciated.
+
+Bibliography:
+
+1. Obara, Shigeru, and A. Saika. "Efficient recursive computation of molecular integrals over Cartesian Gaussian functions." The Journal of chemical physics 84.7 (1986): 3963-3974.
+
+2. Helgaker, Trygve, Poul Jorgensen, and Jeppe Olsen. Molecular electronic-structure theory. John Wiley & Sons, 2014.
