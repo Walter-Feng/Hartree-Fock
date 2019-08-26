@@ -1,4 +1,4 @@
-&BASIS cc-pvdz
+&BASIS 6-311g 
 
 &SCF
     &ERR 1e-6
