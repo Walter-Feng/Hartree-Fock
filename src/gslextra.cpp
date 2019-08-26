@@ -62,7 +62,7 @@ void gsl_quad_tensor_free(gsl_quad_tensor * q)
     {
         for(b=0;b<q->j;b++)
         {
-            gsl_matrix_free(*((* q->element + a) + b)); 
+            gsl_matrix_free(*( *(q->element + a) + b)); 
         }
 
         free(*(q->element + a));

@@ -199,7 +199,7 @@ orbital * orbital_enquiry(orbital * HEAD, int index)
 //decide the label for a particular electron orbital
 void orbital_label(char * dest, int n, int l, int m)
 {
-    char * n_str;
+    char n_str[20];
 
     strcpy(n_str,"1");
     n_str[0] = '1' + n -1;
