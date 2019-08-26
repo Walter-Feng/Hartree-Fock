@@ -53,3 +53,5 @@ Bibliography:
 1. Obara, Shigeru, and A. Saika. "Efficient recursive computation of molecular integrals over Cartesian Gaussian functions." The Journal of chemical physics 84.7 (1986): 3963-3974.
 
 2. Helgaker, Trygve, Poul Jorgensen, and Jeppe Olsen. Molecular electronic-structure theory. John Wiley & Sons, 2014.
+
+3. May, Andrew James. Density fitting in explicitly correlated electronic structure theory. Diss. University of Bristol, 2006.
