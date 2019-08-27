@@ -1,0 +1,212 @@
+%!TEX program = xelatex
+% 使用 ctexart 文类，UTF-8 编码
+%0级缩进：全局；1级缩进：初始设定&document；2级缩进：Chapter；3级缩进：Section；以此类推……
+\documentclass[12pt,a4paper,openany,twoside]{article}
+    \usepackage{cite}
+    \usepackage{xeCJK,indentfirst}
+    \usepackage{amsfonts, amsmath, amssymb,amsthm}
+    \usepackage{graphicx}
+    \usepackage{subfigure}
+    \usepackage[centering]{geometry}
+    \geometry{top=25.4mm, bottom=25.4mm, left=25.4mm, right=25.4mm}
+    \usepackage[normalem]{ulem}
+    \usepackage{listings}
+    \usepackage{mathrsfs}
+    \usepackage{xcolor} % 定制颜色
+    \usepackage{appendix} % 附录
+    \usepackage{physics} % http://mirrors.huaweicloud.com/repository/toolkit/CTAN/macros/latex/contrib/physics/physics.pdf
+    \usepackage[colorlinks=true, unicode=true, linkcolor=red, citecolor=red, filecolor=red, urlcolor=red]{hyperref} % 要放在最后一个
+    \lstset{
+        backgroundcolor=\color{white},      % choose the background color
+        basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
+        columns=fullflexible,
+        tabsize=4,
+        breaklines=true,               % automatic line breaking only atwhitespace
+        captionpos=b,                  % sets the caption-position to bottom
+        commentstyle=\color{green},  % comment style
+        escapeinside={\%*}{*)},        % if you want to add LaTeX withinyour code
+        keywordstyle=\color{blue},     % keyword style
+        stringstyle=\color{mymauve}\ttfamily,  % string literal style
+        frame=single,
+        rulesepcolor=\color{red!20!green!20!blue!20},
+        identifierstyle=\color{black},
+        language=C++,
+        alsolanguage=bash
+    }
+
+
+    \newtheorem{theorem}{Theorem}[section]
+    \newtheorem{lemma}{Lemma}  
+    \newtheorem{definition}{Definition}[section]
+    \numberwithin{equation}{section}
+
+    \newcommand{\bracket}[2]{\langle #1 | #2 \rangle}
+    \newcommand{\bracketl}[3]{\left\langle #1 \left| #2 \right| #3 \right\rangle}
+    \newcommand{\func}[1]{\mathrm{#1} \,}
+    \newcommand{\sinc}[1]{\mathrm{sinc} \, (#1)}
+    \newcommand{\define}[2]{
+        \begin{definition}
+        \begin{description}
+            \item[#1]
+            #2
+        \end{description}
+        \end{definition}
+    }
+    \newcommand{\mean}[1]{\left\langle #1 \right\rangle}
+
+    \newcommand{\sch}{Schr\"odinger}
+
+    \newcommand{\ud}{\mathrm{d}}
+
+    \setlength{\parindent}{2em}
+    \setlength{\textheight}{240mm}
+    \setlength{\textwidth}{155mm}
+    \setlength{\oddsidemargin}{0mm}
+    \setlength{\evensidemargin}{0mm}
+    \renewcommand{\baselinestretch}{1.2}
+    \title{Hartree-Fock程序讲解}
+    \author{李睿}
+    \date{\today}
+    \begin{document}
+        \maketitle
+        \tableofcontents
+
+
+        \section{引言}
+            \begin{quote}
+                如何让一个学生对计算化学充满恐惧？让他写Hartree-Fock程序。高斯积分手写的那种。
+                \begin{flushright}
+                    —————— 李睿
+                \end{flushright}
+
+                建设一流大学从HF做起。
+                
+                \begin{flushright}
+                    —————— 王林军教授
+                \end{flushright}
+            \end{quote}
+
+            Hartree-Fock 方法作为计算化学的开山鼻祖，对于一个想要从事计算化学相关工作的学生而言是一个必须要过去的坎。当然，原则上它作为一种工具你并不需要对它的所有细节都要彻底地把握，但如果并不深入了解，也可以说是十分令人叹息的事——Hartree-Fock写出来确实算是小程序，但它仍然能称得上是人类智慧的结晶。
+
+            本文（本书）将着重探讨Hartree-Fock的各处细节如何在程序中得到体现，以及它们背后的理论基础。
+
+        \section{程序流程概述}
+
+            虽然Hartree-Fock程序相对而言较小，但由于需要照顾许多细节所以总体上仍旧会显得相对庞大，直接从程序源代码入手还并不容易窥见其全貌，因此在这里用文字做一个整体的流程介绍\footnote{\sout{在 \LaTeX 里做流程图很累de}}。
+
+            流程概括地来讲分为：
+            \begin{enumerate}
+                \item 读取指定基组；
+                \item 从文件读取所有剩余的参数，包括所有原子的信息；
+                \item 将所有信息打包成为程序喜欢的数据结构；
+                \item 进行Hartree-Fock方法计算；
+                \item 将结果进行输出。
+            \end{enumerate}
+
+            Hartree-Fock方法采用的流程为：
+            \begin{enumerate}
+                \item 计算原子核排斥能；
+                \item 计算重叠矩阵（即Overlap matrix，用$S$进行表示）；
+                \item 计算动能矩阵（即Kinetic energy matrix, 用$T$进行表示）；
+                \item 计算原子核-电子相互作用势能矩阵（即Nuclear attraction energy matrix,用$Z$进行表示）；
+                \item 计算电子排斥能张量（为四阶张量，用$v$进行表示）；
+                \item 从单电子哈密顿矩阵（$h = T+Z$）得到初始系数矩阵（即Coefficient matrix, 用$C$进行表示）；
+                \item 进行RHF迭代：
+                    \begin{enumerate}
+                        \item 从$C$以及电子数目得到电子密度矩阵（即density matrix,用$D$表示）；
+                        \item 结合$h$，$D$与$v$得到Fock矩阵（用$F$进行表示）；
+                        \item 结合$F$, $S$解本征值问题，得到对应特征值（分子轨道能量）及此时的$C$；
+                        \item 结合$h$，$D$与$v$得到对应体系能量；
+                        \item 将得到的新的$C$与旧的$C$进行混合（mixing）并代入新一轮的迭代。
+                    \end{enumerate}
+                \item 判断每次循环的能量，最后进行输出。
+            \end{enumerate}
+        \section{数据结构讲解}
+        本人认为，在对程序进行解析之前我们必须要了解其所采用的数据结构，因此在该章节我们先着重探讨本程序采用的所有数据结构。
+
+        让我们先了解本程序的核心数据结构 \lstinline$orbital$，其代表了一个原子轨道，定义于 \lstinline$basis.h$ 中：
+        \begin{lstlisting}
+            typedef struct orbital
+            {
+                //Angular quantum number;
+                int L;
+                //magnetic quantum number;
+                int m;
+                //main quantum number;
+                int n;
+                //the name of the orbital;
+                char label[20];
+
+                //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
+                struct  angcoef{
+                    int a[3];
+                    double coef;
+                }A[4];
+
+                //This will tell the functions how long is the angcoef
+                int length;
+
+                //the total number of the terms of coefficients and exponents 
+                int total;
+
+                //The list of exponents
+                double * exponents;
+                //The corresponding coefficient list, which will be normalized during the process;
+                double * coefficients;
+
+                //The cartesian coordinate of the center of the orbital;
+                double cartesian[3];
+
+                //pointer storing the next orbital
+                orbital* NEXT;
+            }orbital;
+        \end{lstlisting}
+        其采用了链表的数据结构，用 \lstinline$NEXT$ 来储存下一个 \lstinline$orbital$ 的指针，从而实现任意长度的原子轨道数量的储存与调用\footnote{不用C++的 \lstinline$vector$ 类型的必然结果}。在整个程序中磁量子数是通过各坐标的幂函数来体现的，如
+        \[
+            d_{z^2} \rightarrow (x-x_0)^0 (y-y_0)^0 (z-z_0)^2.
+        \]
+        其中$(x_0,y_0,z_0)$为原子坐标，而其指数$(0,0,2)$便代表了磁量子数的信息，使用$(a_x,a_y,a_z)$来进行表示，而这是为了能够解析得到高斯积分结果的必要操作。考虑到如$d_{x^2-y^2}$包含了两个轨道的线性叠加，我们使用了 \lstinline$angcoef$ 来描述这样的轨道，并使用 \lstinline$length$ 来进行长度的指定，方便读取。
+
+        由于在实际基组中一个电子轨道往往表示为多个高斯函数的叠加：
+        \begin{equation}
+            \psi (\boldsymbol{r};\boldsymbol{r}_0,\boldsymbol{a}) \sim \sum_i c_i (x-x_0)^{a_x}(y-y_0)^{a_y}(z-z_0)^{a_z} e^{- \alpha_i (\boldsymbol{r} - \boldsymbol{r}_0)^2}.
+        \end{equation}
+        我们对$\{\alpha_i,c_i\}$分别通过 \lstinline$ * exponents$ 和 \lstinline$ * coefficients$ 进行储存，并使用 \lstinline$new/delete$ 来实现可调长度的高斯函数的储存。
+
+        当然如果把所有原子的电子轨道都打进这个链表的话查询起来会很麻烦，所以为了将不同原子的电子轨道分开，我们引入新的数据结构 \lstinline$atomic_orbital$, 同样定义于 \lstinline$basis.h$ 中：
+        \begin{lstlisting}
+            typedef struct atomic_orbital
+            {
+                // The atomic number of the atom;
+                int N;
+                // The name of the atom;
+                char name[5];
+
+                //The cartesian coordinate of the atom;
+                double cartesian[3];
+
+                //The HEAD of the orbital
+                orbital * orbital_HEAD;
+
+                //Next atom
+                atomic_orbital * NEXT;
+            }atomic_orbital;
+        \end{lstlisting}
+        其同样采用链表的形式，以适应基组含有不同数量的原子的现状。
+
+        而具体到每一步高斯积分的计算是针对每一个高斯函数的，如果直接使用 \lstinline$orbital$ 代入计算将非常让人头疼\footnote{在这一点上和 \lstinline$libint$ 库不谋而合}，因此需要一个过渡的数据结构，将一个电子轨道拆散成高斯函数的线性组合，同时在这个转换的过程中完成高斯函数的归一化工作\footnote{神奇吧，市面上的原子轨道基组是没有做归一化工作的。}，从而实现计算部分与信息存储部分的连接。而完成这一大任的是名字很俗的 \lstinline$gaussian_chain$，定义于 \lstinline$integral.h$ 中：
+        \begin{lstlisting}
+            typedef struct gaussian_chain{
+                double R[3];
+                int a[3];
+                
+                double exponent;
+
+                double coefficient;
+
+                gaussian_chain * NEXT;
+
+            }gaussian_chain;
+        \end{lstlisting}
+        \sout{因此如果你不懂链表你根本看不懂这个程序在干什么。}
+    \end{document}

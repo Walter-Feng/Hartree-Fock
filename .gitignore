@@ -38,3 +38,11 @@ HF
 
 #.vscode
 .vscode
+
+# documentation
+*.pdf
+*.gz
+*.aux
+*.out
+*.log
+*.toc
