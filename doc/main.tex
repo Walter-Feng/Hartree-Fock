@@ -209,4 +209,18 @@
             }gaussian_chain;
         \end{lstlisting}
         \sout{因此如果你不懂链表你根本看不懂这个程序在干什么。}
+
+        最后是储存电子排斥的四阶张量，这是由于在计算电子排斥的时候是双电子积分（four-index integral）。当然它具有着很多对称性，能够优化储存及计算速度，但为了能够更加直观地展现Hartree-Fock方法实现的原理，我们使用最原始的``方''四阶张量，以 \lstinline$gsl_quad_tensor$ 的形式储存，并定义于 \lstinline$gslextra.h$ 中：
+        \begin{lstlisting}
+            typedef struct gsl_quad_tensor
+            {
+                int i;
+                int j;
+                int k;
+                int l;
+
+                gsl_matrix *** element;
+            }gsl_quad_tensor;
+        \end{lstlisting}
+        其借用了 \lstinline$gsl$ (GNU Scientific Library) 中的矩阵储存形式 \lstinline$gsl_matrix$ 来简化
     \end{document}
