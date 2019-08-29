@@ -26,7 +26,7 @@
         commentstyle=\color{green},  % comment style
         escapeinside={\%*}{*)},        % if you want to add LaTeX withinyour code
         keywordstyle=\color{blue},     % keyword style
-        stringstyle=\color{mymauve}\ttfamily,  % string literal style
+        % stringstyle=\color{mymauve}\ttfamily,  % string literal style
         frame=single,
         rulesepcolor=\color{red!20!green!20!blue!20},
         identifierstyle=\color{black},
@@ -126,40 +126,40 @@
 
         让我们先了解本程序的核心数据结构 \lstinline$orbital$，其代表了一个原子轨道，定义于 \lstinline$basis.h$ 中：
         \begin{lstlisting}
-            typedef struct orbital
-            {
-                //Angular quantum number;
-                int L;
-                //magnetic quantum number;
-                int m;
-                //main quantum number;
-                int n;
-                //the name of the orbital;
-                char label[20];
+typedef struct orbital
+{
+    //Angular quantum number;
+    int L;
+    //magnetic quantum number;
+    int m;
+    //main quantum number;
+    int n;
+    //the name of the orbital;
+    char label[20];
 
-                //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
-                struct  angcoef{
-                    int a[3];
-                    double coef;
-                }A[4];
+    //the angular momentum exponents combined with their coefficients (concerning the normalization for a linear combination of terms with different angular momentum exponents)
+    struct  angcoef{
+        int a[3];
+        double coef;
+    }A[4];
 
-                //This will tell the functions how long is the angcoef
-                int length;
+    //This will tell the functions how long is the angcoef
+    int length;
 
-                //the total number of the terms of coefficients and exponents 
-                int total;
+    //the total number of the terms of coefficients and exponents 
+    int total;
 
-                //The list of exponents
-                double * exponents;
-                //The corresponding coefficient list, which will be normalized during the process;
-                double * coefficients;
+    //The list of exponents
+    double * exponents;
+    //The corresponding coefficient list, which will be normalized during the process;
+    double * coefficients;
 
-                //The cartesian coordinate of the center of the orbital;
-                double cartesian[3];
+    //The cartesian coordinate of the center of the orbital;
+    double cartesian[3];
 
-                //pointer storing the next orbital
-                orbital* NEXT;
-            }orbital;
+    //pointer storing the next orbital
+    orbital* NEXT;
+}orbital;
         \end{lstlisting}
         其采用了链表的数据结构，用 \lstinline$NEXT$ 来储存下一个 \lstinline$orbital$ 的指针，从而实现任意长度的原子轨道数量的储存与调用\footnote{不用C++的 \lstinline$vector$ 类型的必然结果}。在整个程序中磁量子数是通过各坐标的幂函数来体现的，如
         \[
@@ -175,52 +175,616 @@
 
         当然如果把所有原子的电子轨道都打进这个链表的话查询起来会很麻烦，所以为了将不同原子的电子轨道分开，我们引入新的数据结构 \lstinline$atomic_orbital$, 同样定义于 \lstinline$basis.h$ 中：
         \begin{lstlisting}
-            typedef struct atomic_orbital
-            {
-                // The atomic number of the atom;
-                int N;
-                // The name of the atom;
-                char name[5];
+typedef struct atomic_orbital
+{
+    // The atomic number of the atom;
+    int N;
+    // The name of the atom;
+    char name[5];
 
-                //The cartesian coordinate of the atom;
-                double cartesian[3];
+    //The cartesian coordinate of the atom;
+    double cartesian[3];
 
-                //The HEAD of the orbital
-                orbital * orbital_HEAD;
+    //The HEAD of the orbital
+    orbital * orbital_HEAD;
 
-                //Next atom
-                atomic_orbital * NEXT;
-            }atomic_orbital;
+    //Next atom
+    atomic_orbital * NEXT;
+}atomic_orbital;
         \end{lstlisting}
-        其同样采用链表的形式，以适应基组含有不同数量的原子的现状。
+        其同样采用链表的形式，以适应基组含有不同数量的原子的现状。由于链表用起来不如vector来得好使，所以有一个函数 \lstinline$orbital * orbital_enquiry(orbital * HEAD, int index)$ 来帮你调用这个链表中第几个位置对应的指针，从而可以将其作为类似于向量的方式使用，但又能够保留自由增添的性质。\footnote{由于这个功能是比较偏后才引入的，所以仍旧会有相当多的部分仍旧使用原始的链表引用方式，看起来较为臃肿，请见谅。}
 
         而具体到每一步高斯积分的计算是针对每一个高斯函数的，如果直接使用 \lstinline$orbital$ 代入计算将非常让人头疼\footnote{在这一点上和 \lstinline$libint$ 库不谋而合}，因此需要一个过渡的数据结构，将一个电子轨道拆散成高斯函数的线性组合，同时在这个转换的过程中完成高斯函数的归一化工作\footnote{神奇吧，市面上的原子轨道基组是没有做归一化工作的。}，从而实现计算部分与信息存储部分的连接。而完成这一大任的是名字很俗的 \lstinline$gaussian_chain$，定义于 \lstinline$integral.h$ 中：
         \begin{lstlisting}
-            typedef struct gaussian_chain{
-                double R[3];
-                int a[3];
-                
-                double exponent;
+typedef struct gaussian_chain{
+    double R[3];
+    int a[3];
+    
+    double exponent;
 
-                double coefficient;
+    double coefficient;
 
-                gaussian_chain * NEXT;
+    gaussian_chain * NEXT;
 
-            }gaussian_chain;
+}gaussian_chain;
         \end{lstlisting}
         \sout{因此如果你不懂链表你根本看不懂这个程序在干什么。}
 
         最后是储存电子排斥的四阶张量，这是由于在计算电子排斥的时候是双电子积分（four-index integral）。当然它具有着很多对称性，能够优化储存及计算速度，但为了能够更加直观地展现Hartree-Fock方法实现的原理，我们使用最原始的``方''四阶张量，以 \lstinline$gsl_quad_tensor$ 的形式储存，并定义于 \lstinline$gslextra.h$ 中：
         \begin{lstlisting}
-            typedef struct gsl_quad_tensor
-            {
-                int i;
-                int j;
-                int k;
-                int l;
+typedef struct gsl_quad_tensor
+{
+    int i;
+    int j;
+    int k;
+    int l;
 
-                gsl_matrix *** element;
-            }gsl_quad_tensor;
+    gsl_matrix *** element;
+}gsl_quad_tensor;
         \end{lstlisting}
-        其借用了 \lstinline$gsl$ (GNU Scientific Library) 中的矩阵储存形式 \lstinline$gsl_matrix$ 来简化
+        其借用了 \lstinline$gsl$ (GNU Scientific Library) 中的矩阵储存形式 \lstinline$gsl_matrix$ 来简化\footnote{不然得五重指针呢你说是吧}，并使用$i,j,k,l$指明各个边的长度，每个元素代表了一个双电子积分
+        \begin{equation}
+            v_{ijkl} = [ij|kl] = \int d\boldsymbol{r}_1 \int d\boldsymbol{r}_2 \, \phi_i(\boldsymbol{r}_1)\phi_j(\boldsymbol{r}_1) \frac{1}{r_{12}} \phi_k(\boldsymbol{r}_2)\phi_l(\boldsymbol{r}_2).
+        \end{equation}
+        当然原则上由于$i$与$j$，$k$与$l$，以及双方整体对调都是会得到一样的值，所以可以利用这样的对称性来节省计算时间，节省内存\sout{（但哪有时间写下来而且还增加阅读成本呢是吧）}。
+
+        \section{程序流程讲解}
+        于是我们就开始剖析整个程序所经历的流程了。我会直接在该文档中复制源代码进行讲解，并附带背后的可能的数学原理。
+
+            \subsection{读取基组}
+            程序使用的基组套装是从Basis Set Exchange (\url{https://www.basissetexchange.org}) 里面扒下来的，它会告诉你这个shell它会有多少个高斯函数，每个高斯函数的指数和系数分别是多少。但最反人类的是，Pople基组（也就是3-21G，6-31G类型）的记录方式和非Pople基组的形式完全不一样！比如3-21G的碳的记录方式长这样：
+
+            \begin{lstlisting}
+BASIS "ao basis" PRINT
+#BASIS SET: (6s,3p) -> [3s,2p]
+C    S
+    0.1722560000E+03       0.6176690738E-01
+    0.2591090000E+02       0.3587940429E+00
+    0.5533350000E+01       0.7007130837E+00
+C    SP
+    0.3664980000E+01      -0.3958951621E+00       0.2364599466E+00
+    0.7705450000E+00       0.1215834356E+01       0.8606188057E+00
+C    SP
+    0.1958570000E+00       0.1000000000E+01       0.1000000000E+01
+END
+            \end{lstlisting}
+
+            但cc-pVDZ长这样：
+
+            \begin{lstlisting}
+C    S
+    6.665000E+03           6.920000E-04          -1.460000E-04           0.000000E+00
+    1.000000E+03           5.329000E-03          -1.154000E-03           0.000000E+00
+    2.280000E+02           2.707700E-02          -5.725000E-03           0.000000E+00
+    6.471000E+01           1.017180E-01          -2.331200E-02           0.000000E+00
+    2.106000E+01           2.747400E-01          -6.395500E-02           0.000000E+00
+    7.495000E+00           4.485640E-01          -1.499810E-01           0.000000E+00
+    2.797000E+00           2.850740E-01          -1.272620E-01           0.000000E+00
+    5.215000E-01           1.520400E-02           5.445290E-01           0.000000E+00
+    1.596000E-01          -3.191000E-03           5.804960E-01           1.000000E+00
+C    P
+    9.439000E+00           3.810900E-02           0.000000E+00
+    2.002000E+00           2.094800E-01           0.000000E+00
+    5.456000E-01           5.085570E-01           0.000000E+00
+    1.517000E-01           4.688420E-01           1.000000E+00
+C    D
+    5.500000E-01           1.0000000
+            \end{lstlisting}
+            也就是Pople基组会直接合并同一层的S轨道和P轨道，并且是按照每一层来记录，但非Pople基组是按照角动量来分类。\sout{这谁顶得住啊！}所以在本程序中使用\emph{Mathematica}调整为规整的样子，方便读取，比如：
+
+            \begin{lstlisting}
+N: 2
+Name: He
+
+L= 0
+total= 4
+Exponents:
+38.3600000 5.7700000 1.2400000 0.2976000
+Coefficients:
+0.0238090 0.1548910 0.4699870 0.5130270
+
+L= 0
+total= 4
+Exponents:
+38.3600000 5.7700000 1.2400000 0.2976000
+Coefficients:
+0.0000000 0.0000000 0.0000000 1.0000000
+
+L= 1
+total= 1
+Exponents:
+1.2750000
+Coefficients:
+1.0000000
+            \end{lstlisting}
+
+            按照角动量分类，并且每一个shell都会有关键词给你注释，这样既提供可读性也可以在程序中提供flag，两全其美！但还是要提醒一句，\textbf{这个基组并不是归一的，更不是正交的。}
+
+            读取该部分基组的函数是 \lstinline$basis_fscanf(FILE * basis,atomic_orbital * HEAD)$：
+            
+            
+            由于源代码可能太长，在这里做简单剖析:
+
+            \begin{lstlisting}
+if(strcmp(str,"N:")==0)
+{
+    // Check whether this is a HEAD, namely that this is the initial part
+    if(HEADFLAG == 0)
+    {
+        temp1 = HEAD;
+        HEADFLAG = 1;
+    }
+
+    // if it is not, create new knot and have this atom linked with the previous atom, and seal the former atom
+    else
+    {
+        temp2 = temp1;
+        temp1 = atomic_orbital_calloc();
+        temp2->NEXT = temp1;
+    }
+
+    //initialize
+    n_counter = 0;
+    l_temp = -1;
+    l_ref = -1;
+    ORBITHEADFLAG = 0;
+    ALL_ORBITHEADFLAG = 0;     
+
+    //scan the atomic number
+    fscanf(basis,"%d",&temp1->N);
+}
+            \end{lstlisting}
+
+            这一部分是判断是不是现在要读一个新的原子。由于有可能这是基组的第一个原子，这个时候你并不需要将前一个原子对应的 \lstinline$atomic_orbital$ 的指针中的 \lstinline$NEXT$ 与新原子的指针对应起来，所以需要用一个 \lstinline$HEADFLAG$ 来进行区分，同时每一个新原子都要进行初始化，并读取原子序数。
+
+            \begin{lstlisting}
+                if(strcmp(str,"Name:")==0)
+                {
+                    fscanf(basis,"%s",str);
+                    strcpy(temp1->name,str);
+                }
+            \end{lstlisting}
+            Easy. 过。
+            
+            然后是读取每一个电子轨道了，它们都由 \lstinline$L= ?$ 来发起，所以用这个做关键词：
+            \begin{lstlisting}
+//Read L: when there is a new L, there is a new electron shell that needs to be interpreted, with a set of exponents and coefficients
+if(strcmp(str,"L=")==0)
+{
+    fscanf(basis,"%d",&l_temp);
+
+    //Check if all_orbit has been assigned (or whether all_orbit will be the head of a new atom -> which means it will certainly be the tail of the linked list), and ensure that all_orbit is the tail of the list
+    if(ALL_ORBITHEADFLAG == 1)
+        while(all_orbit->NEXT != NULL)
+            all_orbit = all_orbit->NEXT;
+
+
+    //check whether it has a change compared with the former l_temp, so to restart counting the main magnetic number n
+    if(l_temp == l_ref) n_counter ++;
+    else n_counter = l_temp + 1;
+
+    //set l_ref to the current value of l_temp for next loop
+    l_ref = l_temp;
+
+    //Read total
+    fscanf(basis,"%s",str);
+    fscanf(basis,"%d",&tot_temp);
+
+    //Read exponents
+    fscanf(basis,"%s",str);
+
+    exponents_temp = new double[tot_temp];
+
+    for(i=0;i<tot_temp;i++)
+        fscanf(basis,"%lf",exponents_temp + i);
+
+    //Read coefficients
+    fscanf(basis,"%s",str);
+
+    coefficients_temp = new double[tot_temp];
+
+    for(i=0;i<tot_temp;i++)
+        fscanf(basis,"%lf",coefficients_temp + i);
+
+    ...
+            \end{lstlisting}
+
+            可以很容易地看出它在一层一层地提取信息。不过对于一个原子的电子轨道也会存在是不是 \lstinline$HEAD$ 的问题，所以需要 \lstinline$all_orbit$ 来规避。
+
+            但需要明白的是，这里面只有角量子数的信息，但轨道是要细化到磁量子数的，所以需要将其在磁量子数上进行循环然后添加轨道：
+
+            \begin{lstlisting}
+for(m_temp=-l_temp;m_temp<=l_temp;m_temp++)
+{
+    orbit_temp1 = orbital_calloc(tot_temp);
+    //Check if orbit_temp1 should be the head of the linked list of orbitals in the same atom. If not, link it with the previous orbital whose pointer is stored in orbit_temp2
+    if(ORBITHEADFLAG == 1) //It's not the head
+    {
+        orbit_temp2->NEXT = orbit_temp1;
+    }
+    else //It's the head, and thus orbit_temp2 is not assigned
+    {
+        ORBITHEADFLAG = 1;
+
+        //It might be that all_orbit, containing all the orbitals of the atom the program is currently interpreting, has not assigned, in which case all_orbit will be the head of the linked list of orbitals
+        // P.S.: It is only possible that all_orbit can be the head when orbit_temp1 is the head
+        if(ALL_ORBITHEADFLAG == 0) //It's the head
+        {
+            all_orbit = orbit_temp1;
+            ALL_ORBITHEADFLAG = 1;
+            temp1->orbital_HEAD = all_orbit;
+        }
+        else
+        {
+            all_orbit->NEXT = orbit_temp1;
+        }
+    }
+
+    //Copying the information
+    orbit_temp1->L = l_temp;
+    orbit_temp1->total = tot_temp;
+    orbit_temp1->n = n_counter;
+    orbit_temp1->m = m_temp;
+
+    orbital_label(orbit_temp1->label,n_counter,l_temp,m_temp);
+    orbital_angcoef_set(orbit_temp1);
+
+    for(i=0;i<tot_temp;i++)
+    {
+        *(orbit_temp1->exponents + i) = *(exponents_temp + i);
+        *(orbit_temp1->coefficients + i) = *(coefficients_temp + i);
+    }
+
+    orbit_temp2 = orbit_temp1;
+}
+            \end{lstlisting}
+
+            然后顺带将主量子数、角量子数等信息拷贝进去。值得注意的是这里面引用了两个函数 \lstinline$orbital_label(orbit_temp1->label,n_counter,l_temp,m_temp)$ 和 \lstinline$orbital_angcoef_set(orbit_temp1)$，前一个是针对主量子数和角量子数$n,l,m$写出对应名字（如 $2p_z$），而后一个是需要将对应系数填入 \lstinline$angcoef$ 里（比如$3d_{x^2-y^2}$的情形）。但它们只能做成分支的情形，所以在这里就不进行讲述了。
+
+            通过这个模块基组便以 \lstinline$atomic_orbital$ 的形式储存了起来方便调用。而对于一个具体的体系，我们需要从里面提取出相应原子，该部分体现在 \lstinline$main.cpp$ 读取input文件的时候：
+            \begin{lstlisting}
+if(strcmp(reader,"&COORD")==0)
+{
+    // allocate -> set the head of the linked list
+    atoms = atomic_orbital_calloc();
+
+    // saving the location of the head
+    atoms_bk = atoms;
+
+    // read atoms
+    while(fscanf(inputfile,"%s",reader)!=EOF)
+    {
+        if(strcmp(reader,"&END_COORD")==0)
+        {
+            atomic_orbital_free(atoms);
+            atoms = atoms_bk;
+            atoms_temp->NEXT = NULL;
+            break;
+        }
+
+        else
+        {
+            // scanner for basis
+            basis_scanner = basis_HEAD;
+
+            // scan the basis
+            while(basis_scanner->NEXT!=NULL)
+            {
+                // whether the name matches
+                if(strcmp(basis_scanner->name,reader)==0)
+                {
+                    atomic_orbital_single_cpy(atoms,basis_scanner);
+
+                    break;
+                }
+
+                basis_scanner = basis_scanner->NEXT;
+            }
+
+            if(strcmp(basis_scanner->name,reader)==0)
+            {
+                // copy information from the basis
+                atomic_orbital_single_cpy(atoms,basis_scanner);
+                // add electrons
+                el_num += basis_scanner->N;
+                // copy coordinates & convert unit
+                for(i=0;i<3;i++)
+                {
+                    fscanf(inputfile,"%lf",&coord_temp);
+                    atoms->cartesian[i] = coord_temp / 0.529177210903;
+                }
+
+                // copy the coordinates of the atom to all of its orbitals
+                atomic_orbital_sync_coord(atoms);
+                // print the name of the atom to all its orbitals
+                atomic_orbital_name_print(atoms);
+
+                atoms->NEXT = atomic_orbital_calloc();
+
+                atoms_temp = atoms;
+
+                atoms = atoms->NEXT;                        
+            }
+
+            // no such an atom in the basis -> throw error
+            else
+            {
+                printf("HF_ERROR: atom %s is not defined in the basis.\n",reader);
+
+                return 3;
+            }
+            
+
+        }
+    }
+}
+            \end{lstlisting}
+            可以看到在读取 \lstinline$&COORD$ 和 \lstinline$&END_COORD$ 之间的每一行原子信息都是通过从基组查询名字是不是存在，然后把信息复制出来，把坐标提取出来并转换成原子单位制，并形成一个完整的链表。
+
+            当然，对于Hartree-Fock而言它还需要一个电子轨道的链表，所以在 \lstinline$main.cpp$ 中把所有涉及的电子轨道重新拿出来形成一个链表：
+
+            \begin{lstlisting}
+// setting the head for the orbitals 
+orbitals = orbital_calloc((atoms->orbital_HEAD)->total);
+
+// save the location of the head
+orbital_temp = orbitals;
+// set the scanner of the atoms' list to its head
+atoms_temp = atoms;
+
+// copy all the orbitals from all atoms into `orbitals`
+while(atoms_temp->NEXT != NULL)
+{
+    orbital_cpy(orbital_temp,atoms_temp->orbital_HEAD);
+    while(orbital_temp->NEXT != NULL)
+        orbital_temp = orbital_temp->NEXT;
+
+    atoms_temp = atoms_temp->NEXT;
+    orbital_temp->NEXT = orbital_calloc((atoms_temp->orbital_HEAD)->total);
+
+    orbital_temp = orbital_temp->NEXT;
+}
+// DO the copying for the last one atom
+orbital_cpy(orbital_temp,atoms_temp->orbital_HEAD);
+
+// count the orbitals
+length = orbital_count(orbitals);
+            \end{lstlisting}
+            然后通过 \lstinline$orbital_count$ 数有多少电子轨道，方便后续对各类矩阵的操作（包括调用内存，存取信息等）。
+            \subsection{高斯积分}
+            最让人头疼的来了！
+
+            我们为什么要用基组？因为在量子力学里所有的物理量都是通过算符来表示，但计算机不知道什么叫算符，所以我们需要通过基组来将其转换成一个个矩阵，将问题转换为线性代数问题。DVR(Discrete Variable Representation)\footnote{同样可查看源代码于 \url{https://github.com/Walter-Feng/SincDVR.git}.}如此，电子结构问题亦如此。但每一个矩阵元意味着一个内积，而内积并不是简单的笛卡尔内积，而是一个全空间积分！这也就是最让人头疼的地方，也是高斯基组最美妙的地方。
+
+            我们需要解决的是这么一个线性代数（特征值）问题，
+            \begin{equation}
+                F C = S C E
+            \end{equation}
+            其中$F$和$S$是我们需要实现求出来的。我们从最简单的$S$开始。
+
+                \subsubsection{重叠积分}
+                定义是这个：
+                \begin{equation}
+                    S_{ij} = \langle \phi_i | \phi_j \rangle = \int \phi_i(\boldsymbol{r}) \phi_j(\boldsymbol{r}) d \boldsymbol{r}.
+                \end{equation}
+                所幸$\phi_i$和$\phi_j$都是高斯函数（或者乘上一个多项式），而这样的形式是能够给出精确解的，比如下面这个公式：
+                \begin{equation}
+                    \int_\mathrm{R^n}\, dX \, f(X)\,e^{-\frac{1}{2}X^T A X + B^T X }= \sqrt{\frac{(2\pi)^n}{\mathrm{det} A}}e^{\frac{1}{2}B^T A^{-1}B} \mathrm{exp}\left(\frac{1}{2}(A^{-1})_{ij} \frac{\partial}{\partial x_i}\frac{\partial}{\partial x_j}\right) f(X+B)
+                \end{equation}
+                它表达了对于包括任意数量的自变量$X$以及一个函数（最好是多项式），给出高斯函数的二次项矩阵$A$和一次项矢量$B$的情况下得到的精确解。其中$\exp$部分应理解为
+                \begin{equation}
+                    \exp{\hat{g}} = \sum_n \frac{\hat{g}^n}{n!}
+                \end{equation}
+                当然这么写程序会非常难（我也只能在擅长符号计算的\emph{Mathematica}里实现它）。所幸电子轨道的样子是非常有规律的，所以我们可以通过 Obara \& Saika 提示的迭代关系来实现。
+
+                我们先展现所使用的符号。对于一个高斯函数，
+                \begin{equation}
+                    |a) \equiv g(\vec{r},\alpha,\boldsymbol{a},\vec{A}) = (x- A_x)^{a_x} (y-A_y)^{a_y} (z-A_z)^{a_z} \exp \left(-\alpha |\vec{r} - \vec{A}|^2\right)
+                \end{equation}
+                有一个 Gaussian Product Theorem,即：
+                \begin{theorem}
+                    两个高斯函数的乘积可转换为一系列高斯函数的和，比如：
+                    \begin{equation}
+                        g(\vec{r},\alpha, \boldsymbol{0},\vec{A})g(\vec{r},\beta, \boldsymbol{0},\vec{B}) = \exp(-\xi |\overline{AB}|^2) g(\vec{r},\zeta,\boldsymbol{0},\vec{P}),
+                    \end{equation}
+                    其中$\zeta = \alpha + \beta, \, \xi = \frac{\alpha\beta}{\zeta}, \, \vec{P} = \frac{\alpha \vec{A} + \beta \vec{B}}{\zeta}, \, \overline{AB} = \vec{A} - \vec{B}$.
+                    对于含有多项式的高斯函数。可以利用
+                    \begin{equation}
+                        (x- A_x) ^{a_x} = [(x-P_x) + \overline{PA}_x]^{a_x} = \sum_{i=0}^{a_x} C_{a_x}^i (x-P_x)^i {PA}_x^{a_x - i}
+                    \end{equation}
+                    从而可以展开两个高斯函数的乘积为
+                    \begin{equation}
+                        g_1g_2 = \exp(-\xi|AB|^2) \exp(-\zeta|\vec{r} - \vec{P}|^2) \times \prod_{k=x,y,z} \sum_{i=0}^{i=a_k+b_k}(k-P_k)^i f_i (a_k,b_k,\overline{PA}_k,\overline{PB}_k),
+                    \end{equation}
+                    其中
+                    \begin{equation}
+                        f_i(a_k,b_k,\overline{PA}_k,\overline{PB}_k) = \sum_{n=0}^{n=i} C_{a_k}^{n} C_{b_k}^{i-n} \overline{PA}_k^{a_x-n}\overline{PB}_k^{b_x-n+k}
+                    \end{equation}
+                \end{theorem}
+                但这不迭代啊！
+                
+                高斯函数还有一个特殊的性质，我们可以通过对它进行求导来得到一个多项式的组合：
+                \begin{equation}
+                    \partial_{A_i} g(\vec{r},\alpha,\boldsymbol{a},\vec{A}) = 2 \alpha g(\vec{r},\alpha,\boldsymbol{a} + \boldsymbol{1}_i,\vec{A}) - a_i g(\vec{r},\alpha,\boldsymbol{a} - \boldsymbol{1}_i,\vec{A})
+                \end{equation}
+                其中$\boldsymbol{1}_i = (\delta_{ix},\delta_{iy},\delta_{iz})$, 即沿着某一方向的单位矢量。从而可以有
+                \begin{equation}
+                    (a+\boldsymbol{1}_i|b) = \frac{1}{2\alpha} \partial_{A_i} (a|b) + \frac{a_i}{2\alpha} (a-\boldsymbol{1}_i|b)
+                \end{equation}
+                而$\partial_{A_i}$可以通过前面所描述的 Gaussian Product Theorem 展开后观察得到：
+                \begin{equation}
+                    (a+\boldsymbol{1}_i|b) = (P_i - A_i)(a|b) +  \frac{b_i}{2\zeta} (a|b-\boldsymbol{1}_i) + \frac{a_i}{2\alpha} (a-\boldsymbol{1}_i|b)
+                \end{equation}
+                而起始条件可以由高斯函数在全空间的积分中非常方便地得到：
+                \begin{equation}
+                    (\boldsymbol{0}_A|\boldsymbol{0}_B) = \left(\frac{\pi}{\zeta}\right)^{3/2} \exp(- \xi |\bar{AB}|^2),
+                \end{equation}
+                从而建立起了完整的迭代关系。该部分的迭代的核心部分由 \lstinline$SIntegral$ 实现，并通过 \lstinline$double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b)$ 允许将 \lstinline$gaussian_chain$ 作为执行对象：
+                \begin{lstlisting}
+                    double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b)
+                    {
+                        return a->coefficient * b->coefficient *SIntegral(a->R,b->R,a->a[0],a->a[1],a->a[2],b->a[0],b->a[1],b->a[2],a->exponent,b->exponent);
+                    }
+                \end{lstlisting}
+                
+                而 \lstinline$void single_electron_transform(gaussian_chain * HEAD, orbital * a)$ 可以将 \lstinline$orbital$ 数据结构转换为一系列的 \lstinline$gaussian_chain$ 并完成归一化：
+                \begin{lstlisting}
+//transform the struct orbital to struct gaussian_chain
+void single_electron_transform(gaussian_chain * HEAD, orbital * a)
+{
+    gaussian_chain * temp, * bk;
+
+    temp = HEAD;
+
+    int i,j,q;
+
+    for(i=0;i<a->length;i++)
+    {
+        for(j=0;j<a->total;j++)
+        {
+            temp->coefficient = a->A[i].coef * *(a->coefficients + j) * normalize(*(a->exponents + j),a->A[i].a[0],a->A[i].a[1],a->A[i].a[2]);
+            temp->exponent = *(a->exponents + j);
+            for(q=0;q<3;q++)
+            {
+                temp->R[q] = a->cartesian[q];
+                temp->a[q] = a->A[i].a[q];
+            }
+            temp->NEXT = gaussian_chain_calloc();
+            bk = temp;
+            temp = temp->NEXT;
+        }
+    }
+    delete temp;
+    bk->NEXT = NULL;
+}
+                \end{lstlisting}
+
+                其中归一化所用的函数为
+                \begin{lstlisting}
+double normalize(double alpha, int ax, int ay, int az)
+{
+    return pow(2 * alpha / M_PI, 0.75) * pow(4 * alpha, (double) (ax + ay + az) / 2.0) / sqrt(double_factorial(2 * ax - 1) * double_factorial(2 * ay - 1) * double_factorial(2 * az - 1));
+}
+                \end{lstlisting}
+                即
+                \begin{equation}
+                    N(\alpha,a_x,a_y,a_z) = \left(\frac{2 \alpha}{\pi}\right)^{3/4} \frac{(4\alpha)^{(a_x+a_y+a_z)/2}}{[(2a_x-1)!!(2a_y-1)!!(2a_z-1)!!]^{1/2}}.
+                \end{equation}
+                
+                \subsubsection{动能积分}
+                其实前面已经大概说明了，对于高斯函数而言求导并不算什么大问题——它很快就能拆开成两个不同的高斯函数的加和，那么我们只要在求导后对每一个高斯函数进行一次重叠积分，我们就能够知道动能的期望值。比如对于$x$方向的求导，
+                \begin{lstlisting}
+// obtain the derivative of a gaussian function chain and store as another gaussian function chain over certain axis.
+// key: 0->x 1->y 2->z
+void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
+{
+    gaussian_chain * temp1, * temp2;
+
+    int i;
+
+    temp1 = dest;
+    temp2 = src;
+
+    while(temp2->NEXT != NULL)
+    {
+        if(temp2->a[key] == 0)
+        {
+            for(i=0;i<3;i++)
+            {
+                temp1->a[i] = temp2->a[i];
+                temp1->R[i] = temp2->R[i];
+            }
+            temp1->a[key] = temp2->a[key] + 1;
+            temp1->coefficient = - temp2->coefficient * 2.0 * temp2->exponent;
+            temp1->exponent = temp2->exponent;
+            temp1->NEXT = gaussian_chain_calloc();
+            temp1 = temp1->NEXT;
+            temp2 = temp2->NEXT;
+        }
+        else
+        {
+            for(i=0;i<3;i++)
+            {
+                temp1->a[i] = temp2->a[i];
+                temp1->R[i] = temp2->R[i];
+            }
+            temp1->a[key] = temp2->a[key] + 1;
+            temp1->coefficient = - temp2->coefficient * 2.0 * temp2->exponent;
+            temp1->exponent = temp2->exponent;
+            temp1->NEXT = gaussian_chain_calloc();
+            temp1 = temp1->NEXT;
+            for(i=0;i<3;i++)
+            {
+                temp1->a[i] = temp2->a[i];
+                temp1->R[i] = temp2->R[i];
+            }
+            temp1->coefficient = (double) temp2->a[key] * temp2->coefficient;
+            temp1->exponent = temp2->exponent;
+            temp1->a[key] = temp2->a[key] - 1;
+            temp1->NEXT = gaussian_chain_calloc();
+            temp1 = temp1->NEXT;
+            temp2 = temp2->NEXT;
+        }
+
+    }
+    ...
+                \end{lstlisting}
+                在这里面我对它在x方向上是不是没有角动量（即$a_x = 0$进行了判断，然后按照各自的情况进行展开，这并没有什么难度。对于动能是要求各方向的二次求导，也不难：
+                \begin{lstlisting}
+// obtain the second derivative of a gaussian function chain and store as another gaussian function chain over certain axis.
+void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
+{
+    gaussian_chain * temp1, * temp2, * temp3;
+
+    temp1 = dest;
+    temp2 = src;
+    temp3 = gaussian_chain_calloc();
+    
+    gaussian_chain_derivative(temp3,temp2,key);
+    gaussian_chain_derivative(temp1,temp3,key);
+
+    gaussian_chain_free(temp3);
+}
+
+void gaussian_chain_laplacian(gaussian_chain * dest, gaussian_chain * src)
+{
+    int i;
+    gaussian_chain * temp1, * temp2;
+
+    temp1 = dest;
+    for(i=0;i<3;i++)
+    {
+        gaussian_chain_second_derivative(temp1,src,i);
+        while(temp1->NEXT != NULL)
+            temp1 = temp1->NEXT;
+        temp1->NEXT = gaussian_chain_calloc();
+        temp2 = temp1;
+        temp1 = temp1->NEXT;
+    }
+    delete temp1;
+    temp2->NEXT = NULL;
+}
+// obtain the expectation value of kinetic energy operator, T = p^2/ 2m = - \nabla^2 /2, for gaussian_chain struct
+double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b_HEAD)
+{
+    double result;
+    gaussian_chain * laplacian_temp;
+
+    laplacian_temp = gaussian_chain_calloc();
+
+    gaussian_chain_laplacian(laplacian_temp, b_HEAD);
+
+    result = - 0.5 * gaussian_chain_full_SIntegral(a_HEAD,laplacian_temp);
+
+    gaussian_chain_free(laplacian_temp);
+
+    return result;
+}
+                \end{lstlisting}
+                也就是先抓过来求一次导，然后换个地方再求一次导，就得到了一个方向的二阶导；把每一个方向的串联起来\footnote{体现了为数不多的链表的优越性所在}，然后和原来的高斯函数系列做个重叠积分便能得到最后的动能期望值。
+                \subsubsection{原子核积分}
+                \subsubsection{双电子积分/库仑积分}
+
+
+
     \end{document}
