@@ -64,6 +64,7 @@
     \setlength{\oddsidemargin}{0mm}
     \setlength{\evensidemargin}{0mm}
     \renewcommand{\baselinestretch}{1.2}
+    \bibliographystyle{plain}
     \title{Hartree-Fock程序讲解}
     \author{李睿}
     \date{\today}
@@ -71,6 +72,7 @@
         \maketitle
         \tableofcontents
 
+        \newpage
 
         \section{引言}
             \begin{quote}
@@ -88,7 +90,9 @@
 
             Hartree-Fock 方法作为计算化学的开山鼻祖，对于一个想要从事计算化学相关工作的学生而言是一个必须要过去的坎。当然，原则上它作为一种工具你并不需要对它的所有细节都要彻底地把握，但如果并不深入了解，也可以说是十分令人叹息的事——Hartree-Fock写出来确实算是小程序，但它仍然能称得上是人类智慧的结晶。
 
-            本文（本书）将着重探讨Hartree-Fock的各处细节如何在程序中得到体现，以及它们背后的理论基础。
+            本文将着重探讨Hartree-Fock的各处细节如何在程序中得到体现，以及它们背后的理论基础。
+
+            网址是 \url{https://github.com/Walter-Feng/Hartree-Fock}. 不点赞说不过去呀！
 
         \section{程序流程概述}
 
@@ -232,7 +236,7 @@ typedef struct gsl_quad_tensor
         于是我们就开始剖析整个程序所经历的流程了。我会直接在该文档中复制源代码进行讲解，并附带背后的可能的数学原理。
 
             \subsection{读取基组}
-            程序使用的基组套装是从Basis Set Exchange (\url{https://www.basissetexchange.org}) 里面扒下来的，它会告诉你这个shell它会有多少个高斯函数，每个高斯函数的指数和系数分别是多少。但最反人类的是，Pople基组（也就是3-21G，6-31G类型）的记录方式和非Pople基组的形式完全不一样！比如3-21G的碳的记录方式长这样：
+            程序使用的基组套装是从Basis Set Exchange \cite{schuchardt2007basis}(\url{https://www.basissetexchange.org}) 里面扒下来的，它会告诉你这个shell它会有多少个高斯函数，每个高斯函数的指数和系数分别是多少。但最反人类的是，Pople基组（也就是3-21G，6-31G类型）的记录方式和非Pople基组的形式完全不一样！比如3-21G的碳的记录方式长这样：
 
             \begin{lstlisting}
 BASIS "ao basis" PRINT
@@ -569,7 +573,7 @@ length = orbital_count(orbitals);
                 \end{equation}
                 所幸$\phi_i$和$\phi_j$都是高斯函数（或者乘上一个多项式），而这样的形式是能够给出精确解的，比如下面这个公式：
                 \begin{equation}
-                    \int_\mathrm{R^n}\, dX \, f(X)\,e^{-\frac{1}{2}X^T A X + B^T X }= \sqrt{\frac{(2\pi)^n}{\mathrm{det} A}}e^{\frac{1}{2}B^T A^{-1}B} \mathrm{exp}\left(\frac{1}{2}(A^{-1})_{ij} \frac{\partial}{\partial x_i}\frac{\partial}{\partial x_j}\right) f(X+B)
+                    \int_\mathrm{R^n}\, dX \, f(X)\,e^{-\frac{1}{2}X^T A X + B^T X }= \sqrt{\frac{(2\pi)^n}{\mathrm{det} A}}e^{\frac{1}{2}B^T A^{-1}B} \mathrm{exp}\left(\frac{1}{2}(A^{-1})_{ij} \frac{\partial}{\partial x_i}\frac{\partial}{\partial x_j}\right) f(X) \bigg|_{X=B}
                 \end{equation}
                 它表达了对于包括任意数量的自变量$X$以及一个函数（最好是多项式），给出高斯函数的二次项矩阵$A$和一次项矢量$B$的情况下得到的精确解。其中$\exp$部分应理解为
                 \begin{equation}
@@ -581,7 +585,7 @@ length = orbital_count(orbitals);
                 \begin{equation}
                     |a) \equiv g(\vec{r},\alpha,\boldsymbol{a},\vec{A}) = (x- A_x)^{a_x} (y-A_y)^{a_y} (z-A_z)^{a_z} \exp \left(-\alpha |\vec{r} - \vec{A}|^2\right)
                 \end{equation}
-                有一个 Gaussian Product Theorem,即：
+                有一个 Gaussian Product Theorem,即\cite{may2006density}：
                 \begin{theorem}
                     两个高斯函数的乘积可转换为一系列高斯函数的和，比如：
                     \begin{equation}
@@ -609,15 +613,15 @@ length = orbital_count(orbitals);
                 \end{equation}
                 其中$\boldsymbol{1}_i = (\delta_{ix},\delta_{iy},\delta_{iz})$, 即沿着某一方向的单位矢量。从而可以有
                 \begin{equation}
-                    (a+\boldsymbol{1}_i|b) = \frac{1}{2\alpha} \partial_{A_i} (a|b) + \frac{a_i}{2\alpha} (a-\boldsymbol{1}_i|b)
+                    (\boldsymbol{a}+\boldsymbol{1}_i|\boldsymbol{b}) = \frac{1}{2\alpha} \partial_{A_i} (\boldsymbol{a}|\boldsymbol{b}) + \frac{a_i}{2\alpha} (\boldsymbol{a}-\boldsymbol{1}_i|\boldsymbol{b})
                 \end{equation}
                 而$\partial_{A_i}$可以通过前面所描述的 Gaussian Product Theorem 展开后观察得到：
                 \begin{equation}
-                    (a+\boldsymbol{1}_i|b) = (P_i - A_i)(a|b) +  \frac{b_i}{2\zeta} (a|b-\boldsymbol{1}_i) + \frac{a_i}{2\alpha} (a-\boldsymbol{1}_i|b)
+                    (\boldsymbol{a}+\boldsymbol{1}_i|\boldsymbol{b}) = (P_i - A_i)(\boldsymbol{a}|\boldsymbol{b}) +  \frac{b_i}{2\zeta} (\boldsymbol{a}|\boldsymbol{b}-\boldsymbol{1}_i) + \frac{a_i}{2\alpha} (\boldsymbol{a}-\boldsymbol{1}_i|\boldsymbol{b})
                 \end{equation}
                 而起始条件可以由高斯函数在全空间的积分中非常方便地得到：
                 \begin{equation}
-                    (\boldsymbol{0}_A|\boldsymbol{0}_B) = \left(\frac{\pi}{\zeta}\right)^{3/2} \exp(- \xi |\bar{AB}|^2),
+                    (\boldsymbol{0}_A|\boldsymbol{0}_B) = \left(\frac{\pi}{\zeta}\right)^{3/2} \exp(- \xi |\overline{AB}|^2),
                 \end{equation}
                 从而建立起了完整的迭代关系。该部分的迭代的核心部分由 \lstinline$SIntegral$ 实现，并通过 \lstinline$double gaussian_chain_SIntegral(gaussian_chain * a, gaussian_chain * b)$ 允许将 \lstinline$gaussian_chain$ 作为执行对象：
                 \begin{lstlisting}
@@ -666,7 +670,7 @@ double normalize(double alpha, int ax, int ay, int az)
     return pow(2 * alpha / M_PI, 0.75) * pow(4 * alpha, (double) (ax + ay + az) / 2.0) / sqrt(double_factorial(2 * ax - 1) * double_factorial(2 * ay - 1) * double_factorial(2 * az - 1));
 }
                 \end{lstlisting}
-                即
+                即\cite{obara1986efficient}
                 \begin{equation}
                     N(\alpha,a_x,a_y,a_z) = \left(\frac{2 \alpha}{\pi}\right)^{3/4} \frac{(4\alpha)^{(a_x+a_y+a_z)/2}}{[(2a_x-1)!!(2a_y-1)!!(2a_z-1)!!]^{1/2}}.
                 \end{equation}
@@ -729,7 +733,7 @@ void gaussian_chain_derivative(gaussian_chain * dest, gaussian_chain * src, int 
     }
     ...
                 \end{lstlisting}
-                在这里面我对它在x方向上是不是没有角动量（即$a_x = 0$进行了判断，然后按照各自的情况进行展开，这并没有什么难度。对于动能是要求各方向的二次求导，也不难：
+                在这里面我对它在$x$方向上是不是没有角动量（即$a_x = 0$）进行了判断，然后按照各自的情况进行展开，这并没有什么难度。对于动能是要求各方向的二次求导，也不难：
                 \begin{lstlisting}
 // obtain the second derivative of a gaussian function chain and store as another gaussian function chain over certain axis.
 void gaussian_chain_second_derivative(gaussian_chain * dest, gaussian_chain * src, int key)
@@ -781,10 +785,641 @@ double gaussian_chain_kinetic_energy(gaussian_chain * a_HEAD, gaussian_chain * b
     return result;
 }
                 \end{lstlisting}
-                也就是先抓过来求一次导，然后换个地方再求一次导，就得到了一个方向的二阶导；把每一个方向的串联起来\footnote{体现了为数不多的链表的优越性所在}，然后和原来的高斯函数系列做个重叠积分便能得到最后的动能期望值。
-                \subsubsection{原子核积分}
+                也就是先抓过来求一次导，然后换个地方再求一次导，就得到了一个方向的二阶导；把每一个方向的串联起来\footnote{体现了为数不多的链表的优越性所在}，然后和原来的高斯函数系列做个重叠积分，乘上系数$-\frac{1}{2}$便能得到最后的动能期望值。
+
+
+                \subsubsection{核吸引积分}
+                啊对就是Nuclear attraction energy integral\footnote{\sout{我只看过英文的资料我怎么知道中文叫什么嘛}}.
+
+                定义是
+                \begin{equation}
+                    Z_{ij} = \langle \phi_i | \frac{1}{|\boldsymbol{r} - \boldsymbol{r}_l|} |\phi_j \rangle = \int \frac{\phi_i(\boldsymbol{r}) \phi_j(\boldsymbol{r})}{|\boldsymbol{r} - \boldsymbol{r}_l|} d \boldsymbol{r} 
+                \end{equation}
+                其中$\boldsymbol{r}_l$为原子核所在的坐标。
+
+                解决这个问题最强的地方在于——把$\frac{1}{|\boldsymbol{r} - \boldsymbol{r}_l|}$转换为高斯函数！
+
+                \begin{equation}
+                    \left|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}\right|^{-1}=\frac{2}{\pi^{1 / 2}} \int_{0}^{\infty} d u \exp \left[-\left(\boldsymbol{r}_{1}-\boldsymbol{r}_{2}\right)^{2} u^{2}\right].
+                \end{equation}
+
+                而
+                \begin{equation}
+                    \exp \left[-\left(\boldsymbol{r}-\boldsymbol{r}_{l}\right)^{2} u^{2}\right] = g(\boldsymbol{r};u^2,\boldsymbol{0},\boldsymbol{r}_l)
+                \end{equation}
+                于是就变成了三中心重叠积分：
+                \begin{equation}
+                    \langle \phi_i | \frac{1}{|\boldsymbol{r} - \boldsymbol{r}_l|} |\phi_j \rangle = \frac{2}{\pi^{1 / 2}} \int_0^\infty du \, (\phi_i|\boldsymbol{0}_{\boldsymbol{r}_2}^{u^2}|\phi_j)
+                \end{equation}
+                类似于二电子重叠积分，我们对三中心重叠积分也有迭代关系：
+                \begin{equation}
+                \begin{aligned}
+                    \left(\boldsymbol{a}+\boldsymbol{1}_{i}|\boldsymbol{c}| \boldsymbol{b}\right)=&\left(G_{i}-A_{i}\right)(\boldsymbol{a}|\boldsymbol{c}| \boldsymbol{b})+\frac{a_i}{2\left(\zeta+\zeta_{c}\right)} \\ 
+                & \times \left(\boldsymbol{a}-\boldsymbol{1}_{i}|\boldsymbol{c}| \boldsymbol{b}\right)+\frac{ b_i}{2\left(\zeta+\zeta_{c}\right)} \left(\boldsymbol{a} | \boldsymbol{c}|\boldsymbol{b}-\boldsymbol{1}_{i}\right)\\ 
+                &+\frac{c_i}{2\left(\zeta+\zeta_{c}\right)}\left(\boldsymbol{a}\left|\boldsymbol{c}-\boldsymbol{1}_{i}\right| \boldsymbol{b}\right)
+                \end{aligned}
+                \end{equation}
+                其中$\boldsymbol{G}=\frac{\zeta \boldsymbol{P}+\zeta_{c} \boldsymbol{C}}{\zeta+\zeta_{c}}$.然后由于在这里$c$没有角动量，所以最后一项舍去，$\zeta_c = u^2$，从而有
+                \begin{equation}
+                    \begin{aligned}
+                    \left(\boldsymbol{a}+\boldsymbol{1}_{i}|\boldsymbol{0}_{\boldsymbol{r}_l}^{u^2}| \boldsymbol{b}\right)= & \left(G_{i}-A_{i}\right)(\boldsymbol{a}|\boldsymbol{0}_{\boldsymbol{r}_l}^{u^2}| \boldsymbol{b})+\frac{a_i}{2\left(\zeta + u^2\right)} \\ 
+                    & \times \left(\boldsymbol{a}-\boldsymbol{1}_{i}|\boldsymbol{0}_{\boldsymbol{r}_l}^{u^2}| \boldsymbol{b}\right)+\frac{ b_i}{2\left(\zeta + u^2\right)} \left(\boldsymbol{a} | \boldsymbol{0}_{\boldsymbol{r}_l}^{u^2}|\boldsymbol{b}-\boldsymbol{1}_{i}\right)
+                    \end{aligned}
+                \end{equation}
+                $G_i-A_i$是
+                \begin{equation}
+                    G_i - A_i = \frac{\beta (B_i-A_i) + u^2 (C_i - A_i)}{\zeta + u^2}, \quad \boldsymbol{C} = \boldsymbol{r}_l
+                \end{equation}
+                也就是说最后在积分的时候$\frac{u^2}{\zeta+u^2}$和$\frac{u^2}{\zeta+u^2}$会影响最后的积分。这怎么玩嘛！
+
+                请见数值积分方法，本章节完（不是）
+
+                有变换
+                \begin{equation}
+                    \frac{1}{\zeta + u^2} = \frac{1}{\zeta} \left(1 - \frac{u^2}{\zeta + u^2}\right)
+                \end{equation}
+                这样至少能把$\frac{u^2}{\zeta+u^2}$都转换成$\frac{u^2}{\zeta+u^2}$.这也就意味着最后的结果最多也就乘上$(\frac{u^2}{\zeta+u^2})^m$这一项。我们不妨定义
+                \begin{equation}
+                    (\boldsymbol{a} | \frac{1}{|\boldsymbol{r} - \boldsymbol{r}_l|} |\boldsymbol{b} )^{(m)} = \frac{2}{\pi^{1 / 2}} \int_0^\infty \left(\frac{u^2}{\zeta+u^2}\right)^m\, du \, (\boldsymbol{a}|\boldsymbol{0}_{\boldsymbol{r}_2}^{u^2}|\boldsymbol{b})
+                \end{equation}
+                那么$m=0$就是我们本来想要的。$(\boldsymbol{a}|\boldsymbol{0}_{\boldsymbol{r}_2}^{u^2}|\boldsymbol{b})$这个东西可以通过迭代关系最终化简到$(\boldsymbol{0}_A|\boldsymbol{0}_C|\boldsymbol{0}_B)$类型,然后利用高斯积分计算可以得到
+                \begin{equation}
+                    \left(\boldsymbol{0}_{A}\left|\boldsymbol{0}_{C}\right| \boldsymbol{0}_{B}\right)=\left(\frac{\pi}{\zeta_{a}+\zeta_{b}+\zeta_{c}}\right)^{3 / 2} \kappa_{a b c},
+                \end{equation}
+                其中
+                \begin{equation}
+                    \kappa_{a b c}=\exp \left[-\xi(\boldsymbol{A}-\boldsymbol{B})^{2}\right] \exp \left[-\frac{\zeta \zeta_{c}}{\zeta+\zeta_{c}}(\boldsymbol{P}-\boldsymbol{C})^{2}\right].
+                \end{equation}
+                对$\left(\frac{\pi}{\zeta_{a}+\zeta_{b}+\zeta_{c}}\right)^{3 / 2}$ 我们可以使用刚才的方法继续转换成$\frac{1}{\zeta + u^2}$类型。这样我们就能够将积分转换成类似于
+                \[
+                    \int_0^\infty \left(\frac{u^2}{\zeta + u^2}\right)^{(m+\frac{3}{2})}\exp\left[-\frac{u^2}{\zeta + u^2} \zeta (\boldsymbol{P}-\boldsymbol{r}_2)^2\right]\, du.
+                \]
+                看来只能用换元法呀！令
+                \begin{equation}
+                    t^2 = \frac{u^2}{\zeta + u^2}.
+                \end{equation}
+                那么
+                \begin{equation}
+                    \frac{1}{t^2} = 1 + \frac{\zeta}{u^2}.
+                \end{equation}
+                也就是
+                \begin{equation}
+                    u = \sqrt{\frac{\zeta t^2}{1-t^2}}.
+                \end{equation}
+                省去求微分环节，就可以把上面的积分式转换得到
+                \[
+                    \int_0^1 t^{2m} \exp\left[-\zeta (\boldsymbol{P}-\boldsymbol{r}_2)^2t^2\right]\, dt.
+                \]
+                这怎么积啊！
+
+                请见数值积分方法，本章节完（不是）
+
+                谷歌一查有惊喜，这个就是Boys function.也可以直接放进\emph{Mathematica}，得到
+                \begin{equation}
+                    \int _0^1 t^{2m} \exp(-Tt^2) \, dt = \frac{1}{2} \, T^{-\frac{2m+1}{2}}\left[\Gamma\left(\frac{2m+1}{2}\right) -  \Gamma\left(\frac{2m+1}{2},T\right)\right],
+                \end{equation}
+                其中$\Gamma(n,x)$是incomplete Gamma function(定义详见wiki).
+
+                将所有结果进行汇总，就能够得到
+                \begin{equation}
+                    \begin{aligned}
+                    (\boldsymbol{a} + \boldsymbol{1}_i|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b})^{(m)} =  & \frac{\beta}{\zeta} \overline{BA}_i (\boldsymbol{a}|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b})^{(m)} \\
+                    & + \left(C_i - A_i - \frac{\beta}{\zeta} \overline{BA}_i \right) (\boldsymbol{a}|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b})^{(m+1)} \\
+                    & + \frac{a_i}{2\zeta}\left[(\boldsymbol{a} - \boldsymbol{1}_i|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b})^{(m)}- (\boldsymbol{a} - \boldsymbol{1}_i|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b})^{(m+1)}\right] \\
+                    & + \frac{b_i}{2\zeta}\left[(\boldsymbol{a}|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b}- \boldsymbol{1}_i)^{(m)}- (\boldsymbol{a}|\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_l|}|\boldsymbol{b} - \boldsymbol{1}_i)^{(m+1)}\right]
+                    \end{aligned}
+                \end{equation}
+                以及初始条件
+                \begin{equation}
+                    \frac{2\pi}{\zeta} \exp\left(- \xi \overline{AB}^2\right) F_m(T),
+                \end{equation}
+                其中
+                \begin{equation}
+                    T = \zeta \overline{PC}^2
+                ,\end{equation}
+                以及
+                \begin{equation}
+                    F_m (T) = \int ^1_0 t^{2m} \exp \left\{ - T t^2 \right\}  \, dt 
+                .\end{equation}
+                在程序中体现为一系列的 \lstinline$ZIntegral$ 函数。
+
+
                 \subsubsection{双电子积分/库仑积分}
+            
+                定义为
+                \begin{equation}
+                    J_{ij} = \langle \phi_i | \frac{1}{|\boldsymbol{r}_1 - \boldsymbol{r}_2|} |\phi_j \rangle = \int \frac{\phi_i(\boldsymbol{r}) \phi_j(\boldsymbol{r})}{|\boldsymbol{r}_1 - \boldsymbol{r}_2|} d \boldsymbol{r}. 
+                \end{equation}
+                所以其实方法和 Nuclear attraction energy integral 类似，把中间的距离的反比转换成高斯函数，然后变成迭代关系。
+                \begin{equation}
+                    \begin{aligned}
+                    ( \boldsymbol{a} + \boldsymbol{1}_i | \frac{1}{r_{12}} | \boldsymbol{b} ) =  & \overline{PA}_i ( \boldsymbol{a} | \frac{1}{r_{12}} | \boldsymbol{b} ) ^{(m+1)} \\
+                    & + \frac{a_i}{2\alpha} \left\{ ( \boldsymbol{a}-\boldsymbol{1}_i | \frac{1}{r_{12}} | \boldsymbol{b} ) ^{(m)} - \frac{\beta}{\zeta}( \boldsymbol{a} - \boldsymbol{1}_i | \frac{1}{r_{12}} | \boldsymbol{b} ) ^{(m+1)}\right\}\\
+                    & + \frac{b_i}{2\zeta} ( \boldsymbol{a} | \frac{1}{r_{12}} | \boldsymbol{b} - \boldsymbol{1}_i ) ^{(m+1)} 
+                    \end{aligned}
+                \end{equation}
+                \begin{equation}
+                    ( \boldsymbol{0}_A | \frac{1}{r_{12}} | \boldsymbol{0}_B ) ^{(m)} = \frac{2\pi ^{\frac{5}{2}}}{\alpha \beta \zeta^\frac{1}{2}} F_m(T)
+                ,\end{equation}
+                其中
+                \begin{equation}
+                    T = \xi |\overline{AB}| ^2
+                ,\end{equation}
+                以及
+                \begin{equation}
+                    F_m (T) = \int ^1_0 t^{2m} \exp \left\{ - T t^2 \right\}  \, dt 
+                .\end{equation}
+                在程序中体现为一系列的 \lstinline$JIntegral$ 函数。
+
+                值得一提的是在体系中应该是以双电子积分的形式存在，不过利用 Gaussian Product Theorem 可以把两边的高斯函数乘积转化成为一系列高斯函数之和，然后问题就简单了。在程序中以 \lstinline$two_electron_transform$ 的形式体现。
 
 
+            \subsection{Hartree-Fock 迭代}
+            终于到了最为核心的Hartree-Fock 部分！在解决了所有电子积分相关问题以后后面就是纯粹的线性代数问题了。
+                \subsubsection{非正交基组下的特征解问题——L\"owdin 方法}
+                如果你看过我和我的学长——张超群学长和顾锴学长——合著的一本指南——《浙江大学王林军课题组本科生入门指南》(\url{https://github.com/Warlocat/A-Quick-Tour-Guide-for-LinJun-Group.git})，你应该还记得我们为什么要讨论这个问题。这是由于我们一直都使用的是原子轨道基组，而原子轨道基组并不是正交的\footnote{当然如果您量子力学学得很好您应该记得比如一个氢原子的所有轨道都是正交归一的——但我们研究的是多原子体系，所以如果一个地方的氢原子的$1s$轨道和另一个地方的氢原子放在那里……那自然就不正交啦}，所以我们需要研究非正交基组如何求得特征解。
 
+                \sout{等一下我去那边拷贝一下……}
+
+                \sout{来了来了}
+
+                我们先定义原子轨道基组$\left\{\phi_i\right\}$，他们之间不满足正交归一性，而是存在一个重叠积分矩阵
+                \begin{equation}
+                    {S}_{ij} \equiv \langle \phi_i|\phi_j\rangle = \int \mathrm{d} \boldsymbol{x} \phi_i^*(\boldsymbol{x})\phi_j(\boldsymbol{x})
+                \end{equation}
+                Fock算符的本征态可以在这个基下展开(我们先忽略自旋的问题，或者认为上述原子轨道其实是自旋轨道)，
+                \begin{equation}
+                    |\psi_i\rangle = \sum_j C_{ji} |\phi_i\rangle
+                \end{equation}
+                这样，系数矩阵$C_{ji} $的第$i$列表示第$i$个分子轨道对原子轨道的展开系数，这与多数软件中的设定是一致的。原本的Fock算符的本征值问题可以写作
+                \begin{equation}
+                    \hat{f}|\psi_j\rangle = \varepsilon_j |\psi_j\rangle
+                \end{equation}
+                左乘一个$\langle \psi_i|$然后将原子轨道展开代入
+                \begin{equation}
+                    \sum_k\sum_l C_{ki}^* C_{lj} \langle \phi_k|\hat{f}|\phi_l\rangle = \sum_k\sum_l C_{ki}^* C_{lj} \langle \phi_k|\phi_l\rangle \varepsilon_j 
+                \end{equation}
+                我们定义原子轨道基组下的Fock算符的矩阵为$F_{kl} \equiv \phi_k|\hat{f}|\phi_l$，在很多文献中，这个矩阵称为Fock矩阵。改写上式为
+                \begin{equation}
+                    \sum_k\sum_l C_{ik}^{\dagger} F_{kl} C_{lj} = \sum_k\sum_l  C_{ik}^{\dagger} S_{kl} C_{lj}\varepsilon_j 
+                \end{equation}
+                即
+                \begin{equation}
+                    \left( C^{\dagger}FC \right)_{ij} = \left( C^{\dagger}SC \varepsilon\right)_{ij}
+                \end{equation}
+                其中$\varepsilon$为对角线为原本本征能量的对角阵，将上式的矩阵形式左乘$ C^{\dagger -1}$就得到了Hartree-Fock近似下最后求解的方程
+                \begin{equation}
+                    FC = SC \varepsilon
+                    \label{matrix form of secular equation}
+                \end{equation}
+                上式经常用于在已知Hartree-Fock分子轨道能量的情况下反推Fock矩阵(比如你有Gaussian计算结果，想知道Fock矩阵的时候)，即使用$F = SC \varepsilon C^{-1}$。另外，上式其实是一个矩阵的形式，并不是常见的本征值方程，如果单独拿出某一列，才会化成一般的本征值问题，即
+                \begin{equation}
+                    Fc = ESc
+                \end{equation}
+
+                \sout{欢迎回来}
+
+                所以我们虽然能够通过上面的积分方法得到$F$，但我们不能直接把它投进任何一种可以矩阵对角化的库，因为它们得到的结果都是在基组互相正交归一的前提下进行的\footnote{这句话当然有毛病——它们只帮你解决线性代数问题，而线性代数下的矢量内积是直接默认用点乘的。}线性代数曾教过我们如何解决这样的非正交情况下变成正交基组的操作——没错就是\sout{（翻阅谷歌一分钟）}Gram–Schmidt 方法。在这里不过多讲述它，但它在做这个问题的时候的最大的毛病是它采用了迭代的方法来得到所有的正交基组，而我们现在用的所有数值方法都是存在误差的（比如 \lstinline$double$ 类型的精度问题），而在迭代得到每一个新的向量的过程中误差会不断地积累，最终爆炸——比如最后一个和第一个并不正交。所以我们需要一个整体进行正交化然后求解的方法——而这就是我们即将学习的L\"owdin方法。
+
+                初始想法很简单——我们做这么一个变化：
+                \[
+                    FC = SCE \Rightarrow F S^{-\frac{1}{2}}S^{\frac{1}{2}} C = S^{\frac{1}{2}}S^{\frac{1}{2}} C E \Rightarrow S^{-\frac{1}{2}} F S^{-\frac{1}{2}} S^{\frac{1}{2}}C = S^{\frac{1}{2}} C E,
+                \] 
+                我们就能够看到对基组进行一个$S^{1/2}$的变换，对$F$进行变换$F' = S^{-\frac{1}{2}} F S^{-\frac{1}{2}}$，我们就能够完美抵消$S$的存在，最终就能够转换成为
+                \begin{equation}
+                    F' C' = C' E.
+                \end{equation}
+                于是问题转化成为如何求得$S^{-\frac{1}{2}}$及$S^{\frac{1}{2}}$。注意到$S$为实对称矩阵（而且是正定矩阵），
+                \begin{equation}
+                    S U = s U \Leftrightarrow S = U s U^{T}
+                \end{equation}
+                其中$s$为$S$对角化后的矩阵，$U$为对应的特征向量组。然后约定$s^{1/2}$表示每个特征值取根号值，那么
+                \begin{equation}
+                    U s^{1/2} U^{T} U s^{1/2} U^{T} = U s U^{T} = S
+                \end{equation}
+                因此我们可以判定$U s^{1/2} U^{T}$为我们想要的$S^{\frac{1}{2}}$. $S^{-\frac{1}{2}}$同理，从而有
+                \begin{equation}
+                    S^{\frac{1}{2}} = U s^{1/2} U^{T}, \quad S^{-\frac{1}{2}} =  U s^{-1/2} U^{T}.
+                \end{equation}
+                有了这个我们就能愉快地求解非正交基组下的特征解问题了。
+
+                需要注意的是，进行变换后得到的特征向量组虽然库会帮你正交归一，但在实际使用的时候需要把它还原到原来的原子轨道基组中，也就是要乘上$S^{-\frac{1}{2}}$.
+
+                代码也很明晰——对角化，做变换，组合后输出。函数为 \lstinline$void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, gsl_matrix * eigenvec, int length)$, 定义于 \lstinline$gslextra.cpp$:
+
+                \begin{lstlisting}
+void gsl_eigen_Lowdin_diag(gsl_matrix * m, gsl_matrix * S, gsl_vector * eigen, gsl_matrix * eigenvec, int length)
+{
+    int i;
+
+    gsl_matrix * M, * S_minus_half, * U, * S_cpy, * temp;
+
+    gsl_vector * S_eigen;
+
+    M = gsl_matrix_calloc(length,length);
+    // inverse square root of S
+    S_minus_half = gsl_matrix_calloc(length,length);
+    // copy of S
+    S_cpy = gsl_matrix_calloc(length,length);
+    // transformation matrix (storing all eigenvectors)
+    U = gsl_matrix_calloc(length,length);
+    // temporary matrix helping tranforming
+    temp = gsl_matrix_calloc(length,length);
+
+    // copy S (gsl_eigen_symmv will distroy the source matrix)
+    gsl_matrix_memcpy(S_cpy,S);
+
+    // vector storing eigenvalues
+    S_eigen = gsl_vector_calloc(length);
+
+    gsl_eigen_symmv_workspace * w = gsl_eigen_symmv_alloc(length);
+
+    gsl_eigen_symmv(S_cpy,S_eigen,U,w);
+
+    for(i=0;i<length;i++)
+        gsl_matrix_set(S_minus_half,i,i,1.0/sqrt(gsl_vector_get(S_eigen,i)));
+
+    gsl_matrix_mul(U,S_minus_half,temp,length,length,length);
+
+    gsl_matrix_transpose(U);
+
+    gsl_matrix_mul(temp,U,S_minus_half,length,length,length);
+
+    gsl_matrix_mul(S_minus_half,m,temp,length,length,length);
+    gsl_matrix_mul(temp,S_minus_half,M,length,length,length);
+
+    gsl_eigen_symmv(M,eigen,temp,w);
+
+    gsl_eigen_symmv_sort(eigen,temp,GSL_EIGEN_SORT_VAL_ASC);
+
+    gsl_matrix_mul(S_minus_half,temp,eigenvec,length,length,length);
+
+    gsl_matrix_free(M);
+    gsl_matrix_free(S_minus_half);
+    gsl_matrix_free(U);
+    gsl_matrix_free(S_cpy);
+    gsl_matrix_free(temp);
+    
+    gsl_vector_free(S_eigen);
+
+    gsl_eigen_symmv_free(w);
+}
+                \end{lstlisting}
+                顺便 \lstinline$void gsl_matrix_mul(gsl_matrix * A, gsl_matrix *B, gsl_matrix * Result,int Acolumn,int Arow,int Bcolumn)$ 这个函数作为矩阵相乘并不是gsl库自带的（摊手），不过也不难写，就不展示了。
+
+                \subsubsection{单电子哈密顿矩阵}
+                这一部分是不包含电子之间的排斥的能量。我们有了$T$和$Z$后就很好求了，求矩阵元的函数为 \lstinline$double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD)$, 定义于 \lstinline$RHF.cpp$:
+                \begin{lstlisting}
+// calculate the single electron hamiltonian matrix (core hamiltonian matrix) element
+double single_electron_hamiltonian_matrix_element(orbital * a, orbital * b, atomic_orbital * atom_HEAD)
+{
+    double result;
+
+    atomic_orbital * atom_temp;
+
+    result = orbital_kinetic_energy(a,b);
+
+    atom_temp = atom_HEAD;
+    
+    while(atom_temp->NEXT != NULL)
+    {
+        result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+        atom_temp = atom_temp->NEXT;
+    }
+
+    result -= atom_temp->N * orbital_ZIntegral(a,b,atom_temp->cartesian);
+
+    return result;
+}
+                \end{lstlisting}
+                \subsubsection{初猜}
+                初猜——Initial guess\footnote{这翻译不是我想出来的不关我事},是通过迭代方法求解某类问题时必需的东西。在本程序中通过对单电子哈密顿量求特征解来获得初始的电子轨道构型。其实可以看到，在能量的构成中单电子哈密顿量占相当大的比重，所以通过单电子哈密顿量来获得初猜也不失为一个不错的选择。我们把单电子哈密顿矩阵假装为Fock矩阵：
+                \begin{equation}
+                    h C_0 = S C_0 E_0
+                \end{equation}
+                这个$C_0$便成为我们的初猜构型参与战斗。
+
+                代码也非常easy:
+                \begin{lstlisting}
+// perform initial guess of the coefficient matrix by performing diagonalization of core hamiltonian matrix
+void initial_guess(gsl_matrix * dest, gsl_matrix * core_hamiltonian, gsl_matrix * S, int length)
+{
+    int i;
+
+    i = 0;
+
+    gsl_vector * temp_vector;
+
+    temp_vector = gsl_vector_calloc(length);
+
+    gsl_eigen_Lowdin_diag(core_hamiltonian,S,temp_vector,dest,length);
+
+    gsl_vector_free(temp_vector);
+
+}
+                \end{lstlisting}
+                \subsubsection{HF能量}
+                一般Hartree-Fock的能量的求法是
+                \begin{equation}
+                    \langle \Psi|\mathscr{H}|\Psi\rangle =\sum_{m=1}^N [m|h|m] + \sum_{m=1}^N\sum_{n>m}^N \left([mm|nn] - [mn|nm]\right)
+                \end{equation}
+                但如果从二次量子化的角度出发，会得到一个很有意思的结果\cite{helgaker2014molecular}。在二次量子化下体系的哈密顿量表示为
+                \begin{equation}
+                    \hat{H} = \sum_{\alpha \beta} h_{\alpha \beta} a_\alpha^\dagger a_\beta + \frac{1}{2} \sum_{\alpha \beta \gamma \delta} v_{\alpha \beta \gamma \delta} a_\alpha ^\dagger a_\beta ^\dagger a_\delta a_\gamma.
+                \end{equation}
+                而电子密度算符为
+                \begin{equation}
+                    \hat{\rho} = \sum_{\alpha = 1} ^{A} |\alpha \rangle \langle \alpha | = \sum_{\alpha = 1} ^{A} a_\alpha^\dagger |0\rangle\langle 0| a_\alpha
+                \end{equation}
+                即表示所有具有电子占据的轨道对应的投影矩阵相加。而一个Slater行列式表示为
+                \begin{equation}
+                    |\Phi\rangle = \prod_{\alpha = 1}^A a_\alpha^\dagger |0\rangle
+                \end{equation}
+                这就有意思了——相互组合，并注意算符交换导致的符号变化，然后就能够得到
+                \begin{equation}
+                    E[\rho] = \sum_{ij} h_ij \rho_ji + \frac{1}{2} \sum_{ijkl} \bar{v}_{ijkl} \rho_{ji} \rho_{lk},
+                \end{equation}
+                其中
+                \begin{equation}
+                    \bar{v}_{ijkl} = v_{ijkl} - v_{ikjl} = [ij|kl] - [ik|jl].
+                \end{equation}
+                所以实质上Hartree-Fock也是一种DFT泛函哒！
+
+                求变分，得到Fock矩阵
+                \begin{equation}
+                    F_{ij} = h_{ij} + \sum_{kl} \bar{v}_{ijkl} \rho_{lk}.
+                \end{equation}
+                从而那个四阶张量就可以派上用场啦！求电子密度矩阵很好求，只要注意数到电子数的一半就可以跳出循环。函数为 \lstinline$void density_matrix(gsl_matrix * dest, gsl_matrix * coef, int el_num, int length)$，
+                \begin{lstlisting}
+// calculate density matrix from coefficient matrix and the number of electrons
+void density_matrix(gsl_matrix * dest, gsl_matrix * coef, int el_num, int length)
+{
+    gsl_matrix * temp1, * temp2;
+
+    gsl_vector * vector_temp;
+
+    temp1 = gsl_matrix_calloc(length,length);
+    temp2 = gsl_matrix_calloc(length,length);
+
+    vector_temp = gsl_vector_calloc(length);
+
+    int i;
+    // get coefficient vectors of occupied orbitals and store into temp1, temp2
+    for(i=0;i<el_num/2;i++)
+    {
+        gsl_matrix_get_col(vector_temp,coef,i);
+        gsl_matrix_set_col(temp1,i,vector_temp);
+        gsl_matrix_set_row(temp2,i,vector_temp);
+    }
+
+    // perform \sum n_a | a > < a |
+    gsl_matrix_mul(temp1,temp2,dest,length,length,length);
+
+    gsl_matrix_free(temp1);
+    gsl_matrix_free(temp2);
+}
+                \end{lstlisting}
+                在RHF（Restricted Hartree-Fock）中我们只需要考虑轨道，而自旋导致的影响只会出现在双电子积分中：库仑积分为交换积分的两倍，即：
+                \begin{equation}
+                    F = h_{ij} + \sum_{kl} (2 v_{ijkl} - v_{ikjl}) \rho_{lk}.
+                \end{equation}
+
+                代码也非常明晰，矩阵元函数为 \lstinline$double fock_matrix_element(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int i, int j, int length)$:
+                \begin{lstlisting}
+// calculate the fock matrix element (F_{ij} = h_{ji} + \sum \bar{v}_{ijkl} \rho_{lk})
+double fock_matrix_element(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int i, int j, int length)
+{
+    double fock_matrix_temp;
+    int k,l;
+
+    fock_matrix_temp = gsl_matrix_get(h_matrix,j,i);
+
+    for(k=0;k<length;k++)
+    {
+        for(l=0;l<length;l++)
+        {
+            // Coulomb integral
+            fock_matrix_temp += 2 * gsl_quad_tensor_get(v,j,i,k,l) * gsl_matrix_get(density_matrix,l,k);
+            // Exchange integral 
+            fock_matrix_temp -=  gsl_quad_tensor_get(v,j,k,i,l) * gsl_matrix_get(density_matrix,l,k);               
+        }
+    }
+
+    return fock_matrix_temp;
+}
+                \end{lstlisting}
+
+                能量求值也类似，函数为 \lstinline$double HF_energy(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int length)$：
+                \begin{lstlisting}
+// calculate the Hartree-Fock energy of the system, E(HF) = \sum h_{ij} \rho_{ji} + 0.5 \sum \rho_{lk} \bar{v}_{ijkl} \rho{ji}
+double HF_energy(gsl_quad_tensor * v, gsl_matrix * density_matrix, gsl_matrix * h_matrix, int length)
+{
+    double energy_temp = 0;
+
+    int i,j,k,l;
+
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            // add core hamiltonian energy
+            energy_temp += gsl_matrix_get(h_matrix,i,j) * gsl_matrix_get(density_matrix,j,i);
+        }
+    }
+
+    for(i=0;i<length;i++)
+    {
+        for(j=0;j<length;j++)
+        {
+            for(k=0;k<length;k++)
+            {
+                for(l=0;l<length;l++)
+                {
+                    // Coulumb integrals
+                    energy_temp += gsl_quad_tensor_get(v,i,j,k,l) * gsl_matrix_get(density_matrix,j,i) * gsl_matrix_get(density_matrix,l,k);
+                    // Exchange integrals
+                    energy_temp -= 0.5 * gsl_quad_tensor_get(v,i,k,j,l) * gsl_matrix_get(density_matrix,j,i) * gsl_matrix_get(density_matrix,l,k);
+                }
+            }
+        }
+    }
+
+    return 2.0 * energy_temp;
+}
+                \end{lstlisting}
+
+                有了这些你也可以打造自己的Hartree-Fock循环啦！
+
+                下面是我的循环：
+                \begin{lstlisting}
+for(i=0;i<iteration_max;i++)
+{
+    fock_matrix(F,v,D,h_matrix,length);
+    gsl_eigen_Lowdin_diag(F,S,energy,coef,length);
+    density_matrix(D,coef,el_num,length);     
+
+    energy_temp = HF_energy(v,D,h_matrix,length);
+
+    if(fabs(energy_temp - energy_bk) < errmax) count++;
+    else count = 0;
+
+    if(count >= countmax) break;
+
+    printf("iteration = %d, energy = %lf\n",i+1,energy_temp);
+    if(SCF_FOCK_FLAG==1)
+    {
+        printf("\nFock matrix:\n");
+        gsl_matrix_printf(F,length,length,"%10.4f");
+    }
+    if(SCF_COEF_FLAG==1)
+    {
+        printf("\nCoefficient matrix:\n");
+        gsl_matrix_printf(coef,length,length,"%10.4f");
+    }
+
+
+    gsl_matrix_memcpy(diff_temp,diff);
+
+    gsl_matrix_memcpy(diff,coef);
+    gsl_matrix_sub(diff,input_coef_temp);
+
+
+    energy_bk = energy_temp;
+                \end{lstlisting}
+
+                甚至自信地认为不需要进行额外的注释（骄傲地
+
+                \subsubsection{Anderson's mixing}
+                一般来说迭代意味着要把上一次获得的结果以某种形式代入下一步进行运算——比如进行SCF迭代的时候，最容易的方法就是把上一次得到的系数矩阵直接拿过来算下一步的电子密度矩阵，然后算出Fock矩阵，再对角化，如此循环——但这种情况很难保证在一定的循环次数内达到收敛（即相差数值很小），而且也很难说是一定能收敛——从二分法就可以很容易想象。因此有很多mixing的方法，把前几次得到的运算结果以某种形式混合起来形成新的结果猜测，从而更快地达到收敛。本程序使用了相对简单的Anderson's mixing 的方法\cite{johnson1988modified}。
+
+                最简单的mixing的方法就是直接按照一定比例混合：
+                \begin{equation}
+                    |n^{(m+1)}\rangle = (1-\alpha) |n^{(m)}\rangle + \alpha | n_{\text{out}}^{(m)} \rangle = |n^{m} \rangle + \alpha | F^{(m)} \rangle,
+                \end{equation}
+                其中$|n^{(m)}\rangle$ 表示第$m$次输入，$|n^{(m)}_\text{out}\rangle$表示第$m$次输出，以及
+                \begin{equation}
+                    |F^{(m)}\rangle \equiv |n_\text{out}^{(m)} \rangle - |n^{(m)}\rangle,
+                \end{equation}
+                也就是把第$m$次的输入和输出按照一定比例混合然后作为第$m+1$次输入。但这个方法收敛也容易很慢，因为在即将接近结果的时候跳得过快，使得在很多情况下需要让$\alpha$设得非常小才能收敛。
+
+                Anderson's mixing 试图通过一个可调的$\beta$来将前一次的输入/输出和再前一次的输入/输出进行混合，从而起到把两次输入/输出综合考量的结果，并通过上面的方法把输入/输出混合起来形成下一步的猜测：
+                \begin{equation}
+                    |\bar{n}_\text{in(out)} \rangle = (1-\beta) |n_\text{in(out)}^{(m)} \rangle + \beta |n_\text{in(out)}^{(m-1)} \rangle.
+                \end{equation}
+                而$\beta$在趋近的过程中应该满足
+                \begin{equation}
+                    \partial D\left[\overline{n}_{\mathrm{in}}, \overline{n}_{\mathrm{out}}\right] / \partial \beta=0,
+                \end{equation}
+                其中
+                \begin{equation}
+                \begin{aligned} D\left[n_{\text {out }}, n\right] & \equiv\left(\left\langle n_{\text {out }}-n | n_{\text {out }}-n\right\rangle\right)^{1 / 2} \\ &=\langle F(n) | F(n)\rangle^{1 / 2} \end{aligned}.
+                \end{equation}
+                从而有
+                \begin{equation}
+                    \beta=\frac{\left\langle F^{(m)} | F^{(m)}-F^{(m-1)}\right\rangle}{D^{2}\left[F^{(m)}, F^{(m-1)}\right]},
+                \end{equation}
+                而后通过原来的$\alpha$进行混合：
+                \begin{equation}
+                    \left|n^{(m+1)}\right\rangle=(1-\alpha)\left|\overline{n}_{\text {in }}^{(m)}\right\rangle+\alpha\left|\overline{n}_{\text {out }}^{(m)}\right\rangle.
+                \end{equation}
+
+                代码体现为
+                \begin{lstlisting}
+// Anderson's mixing
+if(i>3 && mixing_type==1)
+{
+    for(j=0;j<length;j++)
+    {
+        //calculating parameter beta
+        gsl_matrix_get_col(vector_temp1,diff,j);
+        gsl_matrix_get_col(vector_temp2,diff_temp,j);
+
+        difference_temp = gsl_vector_inner_product(vector_temp1,vector_temp1,length) - gsl_vector_inner_product(vector_temp1,vector_temp2,length);
+
+        gsl_vector_sub(vector_temp2,vector_temp1);
+
+        beta = difference_temp/gsl_vector_inner_product(vector_temp2,vector_temp2,length);
+
+        // Set the output part |n_{out}>
+        gsl_matrix_get_col(vector_temp1,coef,j);
+        gsl_vector_scale(vector_temp1,1.0 - beta);
+        gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+        gsl_vector_scale(vector_temp2,beta);
+        gsl_vector_add(vector_temp1,vector_temp2);
+
+        // Start writing the next input matrix
+        gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+
+        // Set the input part |n_{in>}
+        gsl_matrix_get_col(vector_temp1,input_coef_temp,j);
+        gsl_vector_scale(vector_temp1,1.0-beta);
+        gsl_matrix_get_col(vector_temp2,diff_temp,j);
+        gsl_vector_scale(vector_temp2,beta);
+        gsl_vector_sub(vector_temp1,vector_temp2);
+        gsl_matrix_get_col(vector_temp2,output_coef_temp,j);
+        gsl_vector_scale(vector_temp2,beta);
+        gsl_vector_add(vector_temp1,vector_temp2);                
+
+        gsl_vector_scale(vector_temp1,1.0-alpha);
+        gsl_matrix_get_col(vector_temp2,mixing_temp,j);
+        gsl_vector_scale(vector_temp2,alpha);
+        gsl_vector_add(vector_temp1,vector_temp2);
+        gsl_matrix_set_col(mixing_temp,j,vector_temp1);
+    }
+
+    // overwrite the coef matrix
+    gsl_matrix_memcpy(output_coef_temp,coef);
+    gsl_matrix_memcpy(coef,mixing_temp);
+}     
+gsl_matrix_memcpy(input_coef_temp,coef);  
+                \end{lstlisting}
+
+\section{效果展示}
+\begin{lstlisting}
+    $ ./HF -f test/H2O.in
+\end{lstlisting}
+使用3-21G，输出结果为
+\begin{lstlisting}
+    SCF converged.
+
+    Fock matrix:
+    
+     -0.437615 -0.404153 -1.133001 -1.022207 -0.415453  0.393827  0.000000
+     -0.404153 -0.437615 -1.133001 -1.022207  0.415453  0.393827  0.000000
+     -1.133001 -1.133001-20.146148 -5.145982 -0.000000  0.027780  0.000000
+     -1.022207 -1.022207 -5.145982 -2.331408 -0.000000  0.111017  0.000000
+     -0.415453  0.415453 -0.000000 -0.000000 -0.227014  0.000000  0.000000
+      0.393827  0.393827  0.027780  0.111017  0.000000 -0.275262  0.000000
+      0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 -0.296996
+    
+    
+    
+    MOs:
+    
+    MO_NUM: 0,    MO_ENERGY = -20.154493 , occ = 2
+    MO_NUM: 1,    MO_ENERGY = -1.208528 , occ = 2
+    MO_NUM: 2,    MO_ENERGY = -0.557811 , occ = 2
+    MO_NUM: 3,    MO_ENERGY = -0.379794 , occ = 2
+    MO_NUM: 4,    MO_ENERGY = -0.296996 , occ = 2
+    MO_NUM: 5,    MO_ENERGY = 0.963347 , occ = 0
+    MO_NUM: 6,    MO_ENERGY = 1.048381 , occ = 0
+    
+    Total Energy: -75.003904
+    
+    MO_LABEL:
+    [ H1s , H1s , O1s , O2s , O2py , O2pz , O2px ]
+    
+    MO_COEFF:
+    
+    
+        0.003630   -0.208665    0.422342   -0.230836    0.000000   -0.778788   -0.829289
+        0.003630   -0.208665   -0.422342   -0.230836    0.000000   -0.778788    0.829289
+       -0.994402    0.222023    0.000000   -0.106497    0.000000   -0.142506   -0.000000
+       -0.024274   -0.772323   -0.000000    0.522462    0.000000    0.898434    0.000000
+       -0.000000   -0.000000    0.643727    0.000000    0.000000   -0.000000    0.939536
+        0.003189    0.128637   -0.000000    0.800802    0.000000   -0.715459   -0.000000
+        0.000000    0.000000    0.000000    0.000000    1.000000    0.000000    0.000000
+\end{lstlisting}
+
+\bibliography{ref}
     \end{document}

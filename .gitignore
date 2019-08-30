@@ -40,9 +40,13 @@ HF
 .vscode
 
 # documentation
-*.pdf
 *.gz
 *.aux
 *.out
 *.log
 *.toc
+doc/main.bbl
+doc/main.blg
+doc/main.fdb_latexmk
+doc/main.fls
+doc/main.xdv
