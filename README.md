@@ -56,6 +56,10 @@ Bibliography:
 
 3. May, Andrew James. Density fitting in explicitly correlated electronic structure theory. Diss. University of Bristol, 2006.
 
+4. Johnson, Duane D. "Modified Broyden’s method for accelerating convergence in self-consistent calculations." Physical Review B 38.18 (1988): 12807.
+
+5. Schuchardt, Karen L., et al. "Basis set exchange: a community database for computational sciences." Journal of chemical information and modeling 47.3 (2007): 1045-1052.
+
 A typical result:
 ```
 $ ./HF -f test/H2O.in (in STO-3G)
