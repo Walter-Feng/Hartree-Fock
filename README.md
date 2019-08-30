@@ -57,10 +57,10 @@ Bibliography:
 3. May, Andrew James. Density fitting in explicitly correlated electronic structure theory. Diss. University of Bristol, 2006.
 
 A typical result:
-
+```
 $ ./HF -f test/H2O.in (in STO-3G)
-
-
+```
+```
 ...(iteration information)..
 
 SCF converged.
@@ -102,3 +102,4 @@ MO_COEFF:
    -0.000000   -0.000000    0.643727    0.000000    0.000000   -0.000000    0.939536
     0.003189    0.128637   -0.000000    0.800802    0.000000   -0.715459   -0.000000
     0.000000    0.000000    0.000000    0.000000    1.000000    0.000000    0.000000
+```
