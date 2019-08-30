@@ -1,5 +1,5 @@
 # Hartree-Fock
-This is a Hartree-Fock program that aims to show how Hartree-Fock really works in every process. It is planned to add comments on almost each line in the source code describing what this is going to perform, what this line is intended for, etc. Currently it only supports Restricted Hartree-Fock (RHF) method.
+This is a Hartree-Fock program that aims to show how Hartree-Fock really works in every process. It is planned to add comments on almost each line in the source code describing what this is going to perform, what this line is intended for, etc. Currently it only supports Restricted Hartree-Fock (RHF) method. Currently there is a Chinese version of ducumentation  `doc/main.tex` along with a compiled pdf file.
 
 It is still at an eary stage, and there might be unexpected errors.
 
@@ -44,8 +44,6 @@ Currently supported flags are:
 Known issues:
   1. the program will receive wrong results if it uses a large basis (e.g. cc-pVDZ), but everything seems to be fine with small bases (e.g. sto-3G and 6-31G)
 
-Future plan should be achieving adding comments on each line. Also it is planned to write a document written in Chinese (English ver. may come later?) describing the mechanisms of each step, which enables understanding of Hartree Fock from a physical/mathematical background.
-
 All comments on how to improve this program is much appreciated.
 
 Bibliography:
@@ -65,7 +63,7 @@ A typical result:
 $ ./HF -f test/H2O.in (in STO-3G)
 ```
 ```
-...(iteration information)..
+...(iteration information)..。
 
 SCF converged.
 
