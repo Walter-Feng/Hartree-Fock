@@ -1,4 +1,4 @@
-&BASIS 6-31g
+&BASIS sto-3g
 
 &SCF
     &ERR 1e-6

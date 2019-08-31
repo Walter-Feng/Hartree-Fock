@@ -33,6 +33,9 @@
 HF
 
 
+# chk files
+*.chk
+
 #.DS_Store
 .DS_Store
 
