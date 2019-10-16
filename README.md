@@ -14,16 +14,19 @@ There are some features in this program:
   4. No special trick is used all through the program - the only complicated thing should be the linked list, which should be a must to learn in C.
 
   5. In principle there (will be) comments at each line, which enables the program to be demonstrated by 'debugging', in other words you can use simple debugging programs like gdb or lldb to directly show the whole trace of the program in the source code level.
+  
+  6. Currently it can use either the simplest mixing method - NO MIXING method, namely the coefficient matrix obtained in each iteration is directly used in the next iteration, and the Anderson's mixing method.
 
 And something bad:
 
-  1. Currently it can use either the simplest mixing method - NO MIXING method, namely the coefficient matrix obtained in each iteration is directly used in the next iteration, and the Anderson's mixing method 
+  1. BAD PROGRAMMING STYLE
 
-  2. BAD PROGRAMMING STYLE
+  2. The output functions still seem to be disordered and scattered in the whole program, which may cause problem in trying to configure the output format and the total amount of information in it.
 
-  3. The output functions still seem to be disordered and scattered in the whole program, which may cause problem in trying to configure the output format and the total amount of information in it.
-
-Currently the optimized program can be compiled using the `build/build.sh` script, but the path for GSL should be stated first in the script (the default install path for GSL should be /usr/local). It is also able to run `build/debug.sh` to get the debug version of the program, which can be used in debugging programs like gdb or lldb. Considering that the program itself is quite simple, you can also try to compile the program all by yourself - writing a makefile or cmakelist should be fine and easy to get it working.
+Currently the optimized program can be compiled using `cmake`:
+```
+$ cmake . -DCMAKE_INSTALL_PREFIX=/the/path/to/your/gsl/library
+```
 
 The program can also be fetched from release, containing a static program and corresponding basis sets. Only Mac OS X and Linux are supported (for I do not know how to compile this stuff with GSL dependency in Windows - and moreover, I guess it is really hard to use such an command-line-interface program in Windows).
 
