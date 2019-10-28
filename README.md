@@ -25,7 +25,8 @@ And something bad:
 
 Currently the optimized program can be compiled using `cmake`:
 ```
-$ cmake . -DCMAKE_INSTALL_PREFIX=/the/path/to/your/gsl/library
+$ CMAKE_PREFIX_PATH=/the/path/to/your/gsl/library cmake .
+$ make
 ```
 
 The program can also be fetched from release, containing a static program and corresponding basis sets. Only Mac OS X and Linux are supported (for I do not know how to compile this stuff with GSL dependency in Windows - and moreover, I guess it is really hard to use such an command-line-interface program in Windows).
