@@ -1,4 +1,18 @@
 # Hartree-Fock
+=================Three years later==================
+
+Hey there. Thank you for having interest in this repository. 
+
+While C is usually the first programming language we will learn - well ok maybe it's python nowadays, but at least back in my time :( - I have to admit, compared with other languages, has more technical difficulties reading / writing the codes due to restricted number of tools available. The pointers are indeed powerful, but ... just too hard.
+
+I also confess that the 2-electron integral code here has some problems that makes it unable to calculate integrals that involve l > 2 orbitals correctly, i.e. d orbitals and f orbitals will fail.
+
+There is a new repository which is written in C++ (https://github.com/Walter-Feng/Hartree-Fock-in-CPP) that addresses these problems. No python - C++ is my last resort X(  I still wish people who are interested in such level of programming can acquire some knowledge of static programming. This repository has also got a taste of software engineering, so slightly more sophisticated and more abstract, but better to read and extend the functionalities. I am also aiming to polish the documents and comments that can help more enthusiasts learn Hartree Fock.
+
+Still, thank you to my repository, who gave me abundant experience how to write functioning codes and relatively large projects.
+
+====================================================
+
 This is a Hartree-Fock program that aims to show how Hartree-Fock really works in every process. It is planned to add comments on almost each line in the source code describing what this is going to perform, what this line is intended for, etc. Currently it only supports Restricted Hartree-Fock (RHF) method. Currently there is a Chinese version of ducumentation  `doc/main.tex` along with a compiled pdf file.
 
 It is still at an eary stage, and there might be unexpected errors.
